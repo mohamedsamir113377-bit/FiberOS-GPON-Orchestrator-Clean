@@ -1,0 +1,11 @@
+{
+  "name": "@fiberos/digital-twin-gis",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "description": "Network digital twin + GIS spatial contracts — graph impact, capacity derivation, PostGIS-ready shapes. No browser authority.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.21.0"
+  },
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@fiberos/dispatch",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

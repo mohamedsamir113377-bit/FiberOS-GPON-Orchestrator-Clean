@@ -1,0 +1,20 @@
+{
+  "schema": "fiberos.production-readiness-attestation.v1",
+  "productionReady": false,
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "checks": {
+    "databaseConnectivity": false,
+    "rlsTenantIsolation": false,
+    "identityOidcJwks": false,
+    "tlsIngress": false,
+    "secretsBoundary": false,
+    "backupRestore": false,
+    "rateLimitBoundary": false,
+    "externalAdapters": false
+  },
+  "notes": "Template only. Replace with truthful buyer-owned live verification evidence; never set productionReady/checks true without current deployed-environment proof.",
+  "evidenceMode": "live",
+  "expiresAt": "",
+  "deploymentId": ""
+}

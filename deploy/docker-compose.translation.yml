@@ -1,0 +1,19 @@
+# FiberOS R14.1 — translation artifact validation (no translation engine shipped).
+# The former compose referenced non-shipped tools/translation and models/ paths.
+# This service validates the checked-in catalogs without adding a paid provider or
+# pretending that a translation engine is bundled.
+name: fiberos-translation-validation
+services:
+  translation-validator:
+    image: node:24.21.0-bookworm-slim
+    working_dir: /work
+    profiles: ["translation-validation"]
+    volumes:
+      - ..:/work:ro
+    environment:
+      NODE_ENV: production
+    command: ["node", "tools/surgical-translator-validator.js"]
+    read_only: true
+    network_mode: none
+    security_opt:
+      - no-new-privileges:true

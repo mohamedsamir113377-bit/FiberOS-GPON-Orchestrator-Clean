@@ -1,0 +1,11 @@
+{
+  "name": "@fiberos/security-firewall",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "description": "High-assurance HTTP request firewall — size limits, content-type allowlist, path hardening, abuse boundary. Complements httpHardening.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.21.0"
+  },
+  "license": "UNLICENSED"
+}

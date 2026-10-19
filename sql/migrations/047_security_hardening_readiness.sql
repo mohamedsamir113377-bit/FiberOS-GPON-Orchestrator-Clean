@@ -1,0 +1,4 @@
+-- Wave 17 Security Hardening Readiness Foundation
+-- Readiness marker only. Audit tenant indexing requires the tenant_id column
+-- introduced by migration 029, so this migration must not reference it.
+-- The tenant-aware audit index is created by the later tenant-hardening chain.

@@ -1,0 +1,8 @@
+{
+  "name": "@fiberos/offline-field-queue",
+  "version": "1.0.0-rc.1+commercial.2026-10-07",
+  "private": true,
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": { "node": ">=24.21.0" }
+}

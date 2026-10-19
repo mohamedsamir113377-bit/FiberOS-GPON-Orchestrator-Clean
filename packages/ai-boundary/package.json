@@ -1,0 +1,11 @@
+{
+  "name": "@fiberos/ai-boundary",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "description": "AI advisory boundary — executionAuthorized always false for network/ticket mutation",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

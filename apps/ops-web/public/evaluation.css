@@ -1,0 +1,10 @@
+body{margin:0;background:#071018;color:#dceff8;font:16px/1.6 system-ui,sans-serif}
+.wrap{max-width:1050px;margin:0 auto;padding:34px 20px}
+.hero{padding:28px;border:1px solid #234656;border-radius:14px;background:#0b1820}
+.muted{color:#9eb5c0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+.card{display:block;text-decoration:none;color:inherit;border:1px solid #234656;border-radius:12px;padding:18px;background:#0d2029}
+.card:hover{border-color:#4f7a8e}
+.pill{display:inline-block;border:1px solid #31566a;border-radius:999px;padding:4px 8px;font-size:12px}
+.note{margin-top:18px;padding:14px;border:1px dashed #31566a;border-radius:10px;background:#0a1b23;font-size:13px}
+.cta{display:inline-block;margin-top:14px;padding:10px 14px;border-radius:8px;background:#173643;color:#fff;text-decoration:none}

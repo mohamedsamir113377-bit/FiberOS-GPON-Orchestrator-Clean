@@ -1,0 +1,10 @@
+{
+  "schema": "fiberos.external-adapters-proof.v1",
+  "oidcJwks": false,
+  "objectStorage": false,
+  "kmsOrSecretManager": false,
+  "nmsOtdr": false,
+  "webhooks": false,
+  "messaging": false,
+  "notes": "Template only. Set true only after live probes in the deployed environment; never commit credentials or tokens."
+}

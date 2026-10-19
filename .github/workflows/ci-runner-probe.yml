@@ -1,0 +1,57 @@
+name: ci-runner-probe
+
+# Minimal job to prove GitHub-hosted runner assignment and log retention.
+# If this fails with 0 steps / empty runner_name, the problem is account/runner pool
+# (Actions disabled, billing/minutes exhausted, or org policy) — not application source.
+
+on:
+  # Dispatch-only by design. This probe exists solely to diagnose hosted-runner
+  # assignment when another workflow reports an empty runner; it must not fire on
+  # ordinary pushes. The previous push trigger listed four branches that no longer
+  # exist (feature/installation-command-workflows-2026-10-07,
+  # handoff/final-commercial-candidate-2026-10-07, feat/deep-reality-kernel-gaps,
+  # chore/main-green-20261014), so it was dead configuration. Run it from the
+  # Actions tab, or: gh workflow run ci-runner-probe.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    name: Hosted runner probe
+    strategy:
+      fail-fast: false
+      matrix:
+        # Dual labels isolate label-availability vs account-level runner denial.
+        runner: [ubuntu-latest, ubuntu-24.04]
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 5
+    steps:
+      - name: Prove runner identity
+        run: |
+          set -euo pipefail
+          echo "requested_label=${{ matrix.runner }}"
+          echo "runner_name=${RUNNER_NAME:-}"
+          echo "runner_os=${RUNNER_OS:-}"
+          echo "runner_arch=${RUNNER_ARCH:-}"
+          echo "image_os_version=$(. /etc/os-release && echo "$PRETTY_NAME")"
+          uname -a
+          date -u +%Y-%m-%dT%H:%M:%SZ | tee "probe-ok-${{ matrix.runner }}.txt"
+      - name: Write job summary
+        run: |
+          {
+            echo "## CI runner probe (${{ matrix.runner }})"
+            echo ""
+            echo "- Status: assigned and executing steps"
+            echo "- Requested label: ${{ matrix.runner }}"
+            echo "- Time (UTC): $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "- OS: $(. /etc/os-release && echo "$PRETTY_NAME")"
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload probe marker
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: ci-runner-probe-${{ matrix.runner }}
+          path: probe-ok-${{ matrix.runner }}.txt
+          if-no-files-found: error
+          retention-days: 14

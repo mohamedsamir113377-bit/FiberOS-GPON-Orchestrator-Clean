@@ -1,0 +1,186 @@
+{
+  "schema": "fiberos.r14.1.architecture-map.v1",
+  "generatedAt": "2026-10-11T00:02:24.301Z",
+  "packages": [
+    "adapters",
+    "ai-boundary",
+    "api-threat-model",
+    "assurance",
+    "audit",
+    "call-routing",
+    "compute-kernel",
+    "concurrency-control",
+    "contact-center-intelligence",
+    "core",
+    "data-quality-engine",
+    "db",
+    "digital-twin-gis",
+    "digital-twin-layers",
+    "dispatch",
+    "domain",
+    "engineering",
+    "enterprise-ftth",
+    "enterprise-kernel",
+    "event-stream-fabric",
+    "field-closure",
+    "field-route-optimization",
+    "financial-forecasting",
+    "formal-verification",
+    "ftth-engineering-intelligence",
+    "ftth-measurements",
+    "gis-reconciliation",
+    "i18n-runtime",
+    "interface-contracts",
+    "model-governance",
+    "multilingual-contact-center",
+    "network-firewall-policy",
+    "network-knowledge",
+    "network-reality-kernel",
+    "observability",
+    "offline-field-queue",
+    "operational-assurance",
+    "operational-context",
+    "operations-kpi",
+    "operations-trace",
+    "performance-capacity",
+    "pon-standards-ext",
+    "predictive-inventory",
+    "productization",
+    "reality-acquisition-policy",
+    "scientific-validity",
+    "secrets-data-leakage",
+    "security",
+    "security-firewall",
+    "signing-port",
+    "southbound-contract",
+    "sovereign-ai-context",
+    "sovereign-contact-center",
+    "sovereign-gis",
+    "sovereign-rag",
+    "state-machine-concurrency",
+    "sync",
+    "tenant-isolation-model",
+    "truth-evidence",
+    "unified-intelligence-graph",
+    "web-intelligence-core"
+  ],
+  "edges": {
+    "adapters": [
+      "domain",
+      "security"
+    ],
+    "ai-boundary": [
+      "web-intelligence-core"
+    ],
+    "api-threat-model": [],
+    "assurance": [],
+    "audit": [],
+    "call-routing": [
+      "db"
+    ],
+    "compute-kernel": [],
+    "concurrency-control": [],
+    "contact-center-intelligence": [
+      "unified-intelligence-graph"
+    ],
+    "core": [
+      "ai-boundary",
+      "db"
+    ],
+    "data-quality-engine": [],
+    "db": [
+      "observability"
+    ],
+    "digital-twin-gis": [
+      "domain",
+      "engineering"
+    ],
+    "digital-twin-layers": [],
+    "dispatch": [
+      "adapters",
+      "domain"
+    ],
+    "domain": [
+      "adapters",
+      "engineering"
+    ],
+    "engineering": [
+      "compute-kernel",
+      "formal-verification",
+      "scientific-validity"
+    ],
+    "enterprise-ftth": [],
+    "enterprise-kernel": [],
+    "event-stream-fabric": [],
+    "field-closure": [
+      "domain"
+    ],
+    "field-route-optimization": [],
+    "financial-forecasting": [],
+    "formal-verification": [
+      "engineering"
+    ],
+    "ftth-engineering-intelligence": [
+      "engineering"
+    ],
+    "ftth-measurements": [],
+    "gis-reconciliation": [],
+    "i18n-runtime": [],
+    "interface-contracts": [],
+    "model-governance": [],
+    "multilingual-contact-center": [],
+    "network-firewall-policy": [],
+    "network-knowledge": [],
+    "network-reality-kernel": [],
+    "observability": [],
+    "offline-field-queue": [],
+    "operational-assurance": [],
+    "operational-context": [],
+    "operations-kpi": [
+      "domain"
+    ],
+    "operations-trace": [],
+    "performance-capacity": [],
+    "pon-standards-ext": [],
+    "predictive-inventory": [],
+    "productization": [],
+    "reality-acquisition-policy": [],
+    "scientific-validity": [],
+    "secrets-data-leakage": [],
+    "security": [],
+    "security-firewall": [
+      "performance-capacity",
+      "security"
+    ],
+    "signing-port": [],
+    "southbound-contract": [],
+    "sovereign-ai-context": [
+      "sovereign-gis",
+      "unified-intelligence-graph"
+    ],
+    "sovereign-contact-center": [
+      "security"
+    ],
+    "sovereign-gis": [
+      "security"
+    ],
+    "sovereign-rag": [],
+    "state-machine-concurrency": [],
+    "sync": [],
+    "tenant-isolation-model": [],
+    "truth-evidence": [],
+    "unified-intelligence-graph": [
+      "sovereign-gis"
+    ],
+    "web-intelligence-core": [
+      "ai-boundary",
+      "security"
+    ]
+  },
+  "rootRules": {
+    "packagesCannotImportAppsOrServices": true,
+    "servicesMayDependOnPackages": true,
+    "appsConsumeThroughHttpContracts": true,
+    "engineeringMathIsPureAndWorkerOffloadable": true
+  }
+}

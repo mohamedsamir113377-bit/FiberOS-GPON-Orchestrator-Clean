@@ -1,0 +1,11 @@
+{
+  "name": "@fiberos/network-firewall-policy",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "description": "Fail-closed Linux nftables host/network firewall policy compiler for FiberOS pre-DB deployment.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.21.0"
+  },
+  "license": "UNLICENSED"
+}

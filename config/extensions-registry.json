@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "registryVersion": "1.0.0",
+  "policy": {
+    "purpose": "Internal extension contract registry; this release does not install or execute marketplace packages.",
+    "requiredManifestFields": [
+      "packageName",
+      "packageVersion",
+      "capabilities",
+      "permissions",
+      "tenantScope",
+      "dependencies",
+      "provenance",
+      "signature"
+    ],
+    "productionInstallRequires": [
+      "verified package provenance",
+      "cryptographic signature verification",
+      "dependency policy approval",
+      "tenant scope validation",
+      "capability and permission review",
+      "runtime sandbox acceptance"
+    ],
+    "unsignedValidationAllowed": true,
+    "installationEnabled": false
+  },
+  "extensions": []
+}

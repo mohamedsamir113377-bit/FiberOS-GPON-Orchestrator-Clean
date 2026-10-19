@@ -1,0 +1,1336 @@
+{
+  "schema": "fiberos.r14.1.surgical-translation-validator.v2",
+  "sourcePath": "i18n/source.json",
+  "sourceKeys": 101,
+  "aiEnabled": false,
+  "locales": [
+    {
+      "locale": "af",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "am",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ar",
+      "declaredStatus": "verified",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.eafe2f6a7a93",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "as",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ay",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "az",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "be",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ber",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "bg",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "bi",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "bm",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "bn",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "bs",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ch",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "cs",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "da",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "de",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "din",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "dv",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "el",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "en",
+      "declaredStatus": "verified",
+      "coverage": "101/101",
+      "findings": [
+        {
+          "code": "SOURCE_COPY",
+          "count": 83,
+          "keys": [
+            "ui.516f0db4cbb4",
+            "ui.f98e1d8821f9",
+            "ui.5a3cb50057be",
+            "ui.91c8e6d08207",
+            "ui.eafe2f6a7a93",
+            "ui.a12e0e3e87c4",
+            "ui.386b69e073ee",
+            "ui.62004bedacdf",
+            "ui.f66563bbea25",
+            "ui.15827a8bf3a8",
+            "ui.d398ae18ddb4",
+            "ui.9bc9b83c11dd",
+            "ui.472590ae974d",
+            "ui.b22f45bae287",
+            "ui.ff214f39e1b8",
+            "ui.07ddb7f340fd",
+            "ui.3b596170f780",
+            "ui.db9b43fe5252",
+            "ui.e628ed3c551c",
+            "ui.7de56378df56",
+            "ui.8ef964729e07",
+            "ui.9077c50d8036",
+            "ui.3120e31fbe89",
+            "ui.7e8cd2056da7",
+            "ui.5e9f98120dbe",
+            "ui.0f809607c33f",
+            "ui.0e8d8c48c817",
+            "ui.43db61570404",
+            "ui.1f8cb7efc46e",
+            "ui.57aaa3019459",
+            "ui.17a1e3ec5d4a",
+            "ui.c92dcc28618d",
+            "ui.e83136f804e6",
+            "ui.4cfe427dee53",
+            "ui.feb54c410c99",
+            "ui.f1f28f6c12ba",
+            "ui.d89d294ed9ee",
+            "ui.23e7ef28c84f",
+            "ui.06fa943be019",
+            "ui.25298521e46e",
+            "ui.4372918e9883",
+            "ui.ea8d2734f5d9",
+            "ui.6e7d50e84f47",
+            "ui.fd9cf6c9b415",
+            "ui.f1a80e3e8395",
+            "ui.8df329dfaf92",
+            "ui.5adb288134e7",
+            "ui.49c266baaaa7",
+            "ui.9d6a74308bbc",
+            "ui.5854ffc6682f",
+            "ui.1e22c22f5622",
+            "ui.046c9378f8f3",
+            "ui.734805bbe64e",
+            "ui.1399beb436bb",
+            "ui.982ebb57d138",
+            "ui.671719217547",
+            "ui.7d418f4d0fb8",
+            "ui.be15e2be8975",
+            "ui.4d1892134581",
+            "ui.39ea57d881ce",
+            "ui.9dedacfad455",
+            "ui.6ef29d0b15c8",
+            "ui.82b3e49eb975",
+            "ui.1bd41c8b8b5a",
+            "ui.53843646caad",
+            "ui.0353ca64634b",
+            "ui.ddf413a199e7",
+            "ui.833c3759a177",
+            "ui.f272249f67c9",
+            "ui.fe1b878224ed",
+            "ui.8faca4019806",
+            "ui.0c9c3591f7c3",
+            "ui.96c6c7c050e9",
+            "ui.88df31867248",
+            "ui.e43dbe06b2e5",
+            "ui.24f86eb91e71",
+            "ui.3ac3ca389ad1",
+            "ui.ce9c507fb561",
+            "ui.9981c2e574ed",
+            "ui.0cab3e2ec19a",
+            "ui.35f6e7a76e4c",
+            "attr.8aa4cd274801",
+            "attr.b2568fa51728"
+          ]
+        }
+      ],
+      "advisories": [],
+      "sourceCopyObservations": [
+        "ui.516f0db4cbb4",
+        "ui.f98e1d8821f9",
+        "ui.5a3cb50057be",
+        "ui.91c8e6d08207",
+        "ui.eafe2f6a7a93",
+        "ui.a12e0e3e87c4",
+        "ui.386b69e073ee",
+        "ui.62004bedacdf",
+        "ui.f66563bbea25",
+        "ui.15827a8bf3a8",
+        "ui.d398ae18ddb4",
+        "ui.9bc9b83c11dd",
+        "ui.472590ae974d",
+        "ui.b22f45bae287",
+        "ui.ff214f39e1b8",
+        "ui.07ddb7f340fd",
+        "ui.3b596170f780",
+        "ui.db9b43fe5252",
+        "ui.e628ed3c551c",
+        "ui.7de56378df56",
+        "ui.8ef964729e07",
+        "ui.9077c50d8036",
+        "ui.3120e31fbe89",
+        "ui.7e8cd2056da7",
+        "ui.5e9f98120dbe",
+        "ui.0f809607c33f",
+        "ui.0e8d8c48c817",
+        "ui.43db61570404",
+        "ui.1f8cb7efc46e",
+        "ui.57aaa3019459",
+        "ui.17a1e3ec5d4a",
+        "ui.c92dcc28618d",
+        "ui.e83136f804e6",
+        "ui.4cfe427dee53",
+        "ui.feb54c410c99",
+        "ui.f1f28f6c12ba",
+        "ui.d89d294ed9ee",
+        "ui.23e7ef28c84f",
+        "ui.06fa943be019",
+        "ui.25298521e46e",
+        "ui.4372918e9883",
+        "ui.ea8d2734f5d9",
+        "ui.6e7d50e84f47",
+        "ui.fd9cf6c9b415",
+        "ui.f1a80e3e8395",
+        "ui.8df329dfaf92",
+        "ui.5adb288134e7",
+        "ui.49c266baaaa7",
+        "ui.9d6a74308bbc",
+        "ui.5854ffc6682f",
+        "ui.1e22c22f5622",
+        "ui.046c9378f8f3",
+        "ui.734805bbe64e",
+        "ui.1399beb436bb",
+        "ui.982ebb57d138",
+        "ui.671719217547",
+        "ui.7d418f4d0fb8",
+        "ui.be15e2be8975",
+        "ui.4d1892134581",
+        "ui.39ea57d881ce",
+        "ui.9dedacfad455",
+        "ui.6ef29d0b15c8",
+        "ui.82b3e49eb975",
+        "ui.1bd41c8b8b5a",
+        "ui.53843646caad",
+        "ui.0353ca64634b",
+        "ui.ddf413a199e7",
+        "ui.833c3759a177",
+        "ui.f272249f67c9",
+        "ui.fe1b878224ed",
+        "ui.8faca4019806",
+        "ui.0c9c3591f7c3",
+        "ui.96c6c7c050e9",
+        "ui.88df31867248",
+        "ui.e43dbe06b2e5",
+        "ui.24f86eb91e71",
+        "ui.3ac3ca389ad1",
+        "ui.ce9c507fb561",
+        "ui.9981c2e574ed",
+        "ui.0cab3e2ec19a",
+        "ui.35f6e7a76e4c",
+        "attr.8aa4cd274801",
+        "attr.b2568fa51728"
+      ],
+      "ai": null
+    },
+    {
+      "locale": "es",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "et",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "fa",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ff",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "fi",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "fj",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "fr",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "gn",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "gu",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ha",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "hi",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "hr",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "hu",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "hy",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "id",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ig",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "is",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "it",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ja",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ka",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "kk",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "km",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "kn",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ko",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ks",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ktu",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ku",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ln",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "lo",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "lt",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "lv",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "mg",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "mi",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "mk",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ml",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "mn",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "mr",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ms",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "my",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ne",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "nl",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "no",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "nr",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "nus",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ny",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "om",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "or",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "pa",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "pau",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "pl",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ps",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "pt",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "qu",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "rn",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ro",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ru",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "rw",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "sat",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "sg",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "si",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "sk",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "sm",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "sn",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "so",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "sq",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "sr",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ss",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "st",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "sv",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "sw",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ta",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "te",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "tg",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "th",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ti",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "tig",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "tk",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "tl",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "tn",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "to",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "tr",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ts",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "uk",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ur",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "uz",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [
+        {
+          "key": "ui.24f86eb91e71",
+          "code": "EMOJI_ADDED",
+          "count": 1
+        }
+      ],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "ve",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "vi",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "wo",
+      "declaredStatus": "untranslated",
+      "coverage": "0/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "xh",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "yo",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "yue",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "zh",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    },
+    {
+      "locale": "zu",
+      "declaredStatus": "machine-draft",
+      "coverage": "101/101",
+      "findings": [],
+      "advisories": [],
+      "sourceCopyObservations": [],
+      "ai": null
+    }
+  ],
+  "totals": {
+    "locales": 114,
+    "missingCatalogs": 0,
+    "empty": 0,
+    "structural": 0,
+    "sourceCopies": 83,
+    "aiReview": 0
+  }
+}

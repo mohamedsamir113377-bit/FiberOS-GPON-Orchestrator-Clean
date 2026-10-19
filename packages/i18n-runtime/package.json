@@ -1,0 +1,14 @@
+{
+  "name": "@fiberos/i18n-runtime",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.21.0"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  }
+}

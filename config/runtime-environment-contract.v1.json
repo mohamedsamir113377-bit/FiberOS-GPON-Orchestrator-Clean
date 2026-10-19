@@ -1,0 +1,50 @@
+{
+  "schema": "fiberos.r14.1.runtime-environment-contract.v1",
+  "status": "DECLARATIVE_CONTRACT_ONLY",
+  "truthBoundary": "This file declares prerequisites; it is not evidence that any prerequisite is available or verified.",
+  "node": {
+    "required": ">=24.21.0",
+    "doNotLowerRequirement": true
+  },
+  "npm": {
+    "required": ">=10.9.2"
+  },
+  "postgresql": {
+    "requiredMajor": 18,
+    "minimumSecurityBaseline": "18.6",
+    "postgis": "3.6"
+  },
+  "runtimeDependencies": [
+    "DATABASE_URL",
+    "OIDC_ISSUER",
+    "OIDC_AUDIENCE",
+    "OIDC_JWKS_URL",
+    "OBJECT_STORAGE",
+    "KMS_OR_SECRET_MANAGER",
+    "REVERSE_PROXY_TLS",
+    "FIBEROS_TLS_PROBE_URL",
+    "FIBEROS_TLS_EXPECTED_ORIGIN"
+  ],
+  "executionSafety": {
+    "disposableAttestation": "FIBEROS_VERIFY_DISPOSABLE=1",
+    "explicitExecution": "FIBEROS_R11_EXECUTE=1"
+  },
+  "productionAdmission": "Canonical admission remains authoritative; no static result may satisfy a runtime requirement.",
+  "conditionalDependencies": {
+    "REDIS_URL": "Required when SECURITY_RATE_LIMIT_BACKEND=REDIS. The shipped Redis backend uses atomic server-time token buckets and fails closed with HTTP 503 when unavailable; API/AI health routes also pass through the edge limiter. PROCESS_LOCAL is supported only for a single instance.",
+    "FIBEROS_REDIS_HA_PROOF_FILE": "Required in production when SECURITY_RATE_LIMIT_BACKEND=REDIS. It must be a fiberos.redis-ha-proof.v1 payload signed with Ed25519 by the approved infrastructure/CI evidence issuer. The signed payload binds provider, resourceId, evidenceReference, managedHighAvailability=true, automaticFailoverConfigured=true, failoverTested=true, and an ISO-8601 failoverTestedAt no older than 180 days and no more than five minutes in the future. The gate verifies this signature and separately probes the configured Redis endpoint with ROLE, requiring a primary with at least one connected replica; PING alone is insufficient. Redis rate limiting fails closed when the store is unavailable.",
+    "FIBEROS_REDIS_HA_PROOF_PUBLIC_KEY_FILE": "Required with Redis HA proof; a trusted Ed25519 public key file supplied through the deployment trust boundary, separate from the proof JSON.",
+    "FIBEROS_REDIS_HA_PROOF_KEY_ID": "Required expected signing-key identifier pinned in deployment configuration and equal to the signed proof keyId.",
+    "FIBEROS_KERNEL_BOUNDARY_REQUIRED": "Must be explicitly true or false in production. When true, a >=32-byte HMAC secret is required and the current nonce replay store restricts the service to one instance.",
+    "FIBEROS_REDIS_HA_RESOURCE_ID": "Required with Redis HA proof; exact resource identifier pinned to the deployment endpoint and equal to the signed proof payload.resourceId.",
+    "FIBEROS_REDIS_HA_BUILD_REF": "Required with Redis HA proof; release/build identifier supplied by the CI/CD release boundary and equal to the signed proof payload.buildRef.",
+    "FIBEROS_REPLAY_DEFENSE_BACKEND": "Required in production for protected write routes. Must be REDIS; process-local replay protection is not accepted as a distributed security boundary.",
+    "FIBEROS_REPLAY_DEFENSE_REQUIRED": "Explicit production requirement for distributed replay protection; fail closed if Redis cannot be reached.",
+    "FIBEROS_OIDC_ISSUER_URL": "Required for interactive ops-web login; must match the OpenID Connect discovery issuer.",
+    "FIBEROS_OIDC_CLIENT_ID": "Required for interactive ops-web Authorization Code + PKCE flow.",
+    "FIBEROS_OIDC_CLIENT_SECRET": "Required server-side for the confidential OIDC client; never exposed to browser code.",
+    "FIBEROS_OPS_WEB_ORIGIN": "Exact ops-web origin used for credentialed CORS and CSRF origin validation.",
+    "FIBEROS_OPS_API_BASE_URL": "Canonical API origin used as the OIDC redirect URI base.",
+    "CORS_ALLOW_CREDENTIALS": "Must be true only with an exact non-wildcard CORS_ORIGIN when OIDC session cookies are used."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fiberos.r14.1.sales-package-manifest.v2",
+  "title": "FiberOS R14.1 Sales Package Manifest",
+  "type": "object",
+  "required": [
+    "manifestSchema",
+    "package",
+    "packageVersion",
+    "preparedFrom",
+    "updateDate",
+    "databaseMigrations",
+    "fileCount",
+    "bytes",
+    "truthBoundary",
+    "sha256ByFile"
+  ],
+  "properties": {
+    "manifestSchema": {
+      "const": "fiberos.r14.1.sales-package-manifest.v2"
+    },
+    "package": {
+      "type": "string",
+      "minLength": 1
+    },
+    "packageVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "preparedFrom": {
+      "type": "string",
+      "minLength": 1
+    },
+    "updateDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "databaseMigrations": {
+      "type": "string",
+      "pattern": "^\\d{3}-\\d{3}$"
+    },
+    "fileCount": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "bytes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "truthBoundary": {
+      "type": "object"
+    },
+    "sha256ByFile": {
+      "type": "object",
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "const": "SELF_REFERENTIAL_NOT_HASHED"
+          },
+          {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

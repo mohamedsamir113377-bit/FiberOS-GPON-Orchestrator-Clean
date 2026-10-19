@@ -1,0 +1,767 @@
+{
+  "schema": "fiberos.i18n.84-locale-forensic-status.v1",
+  "generatedAt": "2026-10-06T20:42:37Z",
+  "classificationPolicy": {
+    "machine-forensically-accepted": "Passed deterministic layers this run",
+    "machine-draft": "Catalog status when not human-verified",
+    "human-certified": "Requires independent human evidence only"
+  },
+  "locales": [
+    {
+      "locale": "ar",
+      "keyCount": 101,
+      "catalogStatusField": "verified",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "fa",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "tr",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ku",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "am",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "sw",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "om",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "so",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ha",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "yo",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ig",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "zu",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "xh",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "af",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "rw",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "sn",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ln",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ber",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "zh",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "yue",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ja",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ko",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "hi",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ur",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "bn",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "pa",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ta",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "te",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "mr",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "gu",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ml",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "kn",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "as",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "or",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ne",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "si",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ps",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ms",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "id",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "th",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "vi",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "km",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "lo",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "my",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "tl",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "az",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "hy",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ka",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "mn",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "en",
+      "keyCount": 101,
+      "catalogStatusField": "verified",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "fr",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "es",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ru",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "de",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "it",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "pt",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "nl",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "el",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "sq",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "sr",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "hr",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "bs",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "mk",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "bg",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ro",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "hu",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "cs",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "sk",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "pl",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "uk",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "be",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "lt",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "lv",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "et",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "fi",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "sv",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "no",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "da",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "is",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "kk",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "uz",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "tk",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "tg",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    },
+    {
+      "locale": "ay",
+      "keyCount": 101,
+      "catalogStatusField": "machine-draft",
+      "classification": "machine-forensically-accepted",
+      "humanReview": "NOT_PERFORMED",
+      "machineForensic": "PASS",
+      "risks": []
+    }
+  ]
+}

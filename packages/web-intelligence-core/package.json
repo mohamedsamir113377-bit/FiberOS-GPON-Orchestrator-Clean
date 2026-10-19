@@ -1,0 +1,11 @@
+{
+  "name": "@fiberos/web-intelligence-core",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "description": "FiberOS sovereign website-only AI orchestration contract; advisory, self-hosted, evidence-bound",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

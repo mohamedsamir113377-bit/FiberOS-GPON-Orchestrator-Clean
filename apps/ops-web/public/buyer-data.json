@@ -1,0 +1,1806 @@
+{
+  "generatedBy": "scripts/release-provenance.js",
+  "provenance": {
+    "repository": "https://github.com/mohamedsamir113377-bit/GPON-Orchestrator.git",
+    "branch": "NOT_BOUND_IN_GENERATOR",
+    "commit": null,
+    "sourceFile": "config/html-feature-parity.json",
+    "sourceSha256": "55ce0bde42ec9b88cb82452a4e392eff03b90a159a90228031357edd498fdfa5"
+  },
+  "total": 106,
+  "byStatus": {
+    "REAL": 55,
+    "VISION": 24,
+    "ADVISORY": 23,
+    "INTEGRATION_REQUIRED": 4
+  },
+  "notReal": 51,
+  "locales": {
+    "total": 114,
+    "verified": 2,
+    "machineDraft": 112,
+    "untranslated": 0,
+    "other": 0,
+    "humanCertified": 0,
+    "note": "humanCertified stays 0 until a native-speaker sign-off file exists"
+  },
+  "features": [
+    {
+      "id": "home",
+      "status": "REAL"
+    },
+    {
+      "id": "dashboard",
+      "status": "REAL"
+    },
+    {
+      "id": "callcenter",
+      "status": "REAL"
+    },
+    {
+      "id": "migration-center",
+      "status": "REAL"
+    },
+    {
+      "id": "architecture",
+      "status": "REAL"
+    },
+    {
+      "id": "future-roadmap",
+      "status": "VISION"
+    },
+    {
+      "id": "theory-guide",
+      "status": "REAL"
+    },
+    {
+      "id": "security-engineering",
+      "status": "REAL"
+    },
+    {
+      "id": "intelligence-core",
+      "status": "VISION"
+    },
+    {
+      "id": "memory-engine",
+      "status": "REAL"
+    },
+    {
+      "id": "ai-architecture",
+      "status": "VISION"
+    },
+    {
+      "id": "event-bus",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "fiber-brain",
+      "status": "VISION"
+    },
+    {
+      "id": "digital-twin",
+      "status": "REAL"
+    },
+    {
+      "id": "executive",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "command-center-2050",
+      "status": "REAL"
+    },
+    {
+      "id": "mission-control",
+      "status": "REAL"
+    },
+    {
+      "id": "simulator",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "noc3d",
+      "status": "REAL"
+    },
+    {
+      "id": "workflows",
+      "status": "REAL"
+    },
+    {
+      "id": "rbac",
+      "status": "REAL"
+    },
+    {
+      "id": "notifications",
+      "status": "REAL"
+    },
+    {
+      "id": "marketplace",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "line-link",
+      "status": "REAL"
+    },
+    {
+      "id": "audit",
+      "status": "REAL"
+    },
+    {
+      "id": "inventory",
+      "status": "REAL"
+    },
+    {
+      "id": "billing",
+      "status": "REAL"
+    },
+    {
+      "id": "sla",
+      "status": "REAL"
+    },
+    {
+      "id": "messaging",
+      "status": "INTEGRATION_REQUIRED"
+    },
+    {
+      "id": "subcontractors",
+      "status": "REAL"
+    },
+    {
+      "id": "ai-ceo",
+      "status": "VISION"
+    },
+    {
+      "id": "fiber-dna",
+      "status": "REAL"
+    },
+    {
+      "id": "dispatcher",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "gis",
+      "status": "REAL"
+    },
+    {
+      "id": "gis-planning",
+      "status": "REAL"
+    },
+    {
+      "id": "otdr-intel",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "vision-qc",
+      "status": "INTEGRATION_REQUIRED"
+    },
+    {
+      "id": "voice-ops",
+      "status": "INTEGRATION_REQUIRED"
+    },
+    {
+      "id": "smart-inventory",
+      "status": "REAL"
+    },
+    {
+      "id": "fiber-health-predict",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "ar-scanner",
+      "status": "REAL"
+    },
+    {
+      "id": "splice-inspection",
+      "status": "VISION"
+    },
+    {
+      "id": "self-diagnostic",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "cx-heatmap",
+      "status": "REAL"
+    },
+    {
+      "id": "geo-integrity",
+      "status": "REAL"
+    },
+    {
+      "id": "offline-sync",
+      "status": "REAL"
+    },
+    {
+      "id": "financial-twin",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "weather",
+      "status": "INTEGRATION_REQUIRED"
+    },
+    {
+      "id": "mission-status",
+      "status": "VISION"
+    },
+    {
+      "id": "crisis-mode",
+      "status": "REAL"
+    },
+    {
+      "id": "live-contracts",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "workload-balance",
+      "status": "REAL"
+    },
+    {
+      "id": "cost-leak",
+      "status": "VISION"
+    },
+    {
+      "id": "zero-trust",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "digital-memory",
+      "status": "REAL"
+    },
+    {
+      "id": "board-meeting",
+      "status": "VISION"
+    },
+    {
+      "id": "exec-radar",
+      "status": "REAL"
+    },
+    {
+      "id": "energy-analytics",
+      "status": "REAL"
+    },
+    {
+      "id": "ops-timeline",
+      "status": "REAL"
+    },
+    {
+      "id": "business-impact",
+      "status": "REAL"
+    },
+    {
+      "id": "innovation-lab",
+      "status": "VISION"
+    },
+    {
+      "id": "cross-project",
+      "status": "REAL"
+    },
+    {
+      "id": "reputation-index",
+      "status": "REAL"
+    },
+    {
+      "id": "strategy-planner",
+      "status": "VISION"
+    },
+    {
+      "id": "enterprise-twin",
+      "status": "REAL"
+    },
+    {
+      "id": "cos",
+      "status": "REAL"
+    },
+    {
+      "id": "enterprise-brain",
+      "status": "VISION"
+    },
+    {
+      "id": "ai-debate",
+      "status": "VISION"
+    },
+    {
+      "id": "digital-dna",
+      "status": "REAL"
+    },
+    {
+      "id": "business-weather",
+      "status": "REAL"
+    },
+    {
+      "id": "strategy-sim",
+      "status": "VISION"
+    },
+    {
+      "id": "enterprise-tm",
+      "status": "REAL"
+    },
+    {
+      "id": "intel-center",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "inspector-general",
+      "status": "VISION"
+    },
+    {
+      "id": "exec-hologram",
+      "status": "VISION"
+    },
+    {
+      "id": "procurement-ai",
+      "status": "VISION"
+    },
+    {
+      "id": "mission-planner",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "knowledge-evo",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "trust-engine",
+      "status": "REAL"
+    },
+    {
+      "id": "black-box",
+      "status": "VISION"
+    },
+    {
+      "id": "auto-score",
+      "status": "VISION"
+    },
+    {
+      "id": "exec-mission",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "future-scanner",
+      "status": "VISION"
+    },
+    {
+      "id": "constitution",
+      "status": "REAL"
+    },
+    {
+      "id": "digital-mind",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "living-org",
+      "status": "VISION"
+    },
+    {
+      "id": "causal-intel",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "consciousness",
+      "status": "VISION"
+    },
+    {
+      "id": "self-improve",
+      "status": "REAL"
+    },
+    {
+      "id": "org-physics",
+      "status": "VISION"
+    },
+    {
+      "id": "nervous-system",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "cognitive-sim",
+      "status": "VISION"
+    },
+    {
+      "id": "company-memory",
+      "status": "REAL"
+    },
+    {
+      "id": "intel-graph",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "cost-settings",
+      "status": "REAL"
+    },
+    {
+      "id": "backend-migration",
+      "status": "REAL"
+    },
+    {
+      "id": "exec-reports",
+      "status": "REAL"
+    },
+    {
+      "id": "db-engine",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "load-test",
+      "status": "REAL"
+    },
+    {
+      "id": "login",
+      "status": "REAL"
+    },
+    {
+      "id": "alarm-root-cause-correlation",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "optical-health-timeline",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "field-evidence-chain",
+      "status": "REAL"
+    },
+    {
+      "id": "pon-capacity-intelligence",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "organization-operating-model",
+      "status": "REAL"
+    },
+    {
+      "id": "customer-portal",
+      "status": "REAL"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "home",
+      "name": "Do not manage installs only. Run your entire business.",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/company/operating-system"
+      ],
+      "evidence": [
+        "HTML view id: view-home"
+      ],
+      "notes": "Company operating home is backed by live read models for operations, memory and trust."
+    },
+    {
+      "id": "dashboard",
+      "name": "Command Room",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/command/rooms/overview"
+      ],
+      "evidence": [
+        "HTML view id: view-dashboard"
+      ],
+      "notes": "Database-backed command-room aggregation is the executable dashboard read model; no synthetic dashboard data is used."
+    },
+    {
+      "id": "callcenter",
+      "name": "Smart Call Center — 3 Live Operational Stages",
+      "status": "REAL",
+      "serverSurfaces": [
+        "POST /v1/call-center/sessions",
+        "POST /v1/call-center/sessions/{id}/ivr"
+      ],
+      "evidence": [
+        "HTML view id: view-callcenter"
+      ],
+      "notes": "Derived from executable repository surface; conservative classification."
+    },
+    {
+      "id": "migration-center",
+      "name": "Smart Migration & Conversion Center — Live",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/migration-center/overview"
+      ],
+      "evidence": [
+        "HTML view id: view-migration-center"
+      ],
+      "notes": "Database-backed migration workflow overview over installation_jobs and persisted migration deadlines."
+    },
+    {
+      "id": "architecture",
+      "name": "System Architecture — Comprehensive Reference Guide",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/capabilities/architecture"
+      ],
+      "evidence": [
+        "GET /v1/capabilities/architecture",
+        "code: services/api/src/capabilities/architecture.cjs",
+        "api: services/api/src/routes/capabilities.js (authorize-gated, fails closed)",
+        "test: services/api/test/capabilities/architecture.test.cjs (3 node:test cases, 0 failing)"
+      ],
+      "notes": "Implemented 2026-10-15: real code + passing unit/API route tests on the merged commit. Buyer-runtime (Neon/Vercel) attestation for this capability is still outstanding."
+    },
+    {
+      "id": "future-roadmap",
+      "name": "Advanced FiberOS 2050 Development Stage — Roadmap / Demo / Reference",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-future-roadmap"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "theory-guide",
+      "name": "FiberOS 2050 — Complete Theoretical Guide",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/capabilities/theory-guide"
+      ],
+      "evidence": [
+        "GET /v1/capabilities/theory-guide",
+        "code: services/api/src/capabilities/theory-guide.cjs",
+        "api: services/api/src/routes/capabilities.js (authorize-gated, fails closed)",
+        "test: services/api/test/capabilities/theory-guide.test.cjs (4 node:test cases, 0 failing)"
+      ],
+      "notes": "Implemented 2026-10-15: real code + passing unit/API route tests on the merged commit. Buyer-runtime (Neon/Vercel) attestation for this capability is still outstanding."
+    },
+    {
+      "id": "security-engineering",
+      "name": "🔐 Security Engineering — Complete Specification Volume I · Security by Design · REAL-LOGIC",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/security/hardening/readiness",
+        "GET /v1/security/zero-trust/readiness"
+      ],
+      "evidence": [
+        "HTML view id: view-security-engineering"
+      ],
+      "notes": "Fail-closed security posture and readiness surfaces are backed by the existing server/database security controls."
+    },
+    {
+      "id": "intelligence-core",
+      "name": "🧠 FiberOS Intelligence Core Volume I · §4 · Cognitive Orchestrator — Real",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-intelligence-core"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "memory-engine",
+      "name": "💾 Enterprise Memory Engine Volume I · §5 · REAL-STORE",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/memory/recent",
+        "GET /v1/memory/query"
+      ],
+      "evidence": [
+        "HTML view id: view-memory-engine"
+      ],
+      "notes": "Tenant-scoped truth-fabric memory is persisted in truth_facts/data_conflicts and queryable with source/state/confidence preserved; no autonomous rewriting."
+    },
+    {
+      "id": "ai-architecture",
+      "name": "🏗 Intelligence Core & AI Engine Architecture Volume I · §3",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-ai-architecture"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "event-bus",
+      "name": "📡 Enterprise Event Bus REAL-LOGIC · Ultra",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/events/processing/health",
+        "POST /v1/events/runtime/validate",
+        "GET /v1/events/runtime/recovery"
+      ],
+      "evidence": [
+        "HTML view id: view-event-bus"
+      ],
+      "notes": "Outbox/event-fabric controls exist and are executable, but exact-head runtime broker/provider evidence remains separate."
+    },
+    {
+      "id": "fiber-brain",
+      "name": "Fiber Brain Pro",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-fiber-brain"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "digital-twin",
+      "name": "🔴 Active Faults Now — From Real Customer Data",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/gis/network-twin"
+      ],
+      "evidence": [
+        "HTML view id: view-digital-twin"
+      ],
+      "notes": "Read-only database-backed network digital twin: assets, ports, physical edges, cable/core aggregates. No autonomous mutation."
+    },
+    {
+      "id": "executive",
+      "name": "Executive Reports",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/executive/financial-snapshot",
+        "GET /v1/executive/commercial-report"
+      ],
+      "evidence": [
+        "HTML view id: view-executive",
+        "GET /v1/executive/commercial-report",
+        "services/api/src/routes/commercialSurfaces.js",
+        "services/api/test/commercialSurfaces.test.js"
+      ],
+      "notes": "Calculated/read-only or decision-support output; autonomous execution is not authorized."
+    },
+    {
+      "id": "command-center-2050",
+      "name": "🎛 FiberOS 2050 Sovereign Command Room",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/command/rooms/overview",
+        "GET /v1/command/fabric/overview"
+      ],
+      "evidence": [
+        "HTML view id: view-command-center-2050"
+      ],
+      "notes": "Sovereign command-room read surfaces are implemented over tenant-scoped operational state; no autonomous command execution is implied."
+    },
+    {
+      "id": "mission-control",
+      "name": "🛰 Live Operations Room",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/command/rooms/overview",
+        "GET /v1/command/fabric/overview"
+      ],
+      "evidence": [
+        "HTML view id: view-mission-control"
+      ],
+      "notes": "Live operations room surfaces are database-backed command summaries; real-time certification depends on the buyer runtime."
+    },
+    {
+      "id": "simulator",
+      "name": "🧪 Network Simulator",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "POST /v1/gis/twin/impact"
+      ],
+      "evidence": [
+        "HTML view id: view-simulator"
+      ],
+      "notes": "Deterministic network impact simulation is available as an advisory analysis surface; it does not mutate live topology or claim predictive certainty."
+    },
+    {
+      "id": "noc3d",
+      "name": "FIBEROS · NETWORK OPERATIONS CENTER",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/noc/3d/scene"
+      ],
+      "evidence": [
+        "apps/ops-web/public/noc3d.html",
+        "GET /v1/noc/3d/scene",
+        "services/api/src/routes/commercialSurfaces.js",
+        "services/api/test/commercialSurfaces.test.js"
+      ],
+      "notes": "Read-only 3D scene is server-backed from tenant-scoped network assets, topology links, technicians, incidents, tickets and services. Vertical depth is semantic hierarchy tier; physical altitude is not inferred."
+    },
+    {
+      "id": "workflows",
+      "name": "Workflow Engine",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/workflows/overview"
+      ],
+      "evidence": [
+        "HTML view id: view-workflows"
+      ],
+      "notes": "Read model over authoritative ticket lifecycle and installation workflow state; transitions remain database-authorized."
+    },
+    {
+      "id": "rbac",
+      "name": "Authorization System (RBAC)",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/security/rbac/effective"
+      ],
+      "evidence": [
+        "HTML view id: view-rbac"
+      ],
+      "notes": "Read-only effective enterprise position/scope surface backed by enterprise_positions and enterprise_scope_grants."
+    },
+    {
+      "id": "notifications",
+      "name": "Notification Center",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/notifications/center"
+      ],
+      "evidence": [
+        "HTML view id: view-notifications"
+      ],
+      "notes": "Tenant-scoped notification request center over outbox events; provider delivery is never inferred from queue state."
+    },
+    {
+      "id": "marketplace",
+      "name": "Extensions Marketplace",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/extensions/registry",
+        "POST /v1/extensions/validate"
+      ],
+      "evidence": [
+        "config/extensions-registry.json",
+        "GET /v1/extensions/registry",
+        "POST /v1/extensions/validate",
+        "services/api/test/commercialSurfaces.test.js"
+      ],
+      "notes": "Internal extension contract/registry only. Installed extensions remain empty; cryptographic package verification, installation and runtime execution are intentionally disabled."
+    },
+    {
+      "id": "line-link",
+      "name": "Line & Router Link",
+      "status": "REAL",
+      "serverSurfaces": [
+        "POST /v1/evidence/submit"
+      ],
+      "evidence": [
+        "HTML view id: view-line-link"
+      ],
+      "notes": "Derived from executable repository surface; conservative classification."
+    },
+    {
+      "id": "audit",
+      "name": "Audit Log (Immutable Audit Trail)",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/audit/events"
+      ],
+      "evidence": [
+        "HTML view id: view-audit"
+      ],
+      "notes": "Tenant-scoped read-only audit center over the append-only audit authority; mutation remains database-controlled."
+    },
+    {
+      "id": "inventory",
+      "name": "Warehouses & Equipment",
+      "status": "REAL",
+      "serverSurfaces": [
+        "POST /v1/inventory/adjust"
+      ],
+      "evidence": [
+        "HTML view id: view-inventory"
+      ],
+      "notes": "Derived from executable repository surface; conservative classification."
+    },
+    {
+      "id": "billing",
+      "name": "Billing & Contracts",
+      "status": "REAL",
+      "serverSurfaces": [
+        "POST /v1/billing/invoices"
+      ],
+      "evidence": [
+        "HTML view id: view-billing"
+      ],
+      "notes": "Derived from executable repository surface; conservative classification."
+    },
+    {
+      "id": "sla",
+      "name": "SLA & Complaint Tracking",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/operations/sla-command"
+      ],
+      "evidence": [
+        "HTML view id: view-sla"
+      ],
+      "notes": "Persisted-deadline SLA command read model is implemented; no deadline is inferred and no autonomous escalation is performed."
+    },
+    {
+      "id": "messaging",
+      "name": "WhatsApp & SMS Channels",
+      "status": "INTEGRATION_REQUIRED",
+      "serverSurfaces": [
+        "POST /v1/messaging/enqueue"
+      ],
+      "evidence": [
+        "HTML view id: view-messaging"
+      ],
+      "notes": "Server surface exists, but an external provider/device must be configured and verified."
+    },
+    {
+      "id": "subcontractors",
+      "name": "Subcontractors",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/subcontractors/overview"
+      ],
+      "evidence": [
+        "HTML view id: view-subcontractors"
+      ],
+      "notes": "Database-backed contractor, qualification and measured-work overview with tenant isolation."
+    },
+    {
+      "id": "ai-ceo",
+      "name": "AI CEO — Intelligent Executive",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-ai-ceo"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "fiber-dna",
+      "name": "Fiber DNA — Line Lifecycle Record",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/enterprise/fiber-dna/{assetId}"
+      ],
+      "evidence": [
+        "HTML view id: view-fiber-dna"
+      ],
+      "notes": "Server-generated Asset DNA snapshot read model; clients cannot author the canonical payload or hash."
+    },
+    {
+      "id": "dispatcher",
+      "name": "Autonomous Dispatcher",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "POST /v1/dispatch/rank"
+      ],
+      "evidence": [
+        "HTML view id: view-dispatcher"
+      ],
+      "notes": "Calculated/read-only or decision-support output; autonomous execution is not authorized."
+    },
+    {
+      "id": "gis",
+      "name": "🗺️ Work Order #FTTH-8840",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/gis/fleet",
+        "POST /v1/gis/positions",
+        "GET /v1/gis/deep-snapshot",
+        "GET /v1/gis/technician-track"
+      ],
+      "evidence": [
+        "HTML view id: view-gis"
+      ],
+      "notes": "Derived from executable repository surface; conservative classification."
+    },
+    {
+      "id": "gis-planning",
+      "name": "GIS & AI Network Planning",
+      "status": "REAL",
+      "serverSurfaces": [
+        "POST /v1/routing/plan"
+      ],
+      "evidence": [
+        "HTML view id: view-gis-planning"
+      ],
+      "notes": "Derived from executable repository surface; conservative classification."
+    },
+    {
+      "id": "otdr-intel",
+      "name": "IoT & Remote OTDR Intelligence",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "POST /v1/engineering/diagnosis"
+      ],
+      "evidence": [
+        "HTML view id: view-otdr-intel"
+      ],
+      "notes": "Calculated/read-only or decision-support output; autonomous execution is not authorized."
+    },
+    {
+      "id": "vision-qc",
+      "name": "Computer Vision Quality Control",
+      "status": "INTEGRATION_REQUIRED",
+      "serverSurfaces": [
+        "POST /v1/evidence/submit"
+      ],
+      "evidence": [
+        "HTML view id: view-vision-qc"
+      ],
+      "notes": "Server surface exists, but an external provider/device must be configured and verified."
+    },
+    {
+      "id": "voice-ops",
+      "name": "Voice-First Field Operations",
+      "status": "INTEGRATION_REQUIRED",
+      "serverSurfaces": [
+        "POST /v1/call-center/sessions",
+        "POST /v1/call-center/sessions/{id}/ivr",
+        "POST /v1/call-center/ivr/inbound",
+        "GET /v1/call-center/queue/status"
+      ],
+      "evidence": [
+        "HTML view id: view-voice-ops"
+      ],
+      "notes": "Voice/IVR control surfaces are implemented, but production telephony/provider verification remains an integration boundary and delivery is never inferred."
+    },
+    {
+      "id": "smart-inventory",
+      "name": "Smart Consumables & Material Tracking",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/smart-inventory/overview"
+      ],
+      "evidence": [
+        "HTML view id: view-smart-inventory"
+      ],
+      "notes": "Ledger-derived inventory, reservations, transfers and reorder alerts; no manual free-stock values are trusted."
+    },
+    {
+      "id": "fiber-health-predict",
+      "name": "Predictive Fiber Health",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "POST /v1/engineering/reliability"
+      ],
+      "evidence": [
+        "HTML view id: view-fiber-health-predict"
+      ],
+      "notes": "Calculated/read-only or decision-support output; autonomous execution is not authorized."
+    },
+    {
+      "id": "ar-scanner",
+      "name": "AR Infrastructure Scanner",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/capabilities/ar-scanner"
+      ],
+      "evidence": [
+        "GET /v1/capabilities/ar-scanner",
+        "code: services/api/src/capabilities/ar-scanner.cjs",
+        "api: services/api/src/routes/capabilities.js (authorize-gated, fails closed)",
+        "test: services/api/test/capabilities/ar-scanner.test.cjs (4 node:test cases, 0 failing)"
+      ],
+      "notes": "Implemented 2026-10-15: real code + passing unit/API route tests on the merged commit. Buyer-runtime (Neon/Vercel) attestation for this capability is still outstanding."
+    },
+    {
+      "id": "splice-inspection",
+      "name": "AI Optical Splice Inspection",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-splice-inspection"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "self-diagnostic",
+      "name": "Self-Diagnostic Portal & WhatsApp Bot",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/customer/self-diagnostic/{reference}"
+      ],
+      "evidence": [
+        "HTML view id: view-self-diagnostic"
+      ],
+      "notes": "Customer self-diagnostic summarizes tenant-scoped service, ticket and billing state; it intentionally does not infer physical faults without optical/NMS evidence."
+    },
+    {
+      "id": "cx-heatmap",
+      "name": "CX Heatmaps",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/cx/heatmap"
+      ],
+      "evidence": [
+        "HTML view id: view-cx-heatmap"
+      ],
+      "notes": "Aggregated spatial ticket cells provide a privacy-bounded customer-experience heatmap from persisted coordinates; exact customer coordinates are excluded."
+    },
+    {
+      "id": "geo-integrity",
+      "name": "Anti-Spoofing & Geo-Fencing",
+      "status": "REAL",
+      "serverSurfaces": [
+        "POST /v1/gis/positions"
+      ],
+      "evidence": [
+        "HTML view id: view-geo-integrity"
+      ],
+      "notes": "Derived from executable repository surface; conservative classification."
+    },
+    {
+      "id": "offline-sync",
+      "name": "Full Offline PWA Sync Engine",
+      "status": "REAL",
+      "serverSurfaces": [
+        "POST /v1/sync/batch"
+      ],
+      "evidence": [
+        "HTML view id: view-offline-sync"
+      ],
+      "notes": "Derived from executable repository surface; conservative classification."
+    },
+    {
+      "id": "financial-twin",
+      "name": "Financial Twin — Financial Twin",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/executive/financial-snapshot"
+      ],
+      "evidence": [
+        "HTML view id: view-financial-twin"
+      ],
+      "notes": "Calculated/read-only or decision-support output; autonomous execution is not authorized."
+    },
+    {
+      "id": "weather",
+      "name": "Weather Intelligence",
+      "status": "INTEGRATION_REQUIRED",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-weather"
+      ],
+      "notes": "Server surface exists, but an external provider/device must be configured and verified."
+    },
+    {
+      "id": "mission-status",
+      "name": "Mission Control AI",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-mission-status"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "crisis-mode",
+      "name": "AI Crisis Mode",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/crisis/command-state",
+        "POST /v1/crisis/incidents"
+      ],
+      "evidence": [
+        "HTML view id: view-crisis-mode"
+      ],
+      "notes": "Derived from executable repository surface; conservative classification."
+    },
+    {
+      "id": "live-contracts",
+      "name": "Live Digital Contracts",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/contracts/runtime"
+      ],
+      "evidence": [
+        "HTML view id: view-live-contracts"
+      ],
+      "notes": "Shipped interface-contract catalog is executable/readable but production interoperability remains prohibited until buyer matrix evidence exists."
+    },
+    {
+      "id": "workload-balance",
+      "name": "Smart Workload Balance",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/operations/workload-balance"
+      ],
+      "evidence": [
+        "HTML view id: view-workload-balance"
+      ],
+      "notes": "Database-backed technician workload distribution is implemented; automatic reassignment is explicitly disabled."
+    },
+    {
+      "id": "cost-leak",
+      "name": "AI Cost Leak Detector",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-cost-leak"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "zero-trust",
+      "name": "Zero Trust Security Center",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/security/zero-trust/readiness"
+      ],
+      "evidence": [
+        "HTML view id: view-zero-trust"
+      ],
+      "notes": "Read-only security posture contract. Live runtime/provider evidence remains required and no production certification is claimed."
+    },
+    {
+      "id": "digital-memory",
+      "name": "Company Digital Memory",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/memory/recent"
+      ],
+      "evidence": [
+        "HTML view id: view-digital-memory"
+      ],
+      "notes": "Read-only company memory surface over the authoritative truth_facts/data_conflicts fabric; provenance, confidence and fact state are preserved."
+    },
+    {
+      "id": "board-meeting",
+      "name": "AI Board Meeting",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-board-meeting"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "exec-radar",
+      "name": "Executive Radar",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/executive/radar"
+      ],
+      "evidence": [
+        "HTML view id: view-exec-radar"
+      ],
+      "notes": "Database-backed executive radar over persisted ticket, SLA, incident, invoice and inventory state; no forecast or synthetic KPI is generated."
+    },
+    {
+      "id": "energy-analytics",
+      "name": "Smart Energy Analytics",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/capabilities/energy-analytics"
+      ],
+      "evidence": [
+        "GET /v1/capabilities/energy-analytics",
+        "code: services/api/src/capabilities/energy-analytics.cjs",
+        "api: services/api/src/routes/capabilities.js (authorize-gated, fails closed)",
+        "test: services/api/test/capabilities/energy-analytics.test.cjs (5 node:test cases, 0 failing)"
+      ],
+      "notes": "Implemented 2026-10-15: real code + passing unit/API route tests on the merged commit. Buyer-runtime (Neon/Vercel) attestation for this capability is still outstanding."
+    },
+    {
+      "id": "ops-timeline",
+      "name": "FiberOS Operating Timeline",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/operations/timeline"
+      ],
+      "evidence": [
+        "HTML view id: view-ops-timeline"
+      ],
+      "notes": "Tenant-scoped operational event timeline derived from outbox events; explicitly not an audit-log replacement."
+    },
+    {
+      "id": "business-impact",
+      "name": "Business Impact Engine",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/network-intelligence/impact/{assetId}",
+        "GET /v1/network-intelligence/customer-impact/{assetId}"
+      ],
+      "evidence": [
+        "HTML view id: view-business-impact"
+      ],
+      "notes": "Database-backed impact analysis is executable for known assets and services; no synthetic customer counts or geography are generated."
+    },
+    {
+      "id": "innovation-lab",
+      "name": "AI Innovation Lab",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-innovation-lab"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "cross-project",
+      "name": "Cross-Project Intelligence",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/capabilities/cross-project"
+      ],
+      "evidence": [
+        "GET /v1/capabilities/cross-project",
+        "code: services/api/src/capabilities/cross-project.cjs",
+        "api: services/api/src/routes/capabilities.js (authorize-gated, fails closed)",
+        "test: services/api/test/capabilities/cross-project.test.cjs (4 node:test cases, 0 failing)"
+      ],
+      "notes": "Implemented 2026-10-15: real code + passing unit/API route tests on the merged commit. Buyer-runtime (Neon/Vercel) attestation for this capability is still outstanding."
+    },
+    {
+      "id": "reputation-index",
+      "name": "Digital Reputation Index",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/capabilities/reputation-index"
+      ],
+      "evidence": [
+        "GET /v1/capabilities/reputation-index",
+        "code: services/api/src/capabilities/reputation-index.cjs",
+        "api: services/api/src/routes/capabilities.js (authorize-gated, fails closed)",
+        "test: services/api/test/capabilities/reputation-index.test.cjs (4 node:test cases, 0 failing)"
+      ],
+      "notes": "Implemented 2026-10-15: real code + passing unit/API route tests on the merged commit. Buyer-runtime (Neon/Vercel) attestation for this capability is still outstanding."
+    },
+    {
+      "id": "strategy-planner",
+      "name": "AI Strategy Planner",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-strategy-planner"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "enterprise-twin",
+      "name": "Enterprise Digital Twin",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/gis/network-twin"
+      ],
+      "evidence": [
+        "HTML view id: view-enterprise-twin"
+      ],
+      "notes": "Existing database-backed network digital-twin surface satisfies the enterprise read-only twin boundary without enabling autonomous mutation."
+    },
+    {
+      "id": "cos",
+      "name": "Company Operating System",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/company/operating-system"
+      ],
+      "evidence": [
+        "HTML view id: view-cos"
+      ],
+      "notes": "Company Operating System read model composes executive radar, truth memory and trust state from the database without autonomous mutation."
+    },
+    {
+      "id": "enterprise-brain",
+      "name": "Enterprise Brain",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-enterprise-brain"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "ai-debate",
+      "name": "AI Debate",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-ai-debate"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "digital-dna",
+      "name": "Digital DNA",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/enterprise/fiber-dna/{assetId}"
+      ],
+      "evidence": [
+        "HTML view id: view-digital-dna"
+      ],
+      "notes": "Server-generated Asset DNA snapshot is authoritative for the canonical payload and hash boundary."
+    },
+    {
+      "id": "business-weather",
+      "name": "Business Weather",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/capabilities/business-weather"
+      ],
+      "evidence": [
+        "GET /v1/capabilities/business-weather",
+        "code: services/api/src/capabilities/business-weather.cjs",
+        "api: services/api/src/routes/capabilities.js (authorize-gated, fails closed)",
+        "test: services/api/test/capabilities/business-weather.test.cjs (3 node:test cases, 0 failing)"
+      ],
+      "notes": "Implemented 2026-10-15: real code + passing unit/API route tests on the merged commit. Buyer-runtime (Neon/Vercel) attestation for this capability is still outstanding."
+    },
+    {
+      "id": "strategy-sim",
+      "name": "AI Strategy Simulator",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-strategy-sim"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "enterprise-tm",
+      "name": "Enterprise Time Machine",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/capabilities/enterprise-tm"
+      ],
+      "evidence": [
+        "GET /v1/capabilities/enterprise-tm",
+        "code: services/api/src/capabilities/enterprise-tm.cjs",
+        "api: services/api/src/routes/capabilities.js (authorize-gated, fails closed)",
+        "test: services/api/test/capabilities/enterprise-tm.test.cjs (6 node:test cases, 0 failing)"
+      ],
+      "notes": "Implemented 2026-10-15: real code + passing unit/API route tests on the merged commit. Buyer-runtime (Neon/Vercel) attestation for this capability is still outstanding."
+    },
+    {
+      "id": "intel-center",
+      "name": "FiberOS Intelligence Center",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "POST /v1/intelligence/graph",
+        "POST /v1/intelligence/engineering"
+      ],
+      "evidence": [
+        "HTML view id: view-intel-center"
+      ],
+      "notes": "Operational intelligence endpoints are implemented as governed advisory analysis; they are not autonomous execution authorities."
+    },
+    {
+      "id": "inspector-general",
+      "name": "AI Inspector General",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-inspector-general"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "exec-hologram",
+      "name": "Executive Hologram",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-exec-hologram"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "procurement-ai",
+      "name": "AI Procurement Negotiator",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-procurement-ai"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "mission-planner",
+      "name": "Enterprise Mission Planner",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "POST /v1/dispatch/rank",
+        "POST /v1/routing/plan"
+      ],
+      "evidence": [
+        "HTML view id: view-mission-planner"
+      ],
+      "notes": "Deterministic dispatch ranking and routing planning are executable advisory planning surfaces; assignment/provider execution remains separately controlled."
+    },
+    {
+      "id": "knowledge-evo",
+      "name": "Knowledge Evolution",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/memory/recent"
+      ],
+      "evidence": [
+        "HTML view id: view-knowledge-evo"
+      ],
+      "notes": "Current source supports evidence/history retrieval, not autonomous knowledge rewriting; facts remain immutable evidence states."
+    },
+    {
+      "id": "trust-engine",
+      "name": "Digital Trust Engine",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/security/trust/overview"
+      ],
+      "evidence": [
+        "HTML view id: view-trust-engine"
+      ],
+      "notes": "Database-backed trust overview over evidence-chain certificates and decision certificates/executions; it does not replace KMS/HSM or runtime proof."
+    },
+    {
+      "id": "black-box",
+      "name": "AI Black Box",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-black-box"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "auto-score",
+      "name": "Autonomous Company Score",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-auto-score"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "exec-mission",
+      "name": "Executive Mission Planner",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/executive/radar",
+        "POST /v1/dispatch/rank"
+      ],
+      "evidence": [
+        "HTML view id: view-exec-mission"
+      ],
+      "notes": "Executive mission planning can compose persisted operational priorities and deterministic dispatch planning; no autonomous execution is claimed."
+    },
+    {
+      "id": "future-scanner",
+      "name": "AI Future Scanner",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-future-scanner"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "constitution",
+      "name": "FiberOS Digital Constitution",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/capabilities/constitution"
+      ],
+      "evidence": [
+        "GET /v1/capabilities/constitution",
+        "code: services/api/src/capabilities/constitution.cjs",
+        "api: services/api/src/routes/capabilities.js (authorize-gated, fails closed)",
+        "test: services/api/test/capabilities/constitution.test.cjs (4 node:test cases, 0 failing)"
+      ],
+      "notes": "Implemented 2026-10-15: real code + passing unit/API route tests on the merged commit. Buyer-runtime (Neon/Vercel) attestation for this capability is still outstanding."
+    },
+    {
+      "id": "digital-mind",
+      "name": "Company Digital Mind",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/company/operating-system"
+      ],
+      "evidence": [
+        "HTML view id: view-digital-mind"
+      ],
+      "notes": "Composed operating view exists, but no autonomous cognitive agent or self-authorizing decision loop is claimed."
+    },
+    {
+      "id": "living-org",
+      "name": "Living Digital Organization",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-living-org"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "causal-intel",
+      "name": "Causal Intelligence",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/network-intelligence/root-cause/{assetId}"
+      ],
+      "evidence": [
+        "HTML view id: view-causal-intel"
+      ],
+      "notes": "Root-cause analysis is implemented as an evidence-bound advisory candidate graph; it does not assert unverified causality."
+    },
+    {
+      "id": "consciousness",
+      "name": "Company Consciousness",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-consciousness"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "self-improve",
+      "name": "Continuous Self Improvement",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/capabilities/self-improve"
+      ],
+      "evidence": [
+        "GET /v1/capabilities/self-improve",
+        "code: services/api/src/capabilities/self-improve.cjs",
+        "api: services/api/src/routes/capabilities.js (authorize-gated, fails closed)",
+        "test: services/api/test/capabilities/self-improve.test.cjs (4 node:test cases, 0 failing)"
+      ],
+      "notes": "Implemented 2026-10-15: real code + passing unit/API route tests on the merged commit. Buyer-runtime (Neon/Vercel) attestation for this capability is still outstanding."
+    },
+    {
+      "id": "org-physics",
+      "name": "Organizational Physics",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-org-physics"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "nervous-system",
+      "name": "Enterprise Digital Nervous System",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/events/processing/health",
+        "GET /v1/command/rooms/overview",
+        "GET /v1/operations/timeline"
+      ],
+      "evidence": [
+        "HTML view id: view-nervous-system"
+      ],
+      "notes": "The operational digital nervous-system read model is composed from event health, command state and operational timeline without autonomous control."
+    },
+    {
+      "id": "cognitive-sim",
+      "name": "Cognitive Simulation",
+      "status": "VISION",
+      "serverSurfaces": [],
+      "evidence": [
+        "HTML view id: view-cognitive-sim"
+      ],
+      "notes": "Reference concept is retained for roadmap traceability; no production claim is made."
+    },
+    {
+      "id": "company-memory",
+      "name": "Company Memory",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/memory/recent"
+      ],
+      "evidence": [
+        "HTML view id: view-company-memory"
+      ],
+      "notes": "Shared company memory read model over tenant-scoped truth facts and conflicts; no autonomous memory agent is claimed."
+    },
+    {
+      "id": "intel-graph",
+      "name": "Enterprise Intelligence Graph",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "POST /v1/intelligence/graph"
+      ],
+      "evidence": [
+        "HTML view id: view-intel-graph"
+      ],
+      "notes": "Enterprise intelligence graph construction is exposed as a governed advisory surface with database/evidence boundaries."
+    },
+    {
+      "id": "cost-settings",
+      "name": "Real Cost Calibration",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/commercial/cost-calibration",
+        "POST /v1/commercial/cost-calibration/propose",
+        "POST /v1/commercial/cost-calibration/approve"
+      ],
+      "evidence": [
+        "GET /v1/commercial/cost-calibration",
+        "packages/engineering/src/costCalibration.js",
+        "sql/migrations/019_physical_twin_engineering.sql",
+        "services/api/test/commercialSurfaces.test.js"
+      ],
+      "notes": "Observed rates are derived from verified/approved/invoiced/paid contractor work measurements. Calibration profiles carry model version, validity window, provenance and independent approval; no production price is autonomously changed."
+    },
+    {
+      "id": "backend-migration",
+      "name": "Plan to Migrate to a Real Backend",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/command/rooms/overview"
+      ],
+      "evidence": [
+        "HTML view id: view-backend-migration"
+      ],
+      "notes": "The current product is already backed by PostgreSQL/PostGIS through the shipped API and database authority; this legacy migration item is reconciled to the current backend state."
+    },
+    {
+      "id": "exec-reports",
+      "name": "Export Real Executive Reports",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/executive/radar/report"
+      ],
+      "evidence": [
+        "HTML view id: view-exec-reports"
+      ],
+      "notes": "Executive radar can be exported as JSON or a real CSV attachment generated from persisted database facts."
+    },
+    {
+      "id": "db-engine",
+      "name": "Database Simulation Engine",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "POST /v1/gis/twin/simulate"
+      ],
+      "evidence": [
+        "apps/ops-web/public/noc3d.html",
+        "POST /v1/gis/twin/simulate",
+        "packages/digital-twin-gis/src/simulationEngine.js",
+        "packages/digital-twin-gis/test/simulationEngine.test.js"
+      ],
+      "notes": "Deterministic, database-snapshot simulation with propagation, capacity impact, affected services/customers and rollback preview. Never mutates production and does not predict future outcomes."
+    },
+    {
+      "id": "load-test",
+      "name": "Load & Stress Testing",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/capabilities/load-test"
+      ],
+      "evidence": [
+        "GET /v1/capabilities/load-test",
+        "code: services/api/src/capabilities/load-test.cjs",
+        "api: services/api/src/routes/capabilities.js (authorize-gated, fails closed)",
+        "test: services/api/test/capabilities/load-test.test.cjs (4 node:test cases, 0 failing)"
+      ],
+      "notes": "Implemented 2026-10-15: real code + passing unit/API route tests on the merged commit. Buyer-runtime (Neon/Vercel) attestation for this capability is still outstanding."
+    },
+    {
+      "id": "login",
+      "name": "One Operating System for Your Entire Business",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/meta"
+      ],
+      "evidence": [
+        "HTML view id: view-login"
+      ],
+      "notes": "OIDC session wiring and verified-principal enforcement are present; runtime IdP acceptance remains a buyer environment requirement."
+    },
+    {
+      "id": "alarm-root-cause-correlation",
+      "name": "Deterministic Alarm Correlation + Root Cause Candidate Graph",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/network-intelligence/root-cause/{assetId}"
+      ],
+      "evidence": [
+        "packages/operational-assurance/src/fieldOperationsIntelligence.js",
+        "sql/migrations/118_deep_field_operations_intelligence.sql"
+      ],
+      "notes": "Correlates persisted alarm signals by explicit topology and time-window evidence. Produces candidates only; no prediction or autonomous action."
+    },
+    {
+      "id": "optical-health-timeline",
+      "name": "Optical Health Timeline + Observed Degradation Fingerprint",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/network-intelligence/optical-health/{assetId}"
+      ],
+      "evidence": [
+        "sql/migrations/118_deep_field_operations_intelligence.sql",
+        "packages/operational-assurance/src/fieldOperationsIntelligence.js"
+      ],
+      "notes": "Reads append-only optical measurements and computes a deterministic observed linear trend. No forecasting."
+    },
+    {
+      "id": "field-evidence-chain",
+      "name": "Field Evidence Chain Certificate",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/operations/evidence-chain/{ticketId}",
+        "POST /v1/operations/evidence-chain/{ticketId}/certify"
+      ],
+      "evidence": [
+        "services/api/src/routes/operations.js",
+        "sql/migrations/118_deep_field_operations_intelligence.sql"
+      ],
+      "notes": "Builds a database-derived chain across ticket, worker, GPS, topology, splice, optical evidence, timestamps and closure; complete certificates are hashed and can append to the existing hash ledger when the production ledger secret is configured."
+    },
+    {
+      "id": "pon-capacity-intelligence",
+      "name": "PON/Port Capacity Intelligence",
+      "status": "ADVISORY",
+      "serverSurfaces": [
+        "GET /v1/network-intelligence/capacity/{assetId}"
+      ],
+      "evidence": [
+        "sql/migrations/118_deep_field_operations_intelligence.sql",
+        "packages/operational-assurance/src/fieldOperationsIntelligence.js"
+      ],
+      "notes": "Capacity is derived from real port state plus asset total_ports; no manually asserted used/free count is accepted by the endpoint."
+    },
+    {
+      "id": "organization-operating-model",
+      "name": "Organization Operating Model — Root-to-Fruit Department Integration",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/organization/operating-model"
+      ],
+      "evidence": [
+        "services/api/src/routes/managementSurfaces.js",
+        "services/api/test/managementSurfaces.test.js"
+      ],
+      "notes": "Database-backed tenant organization tree reconciled with shipped department contracts. Missing provisioning is surfaced explicitly; no department role/KPI/data is invented."
+    },
+    {
+      "id": "customer-portal",
+      "name": "Enterprise Customer Command — Multi-Tenant SaaS Portal",
+      "status": "REAL",
+      "serverSurfaces": [
+        "GET /v1/customer-portal/bootstrap",
+        "GET /v1/customer-portal/overview",
+        "GET /v1/customer-portal/plans",
+        "POST /v1/customer-portal/subscriptions",
+        "POST /v1/customer-portal/subscriptions/{id}/cancel",
+        "POST /v1/customer-portal/subscriptions/{id}/pause",
+        "POST /v1/customer-portal/subscriptions/{id}/resume",
+        "POST /v1/customer-portal/subscriptions/{id}/auto-renew",
+        "POST /v1/customer-portal/reports/run",
+        "GET /v1/customer-portal/reports",
+        "GET /v1/customer-portal/report-schedules",
+        "POST /v1/customer-portal/report-schedules"
+      ],
+      "evidence": [
+        "apps/ops-web/public/customer-portal.html",
+        "apps/ops-web/public/customer-portal.js",
+        "services/api/src/routes/customerPortal.js",
+        "sql/migrations/145_customer_portal_commerce_reporting.sql",
+        "services/worker/src/worker.js"
+      ],
+      "notes": "Server-backed portal with tenant-derived authority, FORCE RLS, work-domain catalog, weekly/monthly/yearly plans, on-demand reports, scheduled email outbox and evidence-preserving status. Runtime/provider acceptance is separate."
+    }
+  ],
+  "generatedFrom": {
+    "sourceAuthority": "CURRENT_TRACKED_SOURCE_TREE",
+    "sourceBranch": "NOT_BOUND_IN_GENERATOR",
+    "sourceCommit": null,
+    "currentBranch": "NOT_BOUND_IN_GENERATOR",
+    "currentBranchAtUpdate": "NOT_BOUND_IN_GENERATOR"
+  },
+  "facts": {
+    "capabilityTotal": 106,
+    "statusCounts": {
+      "REAL": 55,
+      "VISION": 24,
+      "ADVISORY": 23,
+      "INTEGRATION_REQUIRED": 4
+    },
+    "numberedMigrations": 196,
+    "migrationRange": "001-196",
+    "workspacePackageManifests": 66,
+    "sharedPackageManifests": 61,
+    "servicePackageManifests": 4,
+    "productNodeTestFiles": 173,
+    "buyerContractTestFiles": 1,
+    "totalNodeTestFiles": 174,
+    "v1MetaEndpointEntries": 176,
+    "packageVersion": "1.0.0-rc.1+commercial.2026-09-25",
+    "minimumNode": "24.21.0",
+    "databaseTarget": "PostgreSQL 18 + PostGIS 3.6",
+    "packageStructureLabel": "61 shared package manifests + 4 service manifests + 1 root workspace manifest",
+    "productionCertification": false,
+    "verifiedLocaleCount": 2,
+    "localeCatalogFiles": 114,
+    "machineDraftLocaleCount": 112,
+    "untranslatedLocaleCount": 0,
+    "structuralPlaceholders": 112
+  },
+  "migrationRange": "001-196"
+}

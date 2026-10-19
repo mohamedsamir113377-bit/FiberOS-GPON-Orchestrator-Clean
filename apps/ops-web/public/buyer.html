@@ -1,0 +1,124 @@
+<!doctype html><html lang="en" dir="ltr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#04070a"><meta name="color-scheme" content="dark">
+<meta name="referrer" content="no-referrer"><meta name="description" content="FiberOS R14.1 Buyer Command Nexus — evidence-bound technical inspection.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none';base-uri 'none';form-action 'none';object-src 'none';script-src 'self';style-src 'self';img-src 'self' data:;connect-src 'self';font-src 'self';media-src 'self';upgrade-insecure-requests">
+<title>FiberOS R14.1 — Buyer Command Nexus</title><link rel="stylesheet" href="/buyer.css"><link rel="stylesheet" href="/fiberos-tokens.css">
+<link rel="stylesheet" href="/fiberos-3d.css"><link rel="stylesheet" href="/fiberos-modern.css"><link rel="stylesheet" href="/reference-atlas.css">
+<script src="/fiberos-3d.js" defer></script><script src="/fiberos-modern.js" defer></script>
+</head><body>
+<div class="ambient a"></div><div class="ambient b"></div><div class="ambient c"></div>
+<header class="topbar"><a class="brand" href="/"><b>FO</b><span>FIBEROS<small>R14.1 / BUYER NEXUS</small></span></a>
+<button id="foPaletteButton" class="fo-palette-trigger" type="button" aria-haspopup="dialog" aria-controls="foCommandPalette"><span>COMMAND</span><kbd>⌘K</kbd></button><nav aria-label="Primary"><a href="#operating-gateway" aria-label="Operating surface gateway">00</a><a href="#nexus" aria-label="Command Nexus">01</a><a href="#architecture" aria-label="Architecture intelligence">02</a><a href="#operations" aria-label="Operations command center">03</a><a href="#enterprise" aria-label="Enterprise command">04</a><a href="#network" aria-label="FTTH network intelligence">05</a><a href="#twin" aria-label="Digital twin and GIS">06</a><a href="#field" aria-label="Field operations">07</a><a href="#optical" aria-label="Optical and engineering lab">08</a><a href="#reliability" aria-label="Reliability and sync observatory">09</a><a href="#security" aria-label="Security and assurance">10</a><a href="#capabilities" aria-label="Capability explorer">11</a><a href="#reference-atlas" aria-label="Reference capability atlas">12</a><a href="#verification" aria-label="Verification observatory">13</a><a href="#evaluation" aria-label="Buyer 10-minute evaluation">14</a><a href="#commercial" aria-label="Commercial handoff">15</a></nav>
+</header>
+<div class="fo-system-strip" aria-label="Operational boundary"><span><b>SOURCE</b> repository-backed</span><span><b>AUTH</b> server-authoritative</span><span><b>DATA</b> live only when connected</span><span class="fo-system-boundary">UNVERIFIED EXTERNALS stay visible</span></div>
+<main class="deck">
+<div class="truth command-deck" role="status" aria-label="Command surface authority">
+<strong>COMMAND DECK</strong>
+<span>Dark NOC shell · evidence-bound tags (REAL / ADVISORY / DEMO) · static buyer nexus — not live production telemetry.</span>
+</div>
+
+<section id="nexus" class="hero section"><div class="eyebrow">01 / COMMAND NEXUS · EVIDENCE-BOUND</div><h1>Inspect the system.<br><em>Then decide.</em></h1>
+<p>A buyer-facing technical surface over the FiberOS R14.1 commercial source distribution. Implementation status, evidence boundaries and illustrative UI remain visibly separate.</p>
+<div class="actions"><a class="btn primary" href="#evaluation">Start 10-minute evaluation</a><a class="btn" href="#verification">Verification ledger</a></div><div id="metrics" class="metrics"></div>
+<div class="truth"><strong>TRUTH BOUNDARY</strong><span>Static source evidence does not certify buyer-owned production infrastructure.</span></div></section>
+<section id="nexus-command" class="section nexus-shell">
+<div class="eyebrow">01A / UNIVERSAL COMMAND · QUERY CONTRACT</div>
+<div class="head"><div><h2>One command surface.<br><em>Every scope stays explicit.</em></h2><p>Search the shipped evidence registry, compose a server-authoritative query contract, and keep scope, time, sensitivity and provenance visible before any runtime execution.</p></div><span class="badge boundary">EXECUTION DEFERRED</span></div>
+<form id="universalCommand" class="panel command-panel">
+<div class="command-row">
+<label class="command-grow"><span>Universal query</span><input id="universalQuery" maxlength="256" autocomplete="off" placeholder="Customer / service / asset / ticket / technician / contractor"></label>
+<label><span>Entity</span><select id="nexusEntityKind"><option value="">Any entity</option><option>CUSTOMER</option><option>SERVICE</option><option>ASSET</option><option>PORT</option><option>TICKET</option><option>TECHNICIAN</option><option>MANAGER</option><option>CONTRACTOR</option><option>WORK_PACKAGE</option><option>WAREHOUSE</option><option>INCIDENT</option></select></label>
+<label><span>Scope</span><select id="nexusScopeLevel"><option value="">Server-resolved</option><option>enterprise</option><option>sector</option><option>region</option><option>central</option><option>team</option><option>work_package</option><option>contractor</option><option>warehouse</option><option>network_area</option></select></label>
+<label><span>Scope ID</span><input id="nexusScopeId" maxlength="128" placeholder="Optional"></label>
+<div class="command-actions"><button class="btn primary" type="submit">Build contract</button><button class="btn" type="button" id="contextToggle">Context</button></div>
+</div>
+<div class="command-note"><span>SEARCH = source-registry inspection</span><span>LIVE DATA = server endpoint only</span><span>TENANT = server-derived</span><span>SENSITIVE ID = exact + audited</span></div>
+</form>
+<div class="grid two nexus-output">
+<article class="panel"><fiber-entity-header id="nexusEntityHeader" kind="QUERY" entity-id="UNEXECUTED" label="Query Contract" status="UNSET" scope="Server-resolved" source="Query & Scope Engine"></fiber-entity-header>
+<div id="nexusSearchResults" class="nexus-search-results"><span class="muted">Enter a query to inspect the shipped evidence registry.</span></div>
+<pre id="nexusContract" class="nexus-contract" aria-live="polite">No contract built.</pre></article>
+<article class="panel"><fiber-source-drawer source="Registry + Query Contract" authority="REQUEST_ONLY" as-of="UNEXECUTED"></fiber-source-drawer>
+<fiber-evidence-card title="P1 Contract Evidence" status="OK" refs="packages/query-scope/test/queryScope.test.js|packages/web-components/test/webComponents.test.js" limitations="Database execution remains server-side|No live customer or network record is fabricated|Authorization and tenant scope remain runtime boundaries"></fiber-evidence-card></article>
+</div>
+<div class="breadcrumbs" id="nexusBreadcrumbs" aria-label="Nexus context"><span>FiberOS</span><span>›</span><span>Buyer Nexus</span><span>›</span><b>Query Contract</b></div>
+<fiber-context-drawer id="contextDrawer" title="Command Context"></fiber-context-drawer>
+</section>
+
+<section id="operating-gateway" class="section split">
+<div>
+<div class="eyebrow">00 / OPERATING SURFACE GATEWAY</div>
+<h2>One entry point. Three operating surfaces.</h2>
+<p>FiberOS exposes the same operating model through three explicit surfaces: Operations, Enterprise Command, and Field Tech. This gateway makes those surfaces discoverable from the buyer-facing page without changing their server-authoritative boundaries.</p>
+<div class="actions"><a class="btn primary" href="/" target="_blank" rel="noopener noreferrer">Open Operations Console</a><a class="btn" href="/enterprise-command.html" target="_blank" rel="noopener noreferrer">Open Enterprise Command</a><a class="btn" href="/field/" target="_blank" rel="noopener noreferrer">Open Field Tech</a></div>
+</div>
+<aside class="panel">
+<span class="tag real">SOURCE / BOUNDED</span>
+<h3>Operational truth boundary</h3>
+<p>NO SYNTHETIC DATA. The deployed FiberOS gateway states that API, database, OIDC, NMS/OTDR connectivity remains dependent on the external buyer environment. This page does not convert those dependencies into a production claim.</p>
+<div class="chips"><span>PRODUCTION-HOLD respected</span><span>NO SYNTHETIC DATA</span><span>SERVER-AUTHORITATIVE</span></div>
+</aside>
+</section>
+
+<section id="architecture" class="section split"><div><div class="eyebrow">02 / ARCHITECTURE INTELLIGENCE</div><h2>Boundaries first.<br><em>Surfaces second.</em></h2><p>Command, API, worker, AI, GIS, shared packages, database migrations and release controls remain distinct layers.</p></div><div class="panel graph"><div class="core">FOS</div><i>COMMAND</i><i>API</i><i>DB / RLS</i><i>FIELD</i><small>source-bound schematic · not runtime telemetry</small></div></section>
+
+<section id="operations" class="section"><div class="head"><div><div class="eyebrow">03 / OPERATIONS COMMAND CENTER</div><h2>Operational views with explicit authority.</h2></div><span class="badge real">REAL / SOURCE-BACKED</span></div>
+<div class="grid four"><article class="panel"><span class="tag real">REAL</span><h3>Command Fabric</h3><p>Existing API-backed operational surfaces.</p><code>/v1/command/fabric/overview</code></article><article class="panel"><span class="tag real">REAL</span><h3>Contact Center</h3><p>Session, queue and runtime-status endpoints.</p><code>/v1/call-center/*</code></article><article class="panel"><span class="tag advisory">ADVISORY</span><h3>Dispatch Intelligence</h3><p>Ranking is explicitly advisory.</p><code>/v1/dispatch/rank</code></article><article class="panel"><span class="tag demo">DEMO</span><h3>Room Board</h3><p>Illustrative state only.</p><b class="mono">SIMULATED DATA</b></article></div></section>
+
+<section id="enterprise" class="section"><div class="eyebrow">04 / ENTERPRISE COMMAND</div><h2>One operating model. Multiple lenses.</h2><div class="grid three"><article class="panel tall"><span class="tag real">SOURCE</span><h3>Command</h3><p>Protected command views over the existing service/API boundaries.</p><div class="chips"><span>SERVER AUTHORITY</span><span>RLS PATH</span><span>RELEASE HOLD</span></div></article><article class="panel"><h3>GIS</h3><p>Spatial surfaces and network-twin endpoints.</p><code>/v1/gis/network-twin</code></article><article class="panel"><h3>Field</h3><p>Closure stays server-authoritative.</p><code>/v1/tickets/close-field</code></article><article class="panel"><h3>Crisis</h3><p>Incident APIs exist; live incidents are buyer evidence.</p><code>/v1/crisis/command-state</code></article></div></section>
+
+<section id="network" class="section">
+<div class="head"><div><div class="eyebrow">05 / FTTH NETWORK INTELLIGENCE</div><h2>Trace the physical network, layer by layer.</h2><p>Explicit FTTH asset hierarchy for planning, installation, maintenance and monitoring. The hierarchy below is a domain model, not a claim of live inventory or a connected OLT/NMS.</p></div><span class="badge advisory">MODEL / LIVE STATE UNVERIFIED</span></div>
+<div id="ftth-asset-hierarchy" class="panel" aria-label="FTTH physical asset hierarchy">
+  <div class="flow panel" aria-label="Upstream optical path">
+    <b>G-PON / OLT</b><span aria-hidden="true">→</span><b>Main cabinet</b><span aria-hidden="true">→</span><b>Passive cabinet</b>
+  </div>
+  <div class="grid three">
+    <article class="panel" data-asset-layer="gpon-olt"><span class="tag advisory">LAYER 01</span><h3>G-PON / OLT</h3><p>OLT identity, chassis/card/PON port, upstream feeder, capacity and trusted telemetry provenance.</p><small>Live NMS/OLT readings require a configured provider adapter.</small></article>
+    <article class="panel" data-asset-layer="main-cabinet"><span class="tag advisory">LAYER 02</span><h3>Main cabinet</h3><p>Cabinet fed from the OLT/feeder side, with explicit incoming cable/core and outgoing passive-cabinet links.</p><small>Capacity and port occupancy must come from authorized records.</small></article>
+    <article class="panel" data-asset-layer="passive-cabinet"><span class="tag advisory">LAYER 03</span><h3>Passive cabinet</h3><p>Passive distribution, splitter stages and port-to-port continuity, with upstream/downstream relationships.</p><small>Splitter ratios and losses are engineering inputs, not measured truth.</small></article>
+  </div>
+  <div class="flow panel" aria-label="Downstream distribution path">
+    <b>Passive cabinet</b><span aria-hidden="true">→</span><b>Main box</b><span aria-hidden="true">→</span><b>Riser cable / floor box</b><span aria-hidden="true">→</span><b>Customer fiber / ONT</b>
+  </div>
+  <div class="grid three">
+    <article class="panel" data-asset-layer="main-box"><span class="tag advisory">LAYER 04</span><h3>Main distribution box</h3><p>Street/building distribution point mapping each incoming cable/core to downstream boxes and customer drops.</p></article>
+    <article class="panel" data-asset-layer="riser-box"><span class="tag advisory">LAYER 05</span><h3>Riser cable and floor boxes</h3><p>Building → floor → riser → riser-box hierarchy. Each floor box and riser segment has its own identity and traceable upstream link.</p></article>
+    <article class="panel" data-asset-layer="customer-fiber"><span class="tag boundary">LAYER 06 / EVIDENCE REQUIRED</span><h3>Customer fiber / ONT</h3><p>Drop cable, termination, customer/service association and ONT identity. Acceptance requires trusted field evidence and optical measurements.</p></article>
+  </div>
+  <div class="grid three">
+    <article class="panel"><h3>Asset identity and lineage</h3><p>Unique asset ID, parent/child link, cable/core continuity, location provenance, lifecycle state and change history.</p></article>
+    <article class="panel"><h3>Installation and acceptance</h3><p>Survey → design → material → civil/duct → cable → splice → test → QC → acceptance → activation. Each promotion requires its own recorded evidence.</p></article>
+    <article class="panel"><h3>Faults and monitoring</h3><p>Trace affected services downstream, correlate alarms only when a real adapter is connected, and separate calculated optical budget from measured OTDR/power-meter evidence.</p></article>
+  </div>
+  <div class="truth"><strong>TRUTH BOUNDARY</strong><span>No live asset count, port availability, optical level, technician location or NMS alarm is created by this page. Those values must arrive through authorized APIs with source and freshness metadata.</span></div>
+</div>
+</section>
+
+<section id="twin" class="section split"><div class="panel map"><span>VERIFIED</span><span>DEMO</span><span>LIVE</span><span>INTEGRATION_REQUIRED</span><small>spatial source classes</small></div><div><div class="eyebrow">06 / DIGITAL TWIN + GIS</div><h2>Spatial plausibility.<br><em>Not synthetic certainty.</em></h2><p>Network-twin, routing and position surfaces are distinguished from buyer-owned live GIS state.</p></div></section>
+
+<section id="field" class="section"><div class="eyebrow">07 / FIELD OPERATIONS</div><h2>Evidence → authority → closure.</h2><div class="flow panel"><b>IDENTITY</b><span>→</span><b>TENANT SCOPE</b><span>→</span><b>EVIDENCE</b><span>→</span><b>IDEMPOTENCY</b><span>→</span><b>DB AUTHORITY</b></div><div class="grid three"><article class="panel"><span class="tag real">REAL</span><h3>Evidence submit</h3><code>POST /v1/evidence/submit</code></article><article class="panel"><span class="tag real">REAL</span><h3>Field close</h3><code>POST /v1/tickets/close-field</code></article><article class="panel"><span class="tag boundary">BOUNDARY</span><h3>Browser ≠ authority</h3><p>The closure decision belongs to the server/database path.</p></article></div></section>
+
+<section id="optical" class="section split"><div><div class="eyebrow">08 / OPTICAL + ENGINEERING LAB</div><h2>Deterministic math.<br><em>Explicit evidence boundary.</em></h2><p>The calculator is a transparent illustration, not a physical instrument reading.</p><span class="tag boundary">CALCULATED / ILLUSTRATIVE</span></div><div class="panel calc"><div class="inputs"><label>Tx dBm<input id="tx" type="number" value="3" step=".1"></label><label>Distance km<input id="km" type="number" value="10" step=".1"></label><label>Attenuation dB/km<input id="att" type="number" value=".35" step=".01"></label><label>Splices<input id="splices" type="number" value="8"></label><label>Splice loss dB<input id="sl" type="number" value=".1" step=".01"></label><label>Connector loss dB<input id="cl" type="number" value=".6" step=".1"></label></div><div class="result"><span>Illustrative Rx</span><strong id="rx">-2.80 dBm</strong></div></div></section>
+
+<section id="reliability" class="section"><div class="eyebrow">09 / RELIABILITY + SYNC OBSERVATORY</div><h2>State transitions you can inspect.</h2><div class="grid four"><article class="panel"><b>01</b><h3>Queued</h3><p>Event enters the sync boundary.</p></article><article class="panel"><b>02</b><h3>Validated</h3><p>Payload and authority checks run.</p></article><article class="panel"><b>03</b><h3>Applied / Failed</h3><p>Outcome remains explicit.</p></article><article class="panel"><b>04</b><h3>Retryable</h3><p>Recovery is a separate state.</p></article></div><div class="panel api"><code>POST /v1/sync/batch</code><span class="tag real">REAL SURFACE</span></div></section>
+
+<section id="security" class="section"><div class="eyebrow">10 / SECURITY + ASSURANCE</div><h2>Controls are shown with their limits.</h2><div class="grid three"><article class="panel"><span class="tag real">SOURCE</span><h3>JWT / OIDC</h3><p>Identity boundary code exists; live IdP/JWKS verification remains a buyer-environment requirement.</p></article><article class="panel"><span class="tag real">SOURCE</span><h3>PostgreSQL / RLS</h3><p>Migration source includes tenant controls; live cross-tenant proof is not implied.</p></article><article class="panel"><span class="tag boundary">NOT CERTIFIED</span><h3>Production hold</h3><p>The release does not self-declare production readiness.</p></article></div></section>
+
+<section id="capabilities" class="section"><div class="head"><div><div class="eyebrow">11 / CAPABILITY EXPLORER</div><h2>105 capabilities.<br><em>Five status classes.</em></h2></div><input id="capSearch" class="search" placeholder="Search ID or capability" aria-label="Search capabilities"></div><div id="filters" class="filters"></div><div id="capTable" class="panel" role="region" aria-label="Scrollable capability registry" tabindex="0"></div></section>
+
+<section id="reference-atlas" class="section reference-atlas"><div class="reference-atlas-head"><div><div class="eyebrow">12 / REFERENCE → CAPABILITY ATLAS</div><h2>From reference themes<br><em>to inspectable code.</em></h2><p>Ten additions are exposed here with their package, tests and evidence boundary. This is a traceability surface, not a claim that copyrighted books were reproduced or that runtime integrations are certified.</p></div><span class="badge boundary">SOURCE / UNIT-TESTED</span></div><div class="reference-disclaimer">The repository contains a reference-gap matrix based on public material and standards. Unverified titles remain unverified. Buyer runtime, database, instrument, provider and model evidence must be established separately.</div><div id="referenceAtlasGrid" class="reference-atlas-grid" aria-live="polite"><div class="panel">Loading reference map…</div></div></section>
+
+<section id="verification" class="section"><div class="eyebrow">13 / VERIFICATION OBSERVATORY</div><h2>The ledger that prevents overclaiming.</h2><div id="verify" class="grid four"></div><div class="grid two notice-grid"><article class="panel warning"><span class="tag boundary">NOT CERTIFIED</span><p>Live PostgreSQL/RLS, OIDC/JWKS, TLS/ingress, KMS/HSM, backup/restore, distributed rate limiting, external vendor certification and registry-backed dependency auditing require buyer-environment execution.</p></article><article class="panel"><span class="tag real">I18N</span><p><b>1</b> independently verified locale · <b>113</b> structural placeholders · <b>114</b> catalog files.</p></article></div></section>
+
+<section id="evaluation" class="section"><div class="head"><div><div class="eyebrow">14 / BUYER 10-MINUTE EVALUATION</div><h2>Architecture → operations → evidence.</h2></div><span id="prog">0 / 10</span></div><div id="eval" class="eval"></div></section>
+
+<section id="commercial" class="section split"><div><div class="eyebrow">15 / COMMERCIAL HANDOFF</div><h2>Source. Boundaries.<br><em>Acceptance path.</em></h2><p>The current source set contains incompatible historical price figures. This page deliberately publishes <strong>no numeric price</strong> until that conflict is reconciled.</p><span class="tag boundary">PRICE NOT PUBLISHED</span></div><div class="panel"><h3>Buyer handoff sources</h3><div id="sources" class="sources"></div></div></section>
+</main><dialog id="foCommandPalette" class="fo-command-palette" aria-label="Command palette">
+  <div class="fo-palette-head"><strong>COMMAND NEXUS</strong><button type="button" class="fo-palette-close" aria-label="Close command palette">×</button><small>Navigate only through capabilities and routes already present on this surface.</small></div>
+  <div class="fo-palette-input-wrap"><input class="fo-palette-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search this surface…" aria-label="Search commands"></div>
+  <div class="fo-palette-list" role="listbox" aria-label="Available commands"></div>
+  <div class="fo-palette-footer"><span>↑↓ navigate</span><span>ENTER open</span><span>ESC close</span><span>CTRL/CMD+K command palette</span></div>
+</dialog>
+<footer class="footer"><span>FiberOS R14.1 / Buyer Command Nexus</span><span>source FTTH-CORE commercial repository · manifest-bound</span><span>evidence-bound · no synthetic telemetry</span></footer>
+<script type="module" src="/nexus-components.js"></script><script src="/buyer.js" defer></script></body></html>

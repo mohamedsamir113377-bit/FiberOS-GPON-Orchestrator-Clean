@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FiberOSClientConfig",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["supabaseUrl", "supabaseAnonKey", "productionHold"],
+  "properties": {
+    "supabaseUrl": { "type": "string", "format": "uri" },
+    "supabaseAnonKey": { "type": "string", "minLength": 20 },
+    "apiBase": { "type": "string" },
+    "productionHold": { "type": "boolean" },
+    "realityGateMaxMeters": { "type": "number", "minimum": 1, "maximum": 5000 },
+    "defaultLocale": { "type": "string", "enum": ["ar", "en", "fr", "tr", "id"] }
+  }
+}

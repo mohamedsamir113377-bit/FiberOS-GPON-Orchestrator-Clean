@@ -1,0 +1,1178 @@
+{
+  "schema": "fiberos.r14.1.locale-manifest.v1",
+  "generatedAt": "2026-10-16T08:04:27Z",
+  "sourceLocale": "source",
+  "canonicalKeyCount": 101,
+  "localeCount": 114,
+  "statusVocabulary": [
+    "untranslated",
+    "machine-draft",
+    "review-required",
+    "human-reviewed",
+    "verified",
+    "blocked",
+    "needs_review"
+  ],
+  "activationStatuses": [
+    "verified"
+  ],
+  "statusTally": {
+    "verified": 2,
+    "machine-draft": 112,
+    "untranslated": 0
+  },
+  "locales": [
+    {
+      "locale": "af",
+      "language": "af",
+      "direction": "ltr",
+      "file": "i18n/catalogs/af.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "am",
+      "language": "am",
+      "direction": "ltr",
+      "file": "i18n/catalogs/am.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ar",
+      "language": "ar",
+      "direction": "rtl",
+      "file": "i18n/catalogs/ar.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "verified"
+    },
+    {
+      "locale": "as",
+      "language": "as",
+      "direction": "ltr",
+      "file": "i18n/catalogs/as.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ay",
+      "language": "ay",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ay.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "az",
+      "language": "az",
+      "direction": "ltr",
+      "file": "i18n/catalogs/az.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "be",
+      "language": "be",
+      "direction": "ltr",
+      "file": "i18n/catalogs/be.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ber",
+      "language": "ber",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ber.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "bg",
+      "language": "bg",
+      "direction": "ltr",
+      "file": "i18n/catalogs/bg.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "bi",
+      "language": "bi",
+      "direction": "ltr",
+      "file": "i18n/catalogs/bi.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "bm",
+      "language": "bm",
+      "direction": "ltr",
+      "file": "i18n/catalogs/bm.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "bn",
+      "language": "bn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/bn.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "bs",
+      "language": "bs",
+      "direction": "ltr",
+      "file": "i18n/catalogs/bs.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ch",
+      "language": "ch",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ch.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "cs",
+      "language": "cs",
+      "direction": "ltr",
+      "file": "i18n/catalogs/cs.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "da",
+      "language": "da",
+      "direction": "ltr",
+      "file": "i18n/catalogs/da.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "de",
+      "language": "de",
+      "direction": "ltr",
+      "file": "i18n/catalogs/de.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "din",
+      "language": "din",
+      "direction": "ltr",
+      "file": "i18n/catalogs/din.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "dv",
+      "language": "dv",
+      "direction": "rtl",
+      "file": "i18n/catalogs/dv.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "el",
+      "language": "el",
+      "direction": "ltr",
+      "file": "i18n/catalogs/el.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "en",
+      "language": "en",
+      "direction": "ltr",
+      "file": "i18n/catalogs/en.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "verified"
+    },
+    {
+      "locale": "es",
+      "language": "es",
+      "direction": "ltr",
+      "file": "i18n/catalogs/es.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "et",
+      "language": "et",
+      "direction": "ltr",
+      "file": "i18n/catalogs/et.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "fa",
+      "language": "fa",
+      "direction": "rtl",
+      "file": "i18n/catalogs/fa.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ff",
+      "language": "ff",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ff.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "fi",
+      "language": "fi",
+      "direction": "ltr",
+      "file": "i18n/catalogs/fi.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "fj",
+      "language": "fj",
+      "direction": "ltr",
+      "file": "i18n/catalogs/fj.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "fr",
+      "language": "fr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/fr.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "gn",
+      "language": "gn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/gn.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "gu",
+      "language": "gu",
+      "direction": "ltr",
+      "file": "i18n/catalogs/gu.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ha",
+      "language": "ha",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ha.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "hi",
+      "language": "hi",
+      "direction": "ltr",
+      "file": "i18n/catalogs/hi.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "hr",
+      "language": "hr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/hr.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "hu",
+      "language": "hu",
+      "direction": "ltr",
+      "file": "i18n/catalogs/hu.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "hy",
+      "language": "hy",
+      "direction": "ltr",
+      "file": "i18n/catalogs/hy.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "id",
+      "language": "id",
+      "direction": "ltr",
+      "file": "i18n/catalogs/id.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ig",
+      "language": "ig",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ig.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "is",
+      "language": "is",
+      "direction": "ltr",
+      "file": "i18n/catalogs/is.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "it",
+      "language": "it",
+      "direction": "ltr",
+      "file": "i18n/catalogs/it.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ja",
+      "language": "ja",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ja.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ka",
+      "language": "ka",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ka.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "kk",
+      "language": "kk",
+      "direction": "ltr",
+      "file": "i18n/catalogs/kk.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "km",
+      "language": "km",
+      "direction": "ltr",
+      "file": "i18n/catalogs/km.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "kn",
+      "language": "kn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/kn.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ko",
+      "language": "ko",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ko.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ks",
+      "language": "ks",
+      "direction": "rtl",
+      "file": "i18n/catalogs/ks.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ktu",
+      "language": "ktu",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ktu.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ku",
+      "language": "ku",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ku.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ln",
+      "language": "ln",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ln.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "lo",
+      "language": "lo",
+      "direction": "ltr",
+      "file": "i18n/catalogs/lo.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "lt",
+      "language": "lt",
+      "direction": "ltr",
+      "file": "i18n/catalogs/lt.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "lv",
+      "language": "lv",
+      "direction": "ltr",
+      "file": "i18n/catalogs/lv.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "mg",
+      "language": "mg",
+      "direction": "ltr",
+      "file": "i18n/catalogs/mg.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "mi",
+      "language": "mi",
+      "direction": "ltr",
+      "file": "i18n/catalogs/mi.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "mk",
+      "language": "mk",
+      "direction": "ltr",
+      "file": "i18n/catalogs/mk.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ml",
+      "language": "ml",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ml.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "mn",
+      "language": "mn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/mn.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "mr",
+      "language": "mr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/mr.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ms",
+      "language": "ms",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ms.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "my",
+      "language": "my",
+      "direction": "ltr",
+      "file": "i18n/catalogs/my.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ne",
+      "language": "ne",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ne.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "nl",
+      "language": "nl",
+      "direction": "ltr",
+      "file": "i18n/catalogs/nl.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "no",
+      "language": "no",
+      "direction": "ltr",
+      "file": "i18n/catalogs/no.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "nr",
+      "language": "nr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/nr.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "nus",
+      "language": "nus",
+      "direction": "ltr",
+      "file": "i18n/catalogs/nus.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ny",
+      "language": "ny",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ny.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "om",
+      "language": "om",
+      "direction": "ltr",
+      "file": "i18n/catalogs/om.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "or",
+      "language": "or",
+      "direction": "ltr",
+      "file": "i18n/catalogs/or.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "pa",
+      "language": "pa",
+      "direction": "ltr",
+      "file": "i18n/catalogs/pa.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "pau",
+      "language": "pau",
+      "direction": "ltr",
+      "file": "i18n/catalogs/pau.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "pl",
+      "language": "pl",
+      "direction": "ltr",
+      "file": "i18n/catalogs/pl.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ps",
+      "language": "ps",
+      "direction": "rtl",
+      "file": "i18n/catalogs/ps.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "pt",
+      "language": "pt",
+      "direction": "ltr",
+      "file": "i18n/catalogs/pt.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "qu",
+      "language": "qu",
+      "direction": "ltr",
+      "file": "i18n/catalogs/qu.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "rn",
+      "language": "rn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/rn.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ro",
+      "language": "ro",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ro.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ru",
+      "language": "ru",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ru.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "rw",
+      "language": "rw",
+      "direction": "ltr",
+      "file": "i18n/catalogs/rw.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "sat",
+      "language": "sat",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sat.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "sg",
+      "language": "sg",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sg.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "si",
+      "language": "si",
+      "direction": "ltr",
+      "file": "i18n/catalogs/si.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "sk",
+      "language": "sk",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sk.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "sm",
+      "language": "sm",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sm.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "sn",
+      "language": "sn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sn.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "so",
+      "language": "so",
+      "direction": "ltr",
+      "file": "i18n/catalogs/so.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "sq",
+      "language": "sq",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sq.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "sr",
+      "language": "sr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sr.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ss",
+      "language": "ss",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ss.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "st",
+      "language": "st",
+      "direction": "ltr",
+      "file": "i18n/catalogs/st.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "sv",
+      "language": "sv",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sv.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "sw",
+      "language": "sw",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sw.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ta",
+      "language": "ta",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ta.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "te",
+      "language": "te",
+      "direction": "ltr",
+      "file": "i18n/catalogs/te.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "tg",
+      "language": "tg",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tg.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "th",
+      "language": "th",
+      "direction": "ltr",
+      "file": "i18n/catalogs/th.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ti",
+      "language": "ti",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ti.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "tig",
+      "language": "tig",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tig.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "tk",
+      "language": "tk",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tk.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "tl",
+      "language": "tl",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tl.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "tn",
+      "language": "tn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tn.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "to",
+      "language": "to",
+      "direction": "ltr",
+      "file": "i18n/catalogs/to.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "tr",
+      "language": "tr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tr.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ts",
+      "language": "ts",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ts.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "uk",
+      "language": "uk",
+      "direction": "ltr",
+      "file": "i18n/catalogs/uk.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ur",
+      "language": "ur",
+      "direction": "rtl",
+      "file": "i18n/catalogs/ur.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "uz",
+      "language": "uz",
+      "direction": "ltr",
+      "file": "i18n/catalogs/uz.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "ve",
+      "language": "ve",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ve.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "vi",
+      "language": "vi",
+      "direction": "ltr",
+      "file": "i18n/catalogs/vi.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "wo",
+      "language": "wo",
+      "direction": "ltr",
+      "file": "i18n/catalogs/wo.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "xh",
+      "language": "xh",
+      "direction": "ltr",
+      "file": "i18n/catalogs/xh.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "yo",
+      "language": "yo",
+      "direction": "ltr",
+      "file": "i18n/catalogs/yo.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "yue",
+      "language": "yue",
+      "direction": "ltr",
+      "file": "i18n/catalogs/yue.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "zh",
+      "language": "zh",
+      "direction": "ltr",
+      "file": "i18n/catalogs/zh.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    },
+    {
+      "locale": "zu",
+      "language": "zu",
+      "direction": "ltr",
+      "file": "i18n/catalogs/zu.json",
+      "key_count": 101,
+      "translated_count": 101,
+      "missing_count": 0,
+      "status": "machine-draft"
+    }
+  ],
+  "officialAdoption": {
+    "pack": "official-114",
+    "status": "official",
+    "translationMethod": "automated",
+    "forensicAudit": "structural-PASS",
+    "humanCertifiedLocaleCount": 0,
+    "statusTally": {
+      "verified": 2,
+      "machine-draft": 112,
+      "untranslated": 0
+    }
+  }
+}

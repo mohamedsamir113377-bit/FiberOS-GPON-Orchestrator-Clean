@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none';base-uri 'none';form-action 'none';object-src 'none';script-src 'self';style-src 'self';img-src 'self' data: blob:;font-src 'self' data:;connect-src 'self';media-src 'self' blob:;worker-src 'self' blob:">
+<title>FiberOS — Installation Command</title>
+<link rel="stylesheet" href="/installation-command.css">
+<link rel="stylesheet" href="/fiberos-tokens.css"><link rel="stylesheet" href="/fiberos-3d.css"><link rel="stylesheet" href="/fiberos-modern.css">
+<script src="/fiberos-3d.js" defer></script><script src="/fiberos-modern.js" defer></script>
+<script src="/ops-config.js" defer></script><script src="/api-origin.js" defer></script><script src="/session-auth.js" defer></script>
+<script src="/installation-command.js" defer></script>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">FIBEROS / INSTALLATION COMMAND FABRIC</div>
+<h1>قسم التركيبات</h1>
+<p class="muted">ثلاثة مسارات تشغيلية منفصلة: تركيب جديد · Migration / إحلال · Router Installation. وكل مسار يمر بجمع البيانات → مراجعة الكول سنتر → الموعد → الإسناد الجغرافي → قبول الفني → الأدلة → رضا العميل.</p>
+<div class="truth">لا توجد نقاط GPS أو فنيين أو رسائل واتساب مصطنعة. أي نتيجة تشغيلية تأتي من PostgreSQL/المزوّد المهيأ فقط.</div>
+</div></header>
+<main class="wrap">
+<section class="panel">
+<h2>1 · إدخال بيانات العميل</h2>
+<div class="grid">
+<div><label>نوع التركيب</label><select id="workflowType"><option value="NEW_INSTALLATION">تركيب جديد</option><option value="MIGRATION">Migration / إحلال</option><option value="ROUTER_INSTALLATION">Router Installation</option></select></div>
+<div><label>رقم الخدمة / الرقم الأرضي</label><input id="serviceNumber" required></div>
+<div><label>اسم العميل / الشركة</label>
+<label>الرقم الأرضي<input id="landlineNumber" name="landlineNumber" autocomplete="tel"/></label><input id="customerName" required></div>
+<div><label>اسم شركة الإنترنت</label><input id="internetProviderName"></div>
+<div><label>اسم الشركة على الخط</label><input id="companyName"></div><div><label>شركة الخط الأرضي</label><input id="landlineCompanyName"></div>
+<div><label>محمول متابعة 1</label><input id="followupMobile1" inputmode="tel"></div>
+<div><label>محمول متابعة 2</label><input id="followupMobile2" inputmode="tel"></div>
+<div><label>نوع إثبات الهوية</label><select id="identityType"><option value="">غير محدد</option><option value="NATIONAL_ID">رقم قومي</option><option value="PASSPORT">جواز سفر</option><option value="DRIVING_LICENSE">رخصة</option></select></div>
+<div><label>رقم إثبات الهوية</label><input id="identityNumber" autocomplete="off"></div><div><label>وجه المستند الذي سيتم مسحه</label><select id="identitySide"><option value="IDENTITY_FRONT">الوجه الأمامي</option><option value="IDENTITY_BACK">الوجه الخلفي</option></select></div>
+<div><label>المنطقة</label><input id="addressRegion" required></div>
+<div><label>اسم الشارع</label><input id="addressStreet" required></div>
+<div><label>رقم العقار</label><input id="addressBuildingNumber" required></div>
+<div><label>الدور</label><input id="addressFloor"></div>
+<div><label>رقم الشقة</label><input id="addressApartment"></div>
+<div><label>رقم الكابينة</label><input id="cabinetCode"></div>
+<div><label>رقم البوكس</label><input id="boxCode"></div>
+<div><label>Latitude</label><input id="lat" type="number" step="0.000001"></div>
+<div><label>Longitude</label><input id="lon" type="number" step="0.000001"></div>
+<div><label>SLA ساعات — للتركيب الجديد</label><input id="slaDurationHours" type="number" min="0.1" step="0.1"></div>
+<div><label>تاريخ أمر شغل الـMigration</label><input id="migrationWorkOrderDate" type="datetime-local"></div>
+<div><label>موعد انتهاء Migration</label><input id="migrationCompletionDeadlineAt" type="datetime-local"></div>
+</div>
+<div class="actions"><button id="captureSite" class="btn">📍 التقاط موقع العميل</button><button id="startIdentityCamera" class="btn">📷 تشغيل كاميرا إثبات الهوية</button><button id="captureIdentity" class="btn ghost">مسح صورة الهوية</button><button id="submitIntake" class="btn primary">إنشاء أمر التركيب</button></div>
+<video id="identityCamera" autoplay playsinline muted></video><canvas id="identityCanvas" hidden></canvas>
+<div id="identityStatus" class="muted">لم يتم مسح إثبات الهوية بعد.</div>
+<pre id="intakeOut">—</pre>
+</section>
+
+<section class="panel">
+<h2>2 · الكول سنتر</h2>
+<div class="grid">
+<div><label>Job ID</label><input id="jobId"></div>
+<div><label>موعد الزيارة</label><input id="visitScheduledAt" type="datetime-local"></div>
+<div><label>تأكيد البيانات</label><button id="verifyJob" class="btn">تأكيد البيانات</button></div>
+<div><label>الإسناد</label><button id="dispatchJob" class="btn">إرسال لأقرب فني</button></div>
+<div><label>العميل</label><button id="scheduleJob" class="btn">تثبيت موعد الزيارة</button></div>
+</div>
+<pre id="callOut">—</pre>
+</section>
+
+<section class="panel">
+<h2>3 · شاشة الفني</h2>
+<div class="grid">
+<div><label>قبول الزيارة</label><button id="acceptJob" class="btn">استلام الزيارة</button></div>
+<div><label>بدء العمل</label><button id="startJob" class="btn">بدء التركيب</button></div>
+<div><label>تسجيل دليل</label><select id="evidenceType"><option value="DROP_CABLE_VIDEO">فيديو السلك/الدروب</option><option value="ROUTER_INSTALLATION_VIDEO">فيديو تركيب الروتر</option><option value="ROUTER_LABEL_SCAN">مسح ظهر الروتر</option><option value="OPTICAL_POWER">قراءة Power الإشارة</option><option value="SITE_PHOTO">صورة الموقع</option></select></div>
+<div><label>SHA-256 للدليل</label><input id="evidenceHash" inputmode="hex" autocomplete="off"></div><div><label>حالة كابل الإسقاط</label><select id="cableChecklist"><option value="false">غير مؤكد</option><option value="true">مؤكد</option></select></div><div><label>تركيب الراوتر</label><select id="routerChecklist"><option value="false">غير مؤكد</option><option value="true">مؤكد</option></select></div><div><label>Optical Power (dBm)</label><input id="rxDbm" type="number" step="0.01"></div>
+<div><label>مرجع التخزين</label><input id="storageReference"></div>
+</div>
+<div class="actions"><button id="captureTechGps" type="button" class="btn">📍 GPS الفني</button><span id="techGps" class="muted" data-lat="" data-lon="">GPS فني: —</span><button id="submitEvidence" class="btn">حفظ الدليل</button><button id="recordVideo" class="btn ghost">🎥 بدء/إيقاف فيديو</button><button id="completeJob" class="btn primary">إغلاق التركيب</button></div>
+<video id="techCamera" autoplay playsinline muted></video>
+<pre id="techOut">—</pre>
+</section>
+
+<section class="panel router-only">
+<h2>4 · Router Installation</h2>
+<p class="muted">هذا المسار لا يدخل الفني قبل اعتماد الكول سنتر للبيانات. مسح الملصق والفيديو يسجلان كأدلة مرتبطة بأمر العمل.</p>
+<div class="grid">
+<div><label>Router Serial</label><input id="routerSerial"></div>
+<div><label>Router Model</label><input id="routerModel"></div>
+<div><label>Router MAC</label><input id="routerMac"></div>
+</div>
+</section>
+
+<section class="panel">
+<h2>5 · متابعة العميل ورضا الزيارة</h2>
+<div class="grid">
+<div><label>التقييم 1–5</label><input id="rating" type="number" min="1" max="5"></div>
+<div><label>ملاحظات العميل</label><textarea id="feedback" rows="4"></textarea></div>
+</div>
+<div class="actions"><button id="submitFeedback" class="btn">حفظ رضا العميل</button><button id="loadJob" class="btn ghost">تحميل الحالة</button><button id="loadTracking" class="btn ghost">تتبع الفني</button></div>
+<pre id="statusOut">—</pre>
+</section>
+</main>
+</body></html>

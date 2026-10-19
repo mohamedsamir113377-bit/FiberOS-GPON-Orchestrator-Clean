@@ -1,0 +1,9 @@
+{
+  "name": "@fiberos/financial-forecasting",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=24.21.0"
+  },
+  "private": true,
+  "main": "src/index.js"
+}

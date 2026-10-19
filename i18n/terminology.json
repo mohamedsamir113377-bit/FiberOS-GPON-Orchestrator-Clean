@@ -1,0 +1,87 @@
+{
+  "version": "1.0.0",
+  "policy": "source-terms-only-until-verified-target-translations-exist",
+  "terms": [
+    {
+      "source": "GPON",
+      "type": "technical",
+      "preserve": true
+    },
+    {
+      "source": "OLT",
+      "type": "technical",
+      "preserve": true
+    },
+    {
+      "source": "ONT",
+      "type": "technical",
+      "preserve": true
+    },
+    {
+      "source": "ODF",
+      "type": "technical",
+      "preserve": true
+    },
+    {
+      "source": "OTDR",
+      "type": "technical",
+      "preserve": true
+    },
+    {
+      "source": "GIS",
+      "type": "technical",
+      "preserve": true
+    },
+    {
+      "source": "NMS",
+      "type": "technical",
+      "preserve": true
+    },
+    {
+      "source": "RLS",
+      "type": "security",
+      "preserve": true
+    },
+    {
+      "source": "IVR",
+      "type": "telecom",
+      "preserve": true
+    },
+    {
+      "source": "SLA",
+      "type": "operations",
+      "preserve": true
+    },
+    {
+      "source": "GPS",
+      "type": "technical",
+      "preserve": true
+    },
+    {
+      "source": "OCR",
+      "type": "technical",
+      "preserve": true
+    },
+    {
+      "source": "JWT",
+      "type": "security",
+      "preserve": true
+    },
+    {
+      "source": "API",
+      "type": "software",
+      "preserve": true
+    },
+    {
+      "source": "PSTN",
+      "type": "telecom",
+      "preserve": true
+    }
+  ],
+  "invariantTechnicalLabels": {
+    "ui.c6e7dfa0fc87": {
+      "value": "🗺 GIS",
+      "reason": "technical_protocol_label; acronym is intentionally invariant across locales"
+    }
+  }
+}

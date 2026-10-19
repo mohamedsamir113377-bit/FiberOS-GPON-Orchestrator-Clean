@@ -1,0 +1,21 @@
+{
+  "schema": "fiberos.r14.1.identity-production-contract.v1",
+  "status": "DECLARATIVE_CONTRACT_ONLY",
+  "truthBoundary": "This contract defines the selected identity architecture; it is not runtime proof.",
+  "architecture": "OIDC_JWKS_PLUS_POSTGRESQL_IDENTITY_SESSION_BOUNDARY",
+  "production": {
+    "jwtAlgorithm": "RS256",
+    "jwks": {"required": true, "https": true, "hostAllowlist": true, "dnsValidation": true, "responseLimit": true, "unknownKidRefreshThrottle": true},
+    "claims": {"issuer": "required", "audience": "required", "subject": "required", "expiry": "required"},
+    "hmac": {"allowed": false, "reason": "PRODUCTION_HS256_FORBIDDEN"},
+    "labDecodeOnly": {"allowed": false}
+  },
+  "databaseBoundary": {
+    "runtime": "fiberos_runtime",
+    "worker": "fiberos_worker",
+    "migrator": "fiberos_migrator",
+    "owner": "fiberos_owner",
+    "membershipAuthorization": "MUST_BE_PROVEN_AGAINST_LIVE_DATABASE",
+    "tenantIsolation": "MUST_BE_PROVEN_BY_LIVE_RLS_ATTACK"
+  }
+}

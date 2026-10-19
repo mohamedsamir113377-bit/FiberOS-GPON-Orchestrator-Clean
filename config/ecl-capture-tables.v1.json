@@ -1,0 +1,58 @@
+{
+  "schema": "fiberos.ecl-capture-tables.v1",
+  "version": "1.0.1",
+  "recordedOn": "2026-10-17",
+  "migration": "sql/migrations/191_ecl_event_outbox_pk_fix.sql",
+  "policy": {
+    "appendOnly": true,
+    "perTenantChain": true,
+    "actorBoundHash": true,
+    "hashVersions": {
+      "1": "legacy-no-actor",
+      "2": "actor-bound"
+    },
+    "attachRule": "Only tables present in the database are wired; absent tables are skipped with a NOTICE."
+  },
+  "coreTables": [
+    {
+      "table": "contractor_entities",
+      "pk": "id"
+    },
+    {
+      "table": "contractor_qualifications",
+      "pk": "id"
+    },
+    {
+      "table": "contractor_work_authorizations",
+      "pk": "id"
+    },
+    {
+      "table": "contractor_work_measurements",
+      "pk": "id"
+    },
+    {
+      "table": "contractor_work_package_events",
+      "pk": "id"
+    },
+    {
+      "table": "customer_accounts",
+      "pk": "id"
+    },
+    {
+      "table": "enterprise_dashboard_contracts",
+      "pk": "id"
+    },
+    {
+      "table": "event_outbox_contract",
+      "pk": "event_id"
+    },
+    {
+      "table": "fiberos_asset_dna",
+      "pk": "id"
+    },
+    {
+      "table": "ftth_customer_orders",
+      "pk": "id"
+    }
+  ]
+}

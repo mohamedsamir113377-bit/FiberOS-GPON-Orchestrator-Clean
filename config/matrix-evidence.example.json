@@ -1,0 +1,14 @@
+{
+  "projectRef": "YOUR_SUPABASE_REF",
+  "ranAt": "2026-09-05T00:00:00.000Z",
+  "operator": "your-name",
+  "checks": {
+    "roleMatrix": "14/14",
+    "auditAppendOnly": true,
+    "illegalTransitionRejected": true,
+    "fieldCannotComplete": true,
+    "simOnlyCloseRejected": true,
+    "authHealth": true
+  },
+  "notes": "Historical/non-prod matrix contract example. Do not treat this example as runtime evidence and do not use it to lift PRODUCTION_HOLD."
+}

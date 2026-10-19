@@ -1,0 +1,10 @@
+{
+  "name": "@fiberos/compute-kernel",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "private": true,
+  "description": "Backend-agnostic parallel compute boundary for deterministic FiberOS workloads",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

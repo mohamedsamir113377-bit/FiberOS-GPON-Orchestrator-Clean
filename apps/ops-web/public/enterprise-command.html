@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; media-src 'self' blob:; worker-src 'self' blob:; upgrade-insecure-requests">
+<title>FiberOS — Deep Operations Command Rooms</title>
+<link rel="stylesheet" href="/enterprise-command.css">
+<link rel="stylesheet" href="/evaluation-mode.css">
+<script src="/evaluation-mode.js" defer></script>
+<link rel="stylesheet" href="/fiberos-tokens.css">
+<link rel="stylesheet" href="/fiberos-3d.css"><link rel="stylesheet" href="/fiberos-modern.css">
+<script src="/fiberos-3d.js" defer></script><script src="/fiberos-modern.js" defer></script>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="muted">FIBEROS / DEEP OPERATIONS CONTROL FABRIC</div>
+  <button id="foPaletteButton" class="fo-palette-trigger" type="button" aria-haspopup="dialog" aria-controls="foCommandPalette"><span>COMMAND</span><kbd>⌘K</kbd></button><h1>Deep Command Rooms</h1>
+  <div class="row">
+    <a class="pill" href="/noc3d.html">NOC 3D</a><span class="pill">Contact Center</span><span class="pill">GIS / Network</span><span class="pill">Field Dispatch</span><span class="pill">Warehouses</span><span class="pill">Crisis / Executive</span>
+  </div>
+  <div id="truth" class="truth">Data is read from FiberOS/PostgreSQL only. No synthetic numbers are used, and no live telephony or NMS connection is claimed.</div>
+</div></header>
+<div class="fo-system-strip" aria-label="Operational boundary"><span><b>SOURCE</b> repository-backed</span><span><b>AUTH</b> server-authoritative</span><span><b>DATA</b> live only when connected</span><span class="fo-system-boundary">UNVERIFIED EXTERNALS stay visible</span></div>
+<div class="wrap">
+  <section class="panel session-auth" aria-labelledby="sessionAuthTitle"><h2 id="sessionAuthTitle">OIDC Session</h2><p class="muted">Sign-in is handled by the configured OpenID Connect provider. No access JWT is pasted into or stored by this browser page.</p><div class="row"><button type="button" class="btn" data-session-action="login">Sign in with OIDC</button><button type="button" class="btn" data-session-action="logout">Sign out</button></div><p id="sessionAuthStatus" class="muted" role="status" aria-live="polite">Checking session…</p></section>
+</div>
+
+<main class="wrap">
+  <section class="grid">
+    <article class="room"><div class="muted">Call Center</div><div id="ccQueued" class="kpi">—</div><div class="muted">Queued / Last 24 hours</div><div id="ccMeta" class="small"></div></article>
+    <article class="room"><div class="muted">Maps & Assets</div><div id="mapped" class="kpi">—</div><div class="muted">Assets with Coordinates</div><div id="netMeta" class="small"></div></article>
+    <article class="room"><div class="muted">Warehouses</div><div id="warehouses" class="kpi">—</div><div class="muted">Active Warehouses</div><div id="whMeta" class="small"></div></article>
+    <article class="room"><div class="muted">Field Operations</div><div id="unassigned" class="kpi">—</div><div class="muted">Unassigned Tickets</div><div id="fieldMeta" class="small"></div></article>
+    <article class="room"><div class="muted">Crisis</div><div id="p1" class="kpi danger">—</div><div class="muted">Active P1</div><div id="crisisMeta" class="small"></div></article>
+  </section>
+
+  <section class="panel">
+    <div class="row"><h2 class="enterprise-command-inline-1">Room Board</h2><button class="btn" data-action="refreshAll" data-command-safe="true">Refresh All</button><button class="btn" data-action="apiHealth" data-command-safe="true">API Check</button></div>
+    <div id="rooms" class="grid enterprise-command-inline-2"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="governanceTitle">
+    <div class="row"><h2 id="governanceTitle" class="enterprise-command-inline-1">Management &amp; Governance</h2><button class="btn" data-action="refreshGovernance" data-command-safe="true">Refresh Governance</button></div>
+    <div class="grid">
+      <article class="room"><h3>Audit</h3><div id="govAuditCount" class="kpi">—</div><div class="muted">Recent immutable events</div><pre id="govAuditMeta" class="small">Not loaded</pre></article>
+      <article class="room"><h3>Notifications</h3><div id="govNotificationCount" class="kpi">—</div><div class="muted">Communication requests</div><pre id="govNotificationMeta" class="small">Not loaded</pre></article>
+      <article class="room"><h3>Migration / Workflows</h3><div id="govMigrationCount" class="kpi">—</div><div class="muted">Tracked migrations</div><pre id="govMigrationMeta" class="small">Not loaded</pre></article>
+      <article class="room"><h3>RBAC</h3><div id="govRbacCount" class="kpi">—</div><div class="muted">Active enterprise positions</div><pre id="govRbacMeta" class="small">Not loaded</pre></article>
+      <article class="room"><h3>Subcontractors</h3><div id="govContractorCount" class="kpi">—</div><div class="muted">Contractor entities</div><pre id="govContractorMeta" class="small">Not loaded</pre></article>
+      <article class="room"><h3>Smart Inventory</h3><div id="govInventoryCount" class="kpi">—</div><div class="muted">Tracked items</div><pre id="govInventoryMeta" class="small">Not loaded</pre></article>
+      <article class="room"><h3>Workload Balance</h3><div id="govWorkloadCount" class="kpi">—</div><div class="muted">Active technicians</div><pre id="govWorkloadMeta" class="small">Not loaded</pre></article>
+      <article class="room"><h3>Zero-Trust</h3><div id="govSecurityPosture" class="kpi">—</div><div class="muted">Current source posture</div><pre id="govSecurityMeta" class="small">Not loaded</pre></article>
+      <article class="room"><h3>Organization Integration</h3><div id="govOrgState" class="kpi">—</div><div class="muted">Canonical departments with source integration</div><pre id="govOrgMeta" class="small">Not loaded</pre></article>
+      <article class="room"><h3>Contact Center Language Gate</h3><div id="govCcLanguages" class="kpi">—</div><div class="muted">Registered language profiles</div><pre id="govCcMeta" class="small">Not loaded</pre></article>
+    </div>
+    <div class="panel enterprise-command-inline-2"><h3>Workflow / Event Timeline</h3><pre id="govTimeline">Not loaded</pre></div>
+  </section>
+
+  <section class="panel" aria-labelledby="ftthEngineeringTitle">
+    <div class="row">
+      <h2 id="ftthEngineeringTitle" class="enterprise-command-inline-1">FTTH Engineering &amp; Acceptance Assurance</h2>
+      <span class="pill">Handbook-derived · truth-bound</span>
+    </div>
+    <p class="muted small">
+      Engineering control chain derived from the FTTH Handbook Edition 7 (2016) and reconciled against executable FiberOS surfaces.
+      This panel does not invent live measurements, standards limits, instrument connectivity, or acceptance results.
+    </p>
+    <div class="grid">
+      <article class="room">
+        <h3>Build → Accept</h3>
+        <div class="small">
+          Survey → Design → Permit → Material → Civil → Duct → Cable → Splicing → Testing → QC → Acceptance → Drop → Activation
+        </div>
+        <p class="muted small">The current FTTH construction kernel already models this lifecycle and stage evidence requirements.</p>
+      </article>
+      <article class="room">
+        <h3>Optical Evidence</h3>
+        <div class="small">
+          OTDR traces · insertion loss · Rx power · splice evidence · geo/evidence binding
+        </div>
+        <p class="muted small">Server-side optical mathematics and append-only measurement sources are present; instrument calibration provenance is not yet a first-class persisted entity.</p>
+      </article>
+      <article class="room">
+        <h3>ODN Digital Twin</h3>
+        <div class="small">
+          Duct segments · cable segments · splices · ODN connections · construction evidence
+        </div>
+        <p class="muted small">These are database-backed structures and should remain the source of truth for route/as-built state.</p>
+      </article>
+      <article class="room">
+        <h3>Missing High-Value Controls</h3>
+        <div class="small">
+          Test Campaign record · connector clean/inspect cycle · calibration reference · bidirectional OTDR result · explicit as-built readiness
+        </div>
+        <p class="muted small">These are identified additions, not claimed implementations. Acceptance must remain fail-closed until each control has real storage and verification.</p>
+      </article>
+    </div>
+    <div class="grid">
+      <article class="room">
+        <h3>Design Profiles</h3>
+        <div class="small">P2MP/PON · Ethernet P2P · MDU · splitter placement · feeder/distribution/drop topology</div>
+        <p class="muted small">Handbook v7 treats architecture choice as deployment-specific. legacy numeric limits must not become universal 2026 constants; vendor/standard profiles should supply them.</p>
+      </article>
+      <article class="room">
+        <h3>Operations &amp; Maintenance</h3>
+        <div class="small">Segmented testing · fault localization · evidence-linked rework · maintenance access · topology-aware records</div>
+        <p class="muted small">The website should expose the evidence chain from work package to measurement, QC, acceptance, and final network record.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Operational Map — Real Spatial Data</h2>
+    <div class="muted small">Network Assets + Active Incidents + Tracked Technicians + Open Ticket Locations. This is an operational layer complementing MVT/GeoJSON, not a basemap from an external provider.</div>
+    <div id="map" class="map enterprise-command-inline-3"><svg viewBox="0 0 1200 420" role="img" aria-label="Operational spatial view"><rect x="0" y="0" width="1200" height="420" fill="#08131b"/><text x="600" y="210" text-anchor="middle" fill="#91a8b5">Loading layers…</text></svg></div>
+    <div id="mapMeta" class="legend enterprise-command-inline-4"></div>
+  </section>
+
+  <section class="grid">
+    <article class="panel"><h2>Call Center</h2><div id="call" class="stack">—</div></article>
+    <article class="panel"><h2>Warehouses & Supply Chain</h2><div id="supply" class="stack">—</div></article>
+    <article class="panel"><h2>Network & GIS</h2><div id="network" class="stack">—</div></article>
+    <article class="panel"><h2>Field & Dispatch</h2><div id="field" class="stack">—</div></article>
+  </section>
+
+  <section class="panel"><h2>Operational Truth Boundary</h2><pre id="out">Data has not been loaded yet.</pre></section>
+</main>
+<dialog id="foCommandPalette" class="fo-command-palette" aria-label="Command palette">
+  <div class="fo-palette-head"><strong>COMMAND NEXUS</strong><button type="button" class="fo-palette-close" aria-label="Close command palette">×</button><small>Navigate only through capabilities and routes already present on this surface.</small></div>
+  <div class="fo-palette-input-wrap"><input class="fo-palette-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search this surface…" aria-label="Search commands"></div>
+  <div class="fo-palette-list" role="listbox" aria-label="Available commands"></div>
+  <div class="fo-palette-footer"><span>↑↓ navigate</span><span>ENTER open</span><span>ESC close</span><span>CTRL/CMD+K command palette</span></div>
+</dialog>
+<script src="/ops-config.js" defer></script>
+<script src="/api-origin.js" defer></script>
+<script src="/session-auth.js" defer></script>
+<script src="/enterprise-command.js" defer></script>
+<script src="/i18n-runtime.js" defer></script>
+</body>
+</html>

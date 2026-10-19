@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="FiberOS Customer Command — secure enterprise operations, subscription, reporting and engineering assurance portal">
+  <title>FiberOS Customer Command</title>
+  <link rel="stylesheet" href="fiberos-tokens.css">
+  <link rel="stylesheet" href="fiberos-modern.css">
+  <script src="fiberos-modern.js" defer></script>
+  <link rel="stylesheet" href="customer-portal.css">
+  <script src="fiberos-api-config.js" defer></script>
+  <script src="api-origin.js" defer></script>
+  <script src="session-auth.js" defer></script>
+</head>
+<body>
+  <div class="portal-shell">
+    <header class="portal-header">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div>
+          <div class="brand-name">FiberOS</div>
+          <div class="brand-sub">Customer Command</div>
+        </div>
+      </div>
+      <div class="header-status">
+        <span class="live-dot"></span><span id="connectionText">Connecting</span>
+        <span class="tenant-chip" id="tenantChip">Tenant</span>
+        <span class="session-chip" id="sessionAuthStatus" data-session-status>Not signed in.</span>
+        <button class="ghost-btn" data-session-action="login">Sign in</button>
+        <button class="ghost-btn" data-session-action="logout">Sign out</button>
+      </div>
+    </header>
+
+    <main class="portal-main">
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <div class="eyebrow">SOVEREIGN MULTI-TENANT OPERATIONS</div>
+          <h1>One command surface for your network, field delivery, contractors and commercial control.</h1>
+          <p>Every metric is labelled by evidence class. Tenant authority comes from the authenticated session and PostgreSQL/RLS, never from browser input.</p>
+          <div class="hero-actions">
+            <button class="primary-btn" data-action="refresh">Refresh live truth</button>
+            <button class="secondary-btn" data-action="run-report">Generate report</button>
+          </div>
+        </div>
+        <div class="hero-orbit" aria-hidden="true">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="core-node"><span>FOS</span></div>
+          <div class="pulse p1"></div><div class="pulse p2"></div><div class="pulse p3"></div>
+        </div>
+      </section>
+
+      <section class="metric-grid" id="metricGrid">
+        <article class="metric-card"><span>Active services</span><strong id="mServices">—</strong><small id="mSpeed">Observed/declared speed: —</small></article>
+        <article class="metric-card"><span>Open backlog</span><strong id="mBacklog">—</strong><small>Persisted ticket state</small></article>
+        <article class="metric-card"><span>Critical incidents</span><strong id="mCritical">—</strong><small>Unresolved P1</small></article>
+        <article class="metric-card"><span>Capacity pressure</span><strong id="mCapacity">—</strong><small id="mCapacitySub">Network-derived</small></article>
+        <article class="metric-card"><span>First-time fix</span><strong id="mFtf">—</strong><small>Only tracked re-open observations</small></article>
+        <article class="metric-card"><span>Optical evidence</span><strong id="mOptical">—</strong><small>Field / NMS observations</small></article>
+      </section>
+
+      <nav class="tabbar" role="tablist" aria-label="Customer portal sections">
+        <button class="tab active" data-tab="overview">Command</button>
+        <button class="tab" data-tab="delivery">Delivery</button>
+        <button class="tab" data-tab="commercial">Subscription</button>
+        <button class="tab" data-tab="reports">Reports</button>
+        <button class="tab" data-tab="schedules">Automation</button>
+        <button class="tab" data-tab="engineering">Engineering</button>
+        <button class="tab" data-tab="team">Team</button>
+      </nav>
+
+      <section class="tab-panel active" data-panel="overview">
+        <div class="section-title"><div><div class="eyebrow">COMMAND</div><h2>Operational truth, at a glance</h2></div><span class="evidence-badge observed">DATABASE-DERIVED</span></div>
+        <div class="command-grid">
+          <article class="glass-card span-2">
+            <div class="card-title"><h3>Network reality</h3><button class="mini-btn" data-action="refresh">↻</button></div>
+            <div class="fact-grid">
+              <div><span>Assets</span><b id="oAssets">—</b></div>
+              <div><span>Average utilization</span><b id="oUtil">—</b></div>
+              <div><span>Over-capacity assets</span><b id="oOver">—</b></div>
+              <div><span>Latest RX sample</span><b id="oRx">—</b></div>
+              <div><span>Telemetry samples</span><b id="oTelemetry">—</b></div>
+              <div><span>Last observation</span><b id="oLastObs">—</b></div>
+            </div>
+          </article>
+          <article class="glass-card">
+            <div class="card-title"><h3>Service health</h3><span class="evidence-badge derived">DERIVED</span></div>
+            <div class="ring-stat"><div class="ring" id="healthRing"><span id="healthPct">—</span></div><div><strong id="healthLabel">Unknown</strong><p>Never infer health from missing measurements.</p></div></div>
+          </article>
+          <article class="glass-card">
+            <div class="card-title"><h3>Security boundary</h3><span class="evidence-badge protected">PROTECTED</span></div>
+            <ul class="status-list">
+              <li>Tenant authority <b>server-derived</b></li>
+              <li>Database isolation <b>FORCE RLS</b></li>
+              <li>Browser session <b>HttpOnly + CSRF</b></li>
+              <li>Payment cards <b>not stored here</b></li>
+              <li>AI actions <b>advisory only</b></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-panel" data-panel="delivery">
+        <div class="section-title"><div><div class="eyebrow">FIELD + CONTRACTOR DELIVERY</div><h2>Your subscribed work universe</h2></div><span class="evidence-badge observed">SOURCE-BOUND</span></div>
+        <div class="work-strip" id="workTypes"></div>
+        <div class="delivery-grid">
+          <article class="glass-card"><h3>FTTH delivery envelope</h3><div id="deliveryFacts" class="fact-stack"></div></article>
+          <article class="glass-card"><h3>Engineering acceptance</h3><div id="engineeringFacts" class="fact-stack"></div></article>
+        </div>
+      </section>
+
+      <section class="tab-panel" data-panel="commercial">
+        <div class="section-title"><div><div class="eyebrow">COMMERCIAL CONTROL</div><h2>Choose the work domain and cadence</h2></div><span class="evidence-badge protected">NO CARD DATA</span></div>
+        <div class="notice">Enterprise plans are catalog-driven. Price is never invented: unpriced plans stay quote-required; priced plans can be wired to an external checkout provider.</div>
+        <div class="plan-toolbar"><label>Filter work type <select id="planWorkFilter"><option value="">All domains</option></select></label><label>Cadence <select id="planCadenceFilter"><option value="">All</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="yearly">Yearly</option></select></label></div>
+        <div class="plan-grid" id="planGrid"></div>
+        <article class="glass-card subscription-card">
+          <div class="card-title"><h3>Current subscription</h3><span id="subStatus" class="status-pill">—</span></div>
+          <div id="subscriptionDetail" class="subscription-detail"></div>
+          <div class="button-row">
+            <button class="secondary-btn" data-action="toggle-renew">Toggle auto-renew</button>
+            <button class="secondary-btn" data-action="pause-sub">Pause</button>
+            <button class="danger-btn" data-action="cancel-sub">Cancel</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="tab-panel" data-panel="reports">
+        <div class="section-title"><div><div class="eyebrow">REPORT ENGINE</div><h2>Generate a verifiable report on demand</h2></div><span class="evidence-badge observed">PERSISTED FACTS ONLY</span></div>
+        <article class="glass-card report-builder">
+          <div class="form-grid">
+            <label>Report type<select id="reportType"><option value="executive">Executive</option><option value="network">Network</option><option value="quality">Quality</option><option value="field">Field</option><option value="financial">Financial</option><option value="engineering">Engineering</option></select></label>
+            <label>Days<select id="reportDays"><option>7</option><option selected>30</option><option>90</option><option>180</option><option>365</option></select></label>
+            <label>Format<select id="reportFormat"><option value="json">JSON</option><option value="csv">CSV</option></select></label>
+          </div>
+          <button class="primary-btn" data-action="generate-report">Generate now</button>
+          <div id="reportOutput" class="report-output" aria-live="polite">No report generated in this session.</div>
+        </article>
+        <article class="glass-card"><div class="card-title"><h3>Recent reports</h3><button class="mini-btn" data-action="load-reports">Refresh</button></div><div id="reportHistory" class="history-list"></div></article>
+      </section>
+
+      <section class="tab-panel" data-panel="schedules">
+        <div class="section-title"><div><div class="eyebrow">AUTOMATION TIMER</div><h2>Schedule weekly, monthly or yearly email delivery</h2></div><span class="evidence-badge protected">OUTBOX + IDEMPOTENCY</span></div>
+        <div class="notice">The timer creates a governed report run and an email outbox event. Actual email transport remains the configured HTTPS delivery adapter/provider; the portal never stores SMTP passwords.</div>
+        <article class="glass-card schedule-builder">
+          <div class="form-grid">
+            <label>Name<input id="scheduleName" maxlength="160" placeholder="Executive weekly brief"></label>
+            <label>Report<select id="scheduleReportType"><option value="executive">Executive</option><option value="network">Network</option><option value="quality">Quality</option><option value="field">Field</option><option value="financial">Financial</option><option value="engineering">Engineering</option></select></label>
+            <label>Cadence<select id="scheduleCadence"><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="yearly">Yearly</option></select></label>
+            <label>Timezone<input id="scheduleTimezone" placeholder="Africa/Cairo" value="Africa/Cairo"></label>
+            <label>Hour<input id="scheduleHour" type="number" min="0" max="23" value="8"></label>
+            <label>Minute<input id="scheduleMinute" type="number" min="0" max="59" value="0"></label>
+            <label id="scheduleWeekdayWrap">Weekday<select id="scheduleWeekday"><option value="0">Sunday</option><option value="1">Monday</option><option value="2">Tuesday</option><option value="3">Wednesday</option><option value="4">Thursday</option><option value="5">Friday</option><option value="6">Saturday</option></select></label>
+            <label id="scheduleDayWrap" hidden>Day of month<input id="scheduleDay" type="number" min="1" max="31" value="1"></label>
+            <label id="scheduleMonthWrap" hidden>Month<input id="scheduleMonth" type="number" min="1" max="12" value="1"></label>
+            <label class="span-2">Recipients<input id="scheduleRecipients" placeholder="ops@example.com, management@example.com"></label>
+          </div>
+          <button class="primary-btn" data-action="save-schedule">Create scheduled report</button>
+        </article>
+        <article class="glass-card"><div class="card-title"><h3>Active timers</h3><button class="mini-btn" data-action="load-schedules">Refresh</button></div><div id="scheduleHistory" class="history-list"></div></article>
+      </section>
+
+      <section class="tab-panel" data-panel="engineering">
+        <div class="section-title"><div><div class="eyebrow">ENGINEERING GOVERNANCE</div><h2>Standards and evidence boundaries</h2></div><span class="evidence-badge derived">NO INVENTED TELEMETRY</span></div>
+        <div class="standards-grid" id="standardsGrid"></div>
+      </section>
+
+      <section class="tab-panel" data-panel="team">
+        <div class="section-title"><div><div class="eyebrow">TENANT GOVERNANCE</div><h2>Delegated portal access</h2></div><span class="evidence-badge protected">ROLE-SCOPED</span></div>
+        <article class="glass-card">
+          <div class="notice">Portal administrators can delegate access by role and work-type scope. Tenant identity itself is never accepted from the browser.</div>
+          <div id="teamList" class="history-list"></div>
+          <div class="form-grid team-form">
+            <label>User UUID<input id="memberUserId" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"></label>
+            <label>Portal role<select id="memberRole"><option>viewer</option><option>operations</option><option>engineering</option><option>quality</option><option>billing</option><option>contractor_manager</option><option>contractor_supervisor</option><option>contractor_field</option><option>admin</option></select></label>
+            <label class="span-2">Work-type scope<input id="memberScope" placeholder="fusion-splicing, cabinet-odf"></label>
+          </div>
+          <button class="primary-btn" data-action="add-member">Save member</button>
+        </article>
+      </section>
+    </main>
+  </div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script src="customer-portal.js" defer></script>
+</body>
+</html>

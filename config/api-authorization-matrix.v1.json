@@ -1,0 +1,108 @@
+{
+  "schema": "fiberos.api-authorization-surface.v1",
+  "purpose": "Static route-family contract for authentication, tenant authority and database delegation review. This is not runtime proof.",
+  "defaultProtectedMethods": [
+    "POST",
+    "PUT",
+    "PATCH",
+    "DELETE"
+  ],
+  "routeFamilies": [
+    {
+      "family": "tickets",
+      "pattern": "/v1/tickets/",
+      "authentication": "verified principal",
+      "databaseAuthority": "PostgreSQL lifecycle/RLS"
+    },
+    {
+      "family": "faults",
+      "pattern": "/v1/faults/",
+      "authentication": "verified principal",
+      "databaseAuthority": "PostgreSQL fault authority/RLS"
+    },
+    {
+      "family": "operations",
+      "pattern": "/v1/operations/",
+      "authentication": "verified principal",
+      "databaseAuthority": "PostgreSQL/RLS"
+    },
+    {
+      "family": "sync",
+      "pattern": "/v1/sync/",
+      "authentication": "verified principal",
+      "databaseAuthority": "PostgreSQL sync authority/RLS"
+    },
+    {
+      "family": "contact-center",
+      "pattern": "/v1/contact-center/",
+      "authentication": "verified principal",
+      "databaseAuthority": "PostgreSQL/RLS"
+    },
+    {
+      "family": "gis",
+      "pattern": "/v1/gis/",
+      "authentication": "verified principal",
+      "databaseAuthority": "PostgreSQL/RLS"
+    },
+    {
+      "family": "intelligence",
+      "pattern": "/v1/intelligence/",
+      "authentication": "verified principal",
+      "databaseAuthority": "PostgreSQL/RLS"
+    },
+    {
+      "family": "ai",
+      "pattern": "/v1/ai/",
+      "authentication": "verified principal",
+      "databaseAuthority": "policy + PostgreSQL/RLS where persisted"
+    },
+    {
+      "family": "crisis",
+      "pattern": "/v1/crisis/",
+      "authentication": "verified principal",
+      "databaseAuthority": "PostgreSQL incident authority/RLS"
+    },
+    {
+      "family": "billing",
+      "pattern": "/v1/billing/",
+      "authentication": "role-specific verified principal",
+      "databaseAuthority": "PostgreSQL payment authority/RLS"
+    },
+    {
+      "family": "reality-boundary",
+      "pattern": "/v1/reality-boundary/",
+      "authentication": "verified principal",
+      "databaseAuthority": "none (pure boundary advisory; no live mutation)"
+    },
+    {
+      "family": "network-intelligence",
+      "pattern": "/v1/network-intelligence/",
+      "authentication": "verified principal",
+      "databaseAuthority": "PostgreSQL/RLS"
+    },
+    {
+      "family": "customer-portal",
+      "pattern": "/v1/customer-portal/",
+      "authentication": "verified principal + central route role policy",
+      "tenantAuthority": "server-derived tenant_id from authenticated subject",
+      "databaseAuthority": "PostgreSQL portal tables + FORCE RLS + worker-only report scheduler authority",
+      "paymentBoundary": "external provider; no card data stored",
+      "emailBoundary": "outbox event -> configured HTTPS delivery adapter"
+    },
+    {
+      "family": "enterprise-fiber-dna",
+      "pattern": "/v1/enterprise/fiber-dna/",
+      "authentication": "role-specific verified principal",
+      "databaseAuthority": "PostgreSQL/RLS-backed enterprise asset and organization authority"
+    }
+  ],
+  "publicExceptions": [
+    "/health",
+    "/v1/meta",
+    "/v1/lifecycle/self-test",
+    "/v1/call-center/ivr/inbound"
+  ],
+  "tenantAuthorityRule": "Client-supplied tenantId/tenant_id never grants tenant authority; session/RLS/database authority is authoritative.",
+  "claims": {},
+  "updatedAt": "2026-10-08"
+}

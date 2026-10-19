@@ -1,0 +1,1778 @@
+{
+  "version": "1.0.0",
+  "source": "ECMAScript Intl.Locale/Intl.PluralRules/Intl.DateTimeFormat/Intl.NumberFormat using Unicode CLDR-backed runtime data",
+  "generatedAt": "2026-09-27T00:00:00.000Z",
+  "localeCount": 114,
+  "rtl": [
+    "ar",
+    "fa",
+    "ur",
+    "ks",
+    "dv",
+    "ps"
+  ],
+  "locales": [
+    {
+      "code": "ar",
+      "canonical": "ar",
+      "language": "ar",
+      "script": null,
+      "region": null,
+      "direction": "rtl",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "many",
+        "one",
+        "other",
+        "two",
+        "zero"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "fa",
+      "canonical": "fa",
+      "language": "fa",
+      "script": null,
+      "region": null,
+      "direction": "rtl",
+      "calendar": "persian",
+      "numberingSystem": "arabext",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "tr",
+      "canonical": "tr",
+      "language": "tr",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ku",
+      "canonical": "ku",
+      "language": "ku",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "am",
+      "canonical": "am",
+      "language": "am",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "sw",
+      "canonical": "sw",
+      "language": "sw",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "om",
+      "canonical": "om",
+      "language": "om",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "so",
+      "canonical": "so",
+      "language": "so",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ti",
+      "canonical": "ti",
+      "language": "ti",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ha",
+      "canonical": "ha",
+      "language": "ha",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "yo",
+      "canonical": "yo",
+      "language": "yo",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ig",
+      "canonical": "ig",
+      "language": "ig",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "zu",
+      "canonical": "zu",
+      "language": "zu",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "xh",
+      "canonical": "xh",
+      "language": "xh",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "af",
+      "canonical": "af",
+      "language": "af",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ff",
+      "canonical": "ff",
+      "language": "ff",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "wo",
+      "canonical": "wo",
+      "language": "wo",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "bm",
+      "canonical": "bm",
+      "language": "bm",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "mg",
+      "canonical": "mg",
+      "language": "mg",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "rw",
+      "canonical": "rw",
+      "language": "rw",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "rn",
+      "canonical": "rn",
+      "language": "rn",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "st",
+      "canonical": "st",
+      "language": "st",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "tn",
+      "canonical": "tn",
+      "language": "tn",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ss",
+      "canonical": "ss",
+      "language": "ss",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "ts",
+      "canonical": "ts",
+      "language": "ts",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "ve",
+      "canonical": "ve",
+      "language": "ve",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "nr",
+      "canonical": "nr",
+      "language": "nr",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "sn",
+      "canonical": "sn",
+      "language": "sn",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ny",
+      "canonical": "ny",
+      "language": "ny",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "ln",
+      "canonical": "ln",
+      "language": "ln",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ktu",
+      "canonical": "ktu",
+      "language": "ktu",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "sg",
+      "canonical": "sg",
+      "language": "sg",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "tig",
+      "canonical": "tig",
+      "language": "tig",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "din",
+      "canonical": "din",
+      "language": "din",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "nus",
+      "canonical": "nus",
+      "language": "nus",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ber",
+      "canonical": "ber",
+      "language": "ber",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "zh",
+      "canonical": "zh",
+      "language": "zh",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "yue",
+      "canonical": "yue",
+      "language": "yue",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ja",
+      "canonical": "ja",
+      "language": "ja",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ko",
+      "canonical": "ko",
+      "language": "ko",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "hi",
+      "canonical": "hi",
+      "language": "hi",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ur",
+      "canonical": "ur",
+      "language": "ur",
+      "script": null,
+      "region": null,
+      "direction": "rtl",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "bn",
+      "canonical": "bn",
+      "language": "bn",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "beng",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "pa",
+      "canonical": "pa",
+      "language": "pa",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ta",
+      "canonical": "ta",
+      "language": "ta",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "te",
+      "canonical": "te",
+      "language": "te",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "mr",
+      "canonical": "mr",
+      "language": "mr",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "deva",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "gu",
+      "canonical": "gu",
+      "language": "gu",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ml",
+      "canonical": "ml",
+      "language": "ml",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "kn",
+      "canonical": "kn",
+      "language": "kn",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "as",
+      "canonical": "as",
+      "language": "as",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "beng",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "or",
+      "canonical": "or",
+      "language": "or",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "sat",
+      "canonical": "sat",
+      "language": "sat",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "olck",
+      "pluralCategories": [
+        "one",
+        "other",
+        "two"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ks",
+      "canonical": "ks",
+      "language": "ks",
+      "script": null,
+      "region": null,
+      "direction": "rtl",
+      "calendar": "gregory",
+      "numberingSystem": "arabext",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ne",
+      "canonical": "ne",
+      "language": "ne",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "deva",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "si",
+      "canonical": "si",
+      "language": "si",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "dv",
+      "canonical": "dv",
+      "language": "dv",
+      "script": null,
+      "region": null,
+      "direction": "rtl",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "ps",
+      "canonical": "ps",
+      "language": "ps",
+      "script": null,
+      "region": null,
+      "direction": "rtl",
+      "calendar": "persian",
+      "numberingSystem": "arabext",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ms",
+      "canonical": "ms",
+      "language": "ms",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "id",
+      "canonical": "id",
+      "language": "id",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "th",
+      "canonical": "th",
+      "language": "th",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "buddhist",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "vi",
+      "canonical": "vi",
+      "language": "vi",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "km",
+      "canonical": "km",
+      "language": "km",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "lo",
+      "canonical": "lo",
+      "language": "lo",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "my",
+      "canonical": "my",
+      "language": "my",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "mymr",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "tl",
+      "canonical": "fil",
+      "language": "fil",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "az",
+      "canonical": "az",
+      "language": "az",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "hy",
+      "canonical": "hy",
+      "language": "hy",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ka",
+      "canonical": "ka",
+      "language": "ka",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "mn",
+      "canonical": "mn",
+      "language": "mn",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "en",
+      "canonical": "en",
+      "language": "en",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "fr",
+      "canonical": "fr",
+      "language": "fr",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "many",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "es",
+      "canonical": "es",
+      "language": "es",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "many",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ru",
+      "canonical": "ru",
+      "language": "ru",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "many",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "de",
+      "canonical": "de",
+      "language": "de",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "it",
+      "canonical": "it",
+      "language": "it",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "many",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "pt",
+      "canonical": "pt",
+      "language": "pt",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "many",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "nl",
+      "canonical": "nl",
+      "language": "nl",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "el",
+      "canonical": "el",
+      "language": "el",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "sq",
+      "canonical": "sq",
+      "language": "sq",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "sr",
+      "canonical": "sr",
+      "language": "sr",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "hr",
+      "canonical": "hr",
+      "language": "hr",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "bs",
+      "canonical": "bs",
+      "language": "bs",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "mk",
+      "canonical": "mk",
+      "language": "mk",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "bg",
+      "canonical": "bg",
+      "language": "bg",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ro",
+      "canonical": "ro",
+      "language": "ro",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "hu",
+      "canonical": "hu",
+      "language": "hu",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "cs",
+      "canonical": "cs",
+      "language": "cs",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "many",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "sk",
+      "canonical": "sk",
+      "language": "sk",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "many",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "pl",
+      "canonical": "pl",
+      "language": "pl",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "many",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "uk",
+      "canonical": "uk",
+      "language": "uk",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "many",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "be",
+      "canonical": "be",
+      "language": "be",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "many",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "lt",
+      "canonical": "lt",
+      "language": "lt",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "few",
+        "many",
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "lv",
+      "canonical": "lv",
+      "language": "lv",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other",
+        "zero"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "et",
+      "canonical": "et",
+      "language": "et",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "fi",
+      "canonical": "fi",
+      "language": "fi",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "sv",
+      "canonical": "sv",
+      "language": "sv",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "no",
+      "canonical": "no",
+      "language": "no",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "da",
+      "canonical": "da",
+      "language": "da",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "is",
+      "canonical": "is",
+      "language": "is",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "kk",
+      "canonical": "kk",
+      "language": "kk",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "uz",
+      "canonical": "uz",
+      "language": "uz",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "tk",
+      "canonical": "tk",
+      "language": "tk",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "tg",
+      "canonical": "tg",
+      "language": "tg",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "qu",
+      "canonical": "qu",
+      "language": "qu",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "ay",
+      "canonical": "ay",
+      "language": "ay",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "gn",
+      "canonical": "gn",
+      "language": "gn",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "mi",
+      "canonical": "mi",
+      "language": "mi",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "fj",
+      "canonical": "fj",
+      "language": "fj",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "sm",
+      "canonical": "sm",
+      "language": "sm",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "to",
+      "canonical": "to",
+      "language": "to",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "other"
+      ],
+      "intlSupported": true
+    },
+    {
+      "code": "bi",
+      "canonical": "bi",
+      "language": "bi",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "pau",
+      "canonical": "pau",
+      "language": "pau",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    },
+    {
+      "code": "ch",
+      "canonical": "ch",
+      "language": "ch",
+      "script": null,
+      "region": null,
+      "direction": "ltr",
+      "calendar": "gregory",
+      "numberingSystem": "latn",
+      "pluralCategories": [
+        "one",
+        "other"
+      ],
+      "intlSupported": true,
+      "formattingFallbackLocale": "en"
+    }
+  ],
+  "formattingFallbackPolicy": {
+    "mode": "explicit-locale-fallback",
+    "nativeIntlRequired": false,
+    "fallbackLocaleByCode": {
+      "ss": "en",
+      "ts": "en",
+      "ve": "en",
+      "nr": "en",
+      "ny": "en",
+      "ktu": "en",
+      "tig": "en",
+      "din": "en",
+      "ber": "en",
+      "dv": "en",
+      "ay": "en",
+      "gn": "en",
+      "fj": "en",
+      "sm": "en",
+      "bi": "en",
+      "pau": "en",
+      "ch": "en"
+    },
+    "rationale": "Some configured low-resource locale tags have no native DateTimeFormat/NumberFormat data in the deployed Node ICU dataset. Formatting falls back deterministically to English rather than silently pretending native locale support."
+  }
+}

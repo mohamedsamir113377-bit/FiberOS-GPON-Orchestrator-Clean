@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fiberos.r14.1.evidence-provenance.v1",
+  "title": "FiberOS Evidence Provenance v1",
+  "type": "object",
+  "required": ["schemaVersion", "checkId", "result", "proofLevel", "observedAt", "environment", "executor", "source", "evidenceRef", "inputsHash"],
+  "properties": {
+    "schemaVersion": {"const": "fiberos.r14.1.evidence-provenance.v1"},
+    "checkId": {"type": "string", "minLength": 1},
+    "result": {"enum": ["PASS_STATIC", "PASS_RUNTIME", "FAIL", "BLOCKED"]},
+    "proofLevel": {"enum": ["STATIC_ONLY", "RUNTIME_DISPOSABLE", "RUNTIME_STAGING", "RUNTIME_PRODUCTION", "NONE"]},
+    "observedAt": {"type": "string", "format": "date-time"},
+    "environment": {"type": "string", "minLength": 1},
+    "executor": {"type": "string", "minLength": 1},
+    "source": {"type": "string", "minLength": 1},
+    "evidenceRef": {"type": "string", "minLength": 1},
+    "inputsHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "command": {"type": "string"},
+    "toolchain": {"type": "object"},
+    "artifactSetHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "canonicalInventoryHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  },
+  "additionalProperties": false
+}

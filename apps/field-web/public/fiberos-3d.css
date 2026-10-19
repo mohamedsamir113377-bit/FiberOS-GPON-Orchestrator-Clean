@@ -1,0 +1,116 @@
+/* ===========================================================================
+   FiberOS - realistic 3D depth + smooth motion layer (Field surface)
+   ---------------------------------------------------------------------------
+   Mobile-first sibling of the Operations layer: identical depth model, but the
+   expensive specular blend layer is only enabled where a fine pointer exists,
+   because field handsets are driven by touch and often sit in direct sunlight.
+   External stylesheet only - CSP stays script-src 'self'; style-src 'self'.
+   Fully inert under prefers-reduced-motion: reduce.
+   =========================================================================== */
+
+:root {
+  --fo-spring: cubic-bezier(0.22, 1, 0.36, 1);
+  --fo-glide: cubic-bezier(0.16, 1, 0.3, 1);
+  --fo-mx: 50%;
+  --fo-my: 50%;
+  --fo-rx: 0deg;
+  --fo-ry: 0deg;
+  --fo-z: 0px;
+}
+
+.grid, .wrap { perspective: 1150px; perspective-origin: 50% 22%; }
+
+.panel, .card, .metric {
+  position: relative;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform:
+    translate3d(0, 0, var(--fo-z))
+    rotateX(var(--fo-rx))
+    rotateY(var(--fo-ry));
+  transition:
+    transform 500ms var(--fo-spring),
+    box-shadow 420ms var(--fo-glide),
+    border-color 220ms ease;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 1px 2px rgba(0, 0, 0, 0.42),
+    0 12px 26px -10px rgba(0, 0, 0, 0.5);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .panel:hover, .card:hover, .metric:hover {
+    --fo-z: 14px;
+    transform:
+      translate3d(0, -6px, var(--fo-z))
+      rotateX(var(--fo-rx))
+      rotateY(var(--fo-ry));
+    border-color: rgba(46, 230, 214, 0.26);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.09),
+      0 2px 4px rgba(0, 0, 0, 0.5),
+      0 28px 52px -18px rgba(0, 0, 0, 0.74),
+      0 0 0 1px rgba(46, 230, 214, 0.16);
+  }
+
+  .panel::after, .card::after, .metric::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 360ms var(--fo-glide);
+    background: radial-gradient(
+      420px circle at var(--fo-mx) var(--fo-my),
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.05) 30%,
+      rgba(255, 255, 255, 0) 62%
+    );
+    mix-blend-mode: screen;
+  }
+  .panel:hover::after, .card:hover::after, .metric:hover::after { opacity: 1; }
+}
+
+.fo-3d { will-change: transform; }
+
+@keyframes fo-rise {
+  from { opacity: 0; transform: translate3d(0, 18px, 0) scale(0.988); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .panel, .card, .metric, section {
+      animation: fo-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 8% cover 30%;
+    }
+  }
+
+  @supports not (animation-timeline: view()) {
+    html.fo-js .fo-reveal { opacity: 0; transform: translate3d(0, 18px, 0); }
+    html.fo-js .fo-reveal.fo-in {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      transition: opacity 640ms var(--fo-glide), transform 640ms var(--fo-spring);
+    }
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 320ms;
+    animation-timing-function: var(--fo-spring);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel, .card, .metric, section,
+  .fo-reveal, .fo-reveal.fo-in {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .panel::after, .card::after, .metric::after { opacity: 0 !important; }
+}

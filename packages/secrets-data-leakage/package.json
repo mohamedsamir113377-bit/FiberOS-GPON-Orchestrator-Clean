@@ -1,0 +1,13 @@
+{
+  "name": "@fiberos/secrets-data-leakage",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

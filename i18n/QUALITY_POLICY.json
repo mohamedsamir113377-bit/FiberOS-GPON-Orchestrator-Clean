@@ -1,0 +1,70 @@
+{
+  "version": "2.0.0",
+  "purpose": "Strict localization quality contract for FiberOS",
+  "sourceLocale": "en",
+  "runtimeCanonicalLocale": "source",
+  "requiredLocaleCount": 114,
+  "requiredTargetLocaleCount": 113,
+  "requiredKeyCount": 101,
+  "defaultLocale": "ar",
+  "activation": {
+    "verifiedStatusOnly": true,
+    "untranslatedStatusFallsBack": true,
+    "warningStatuses": [
+      "machine-draft",
+      "review-required",
+      "human-reviewed"
+    ]
+  },
+  "validation": {
+    "requireExactLocaleSet": true,
+    "requireExactKeySet": true,
+    "requirePlaceholderParity": true,
+    "rejectEmptyVerifiedValues": true,
+    "rejectSourceCopyForTranslatableKeys": true,
+    "requireNfcUnicode": true,
+    "rejectReplacementCharacter": true,
+    "rejectUnbalancedBidiControls": true,
+    "preserveNonTranslatableKeys": true,
+    "validateBcp47Canonicalization": true,
+    "validateDirectionAgainstIntlWhenAvailable": true,
+    "validatePluralCategoriesAgainstIntlWhenAvailable": true,
+    "recordDateTimeAndNumberFormatSupport": true,
+    "rejectDateTimeAndNumberFormatFallbackInProductionGate": true
+  },
+  "requiredArtifacts": [
+    "i18n/source.json",
+    "i18n/manifest.json",
+    "i18n/locale-metadata.json",
+    "i18n/terminology.json"
+  ],
+  "publicMirrors": [
+    "apps/field-web/public/i18n",
+    "apps/ops-web/public/i18n"
+  ],
+  "canonicalAliases": {
+    "tl": "fil"
+  },
+  "officialPacks": {
+    "structural114": {
+      "file": "i18n/official-114.json",
+      "localeCount": 114,
+      "adoption": "official",
+      "translationMethod": "automated",
+      "forensicAudit": "structural",
+      "humanCertified": false
+    },
+    "sales84": {
+      "file": "i18n/official-84.json",
+      "localeCount": 84,
+      "adoption": "official-subset",
+      "humanCertified": false
+    }
+  },
+  "notices": {
+    "automatedTranslation": true,
+    "structuralForensicAudit": true,
+    "humanCertificationRequiredForClaims": true,
+    "activationRemainsVerifiedOnly": true
+  }
+}

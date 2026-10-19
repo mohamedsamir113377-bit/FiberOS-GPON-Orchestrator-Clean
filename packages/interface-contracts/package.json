@@ -1,0 +1,11 @@
+{
+  "name": "@fiberos/interface-contracts",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "description": "Formal southbound/evidence/signing/VRP interface contract registry (server metadata)",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

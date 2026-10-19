@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fiberos.r14.1.runtime-evidence-record.v1",
+  "title": "FiberOS Runtime Evidence Record v1",
+  "type": "object",
+  "required": ["schema", "sequence", "releaseId", "artifactSetHash", "canonicalInventoryHash", "proofLevel", "result", "previousRecordHash", "recordHash", "provenance"],
+  "properties": {
+    "schema": {"const": "fiberos.r14.1.runtime-evidence-record.v1"},
+    "sequence": {"type": "integer", "minimum": 1},
+    "releaseId": {"type": "string", "minLength": 1},
+    "artifactSetHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "canonicalInventoryHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "proofLevel": {"enum": ["RUNTIME_DISPOSABLE", "RUNTIME_STAGING", "RUNTIME_PRODUCTION"]},
+    "result": {"enum": ["PASS_RUNTIME", "FAIL"]},
+    "previousRecordHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "recordHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "provenance": {"$ref": "evidence-provenance.schema.json"}
+  },
+  "additionalProperties": false
+}

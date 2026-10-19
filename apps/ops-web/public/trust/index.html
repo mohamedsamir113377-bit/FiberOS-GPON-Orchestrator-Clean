@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="FiberOS buyer assurance: clear product boundaries, evidence, security posture, and evaluation steps.">
+<title>FiberOS — Buyer Assurance & Verification</title>
+<link rel="stylesheet" href="/trust/trust.css">
+</head>
+<body>
+<header><a class="brand" href="/">FIBEROS <span>R14.1 · BUYER ASSURANCE</span></a><a href="/">Return to product preview ↗</a></header>
+<main>
+<p class="eyebrow">BUYER DUE DILIGENCE / EVIDENCE-FIRST</p>
+<h1>Evaluate the operating model.<br><em>Verify before you commit.</em></h1>
+<p class="lead">FiberOS is designed for FTTH and network operations across field execution, service incidents, asset context, operational oversight, and engineering workflows. This page separates what you can inspect today from what still requires environment-specific acceptance.</p>
+<div class="notice"><strong>Important boundary</strong><p>This public preview is not a customer production tenant and does not certify a buyer's live deployment. We do not represent every catalogued capability as production-ready.</p></div>
+<section>
+<h2>What you can evaluate</h2>
+<div class="grid">
+<article><span>01 / OPERATIONS</span><h3>Follow an operational workflow</h3><p>Inspect the operations, field, enterprise command, and buyer-preview surfaces. Ask to walk through one real scenario from intake to assignment, execution, and closure.</p></article>
+<article><span>02 / NETWORK CONTEXT</span><h3>Connect service events to assets</h3><p>Review the network and GIS model, and verify which screens use persisted server-backed data versus advisory or illustrative presentation.</p></article>
+<article><span>03 / ENGINEERING</span><h3>Inspect the evidence, not the headline</h3><p>The capability registry classifies items as REAL, ADVISORY, INTEGRATION_REQUIRED, VISION, or UNIMPLEMENTED. A label alone is not a substitute for a buyer acceptance test.</p></article>
+<article><span>04 / DELIVERY</span><h3>Agree the acceptance boundary</h3><p>Before purchase, define target integrations, data migration, identity, roles, operational volumes, deployment ownership, recovery expectations, and sign-off criteria.</p></article>
+</div>
+</section>
+<section id="security">
+<h2>Security and source-access boundaries</h2>
+<ul>
+<li><strong>Source repository:</strong> the GitHub product repository is private. A public preview does not grant repository access or deliver the source distribution.</li>
+<li><strong>Browser code:</strong> HTML, CSS, JavaScript, and other assets sent to a browser can be inspected or copied. No honest seller can guarantee that a public website's client-side assets are impossible to copy. The preview is not the source-code license or delivery package.</li>
+<li><strong>Secrets and data:</strong> database credentials, signing keys, and privileged server logic must remain server-side and must never be embedded in public client assets. Buyer credentials and production data should not be entered into this preview.</li>
+<li><strong>Browser protections:</strong> the deployment configuration defines Content Security Policy, HSTS, anti-framing, MIME-sniffing, referrer, and cross-origin headers. These controls reduce browser-side attack surface; they do not prove that every backend or external integration is secure.</li>
+<li><strong>Database and runtime:</strong> production network restrictions, least-privilege grants, populated-tenant isolation, backup/recovery, and buyer-owned live acceptance must be verified for the exact release and deployment. Source tests alone are not a production security certification.</li>
+</ul>
+</section>
+<section id="evidence">
+<h2>Evidence available for technical review</h2>
+<p>The public preview exposes a machine-readable capability registry and buyer-facing evidence summaries. Review the status of each capability rather than relying on a single headline or a total feature count.</p>
+<ul class="links">
+<li><a href="/reference-capabilities.json">Open the capability registry</a> — machine-readable statuses and evidence boundaries.</li>
+<li><a href="/buyer-data.json">Open the buyer evidence summary</a> — current summary metrics published with this preview.</li>
+</ul>
+<p class="small">Repository and detailed source evidence are private and available only to authorized reviewers. If you need a source-level audit, request a controlled technical review or a licensed delivery package. The exact release commit, package digest, test results, and exclusions should be agreed in writing before purchase.</p>
+</section>
+<section>
+<h2>A practical 15-minute buyer evaluation</h2>
+<ol>
+<li>Choose one FTTH operational scenario that matters to your team.</li>
+<li>Trace the workflow and identify each persisted action, permission check, and audit record.</li>
+<li>Mark any provider/device dependency that must be supplied by your organization.</li>
+<li>Agree a written acceptance test, deployment boundary, support period, and deliverable hash before payment.</li>
+</ol>
+</section>
+<footer><strong>FiberOS R14.1</strong><p>Clear evidence. Explicit boundaries. No unsupported production claims.</p><a href="/">Back to Buyer Command Nexus</a></footer>
+</main>
+</body>
+</html>

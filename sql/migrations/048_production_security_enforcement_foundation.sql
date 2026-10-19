@@ -1,0 +1,4 @@
+-- Wave 18: production security enforcement foundation
+-- Readiness marker only. The audit tenant/time index is created after audit
+-- tenantization, by migration 054. Keeping this stage DDL-free preserves the
+-- numbered migration order without referencing columns that do not yet exist.

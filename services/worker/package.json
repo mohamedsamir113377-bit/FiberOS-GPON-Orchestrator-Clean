@@ -1,0 +1,12 @@
+{
+  "name": "@fiberos/worker",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/worker.js",
+  "scripts": {
+    "start": "node src/worker.js"
+  },
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

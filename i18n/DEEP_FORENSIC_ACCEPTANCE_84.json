@@ -1,0 +1,30 @@
+{
+  "schema": "fiberos.i18n.deep-forensic-acceptance-record.v2",
+  "acceptanceClass": "DETERMINISTIC_MACHINE_FORENSIC_ONLY",
+  "status": "PASS_FOR_EXECUTED_MACHINE_LAYERS",
+  "generatedAt": "2026-10-06T20:42:37Z",
+  "baselineRef": "i18n/POST_MERGE_BASELINE_2026-10-06.json",
+  "scope": {
+    "runtimeCatalogs": 84,
+    "keysPerCatalog": 101,
+    "translationCells": 8484,
+    "intentionallyUntranslated": 30
+  },
+  "validatorHardeningThisCycle": [
+    "URL RegExp fix in atomic auditor",
+    "Unicode \\\\p{L} escape fix",
+    "Numeric parity via decimalDigitSequence (eliminates fa/mr/ne false positives)",
+    "Forensic JSON report newline write fix"
+  ],
+  "contractAndSemanticBoundary": {
+    "semanticNativeLanguageCertification": "NOT_PERFORMED",
+    "humanReviewRequiredForVerified": true,
+    "machineDraftPromotion": "FORBIDDEN"
+  },
+  "mandatoryWarning": "Deep multilayer deterministic machine forensic audit only — not human linguistic certification.",
+  "mandatoryWarningAr": "تدقيق آلي جنائي متعدد الطبقات فقط — ليس شهادة لغوية بشرية.",
+  "reproducibleValidators": [
+    "scripts/verify-i18n-forensic-audit.js",
+    "scripts/verify-i18n-atomic-linguistic-audit.js"
+  ]
+}

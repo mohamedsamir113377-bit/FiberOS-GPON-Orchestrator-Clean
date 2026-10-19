@@ -1,0 +1,6 @@
+Source repository: mosamiryamany-hub/FTTH-CORE-Commercial-Fiber-Network-Operations-Platform
+Source branch: handoff/final-commercial-candidate-2026-10-07
+Source commit: BOUND_BY_SALES_PACKAGE_MANIFEST
+Snapshot role: current commercial release provenance for the exact handoff source tree.
+Production status: FINAL HANDOFF CANDIDATE — NOT PRODUCTION READY.
+Runtime evidence boundary: exact-head hosted CI and buyer/runtime verification remain separate proof requirements.

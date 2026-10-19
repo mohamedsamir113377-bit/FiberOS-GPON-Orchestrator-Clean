@@ -1,0 +1,11 @@
+{
+  "name": "@fiberos/sovereign-contact-center",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "description": "FiberOS distributed sovereign contact-center contracts; control plane separate from media plane",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

@@ -1,0 +1,89 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.runtime
+      args: { SERVICE: api }
+    environment:
+      NODE_ENV: production
+      API_PORT: 8080
+      API_BIND_HOST: 0.0.0.0
+      DATABASE_URL_FILE: /run/secrets/runtime_database_url
+      JWT_VERIFY: "true"
+      OIDC_JWKS_URL: ${OIDC_JWKS_URL:?Set the production IdP JWKS URL}
+      OIDC_ISSUER: ${OIDC_ISSUER:?Set the production IdP issuer}
+      OIDC_AUDIENCE: ${OIDC_AUDIENCE:?Set the production API audience}
+      OIDC_JWKS_ALLOWED_HOSTS: ${OIDC_JWKS_ALLOWED_HOSTS:?Set the allowlisted IdP host}
+      PG_SSL: "true"
+      PG_SSL_REJECT_UNAUTHORIZED: "true"
+      SECURITY_DDOS_GUARD_ENABLED: "true"
+      SECURITY_DDOS_MAX_CONCURRENT_PER_IP: ${SECURITY_DDOS_MAX_CONCURRENT_PER_IP:-32}
+      SECURITY_DDOS_MAX_GLOBAL_CONCURRENT: ${SECURITY_DDOS_MAX_GLOBAL_CONCURRENT:-512}
+      SECURITY_DDOS_MAX_REQUESTS_PER_WINDOW: ${SECURITY_DDOS_MAX_REQUESTS_PER_WINDOW:-120}
+      SECURITY_DDOS_RATE_WINDOW_MS: ${SECURITY_DDOS_RATE_WINDOW_MS:-1000}
+      SECURITY_FIREWALL_ENABLED: "true"
+      SECURITY_RATE_LIMIT_PER_MINUTE: ${SECURITY_RATE_LIMIT_PER_MINUTE:-120}
+      SECURITY_RATE_LIMIT_BURST: ${SECURITY_RATE_LIMIT_BURST:-30}
+    ports: ["127.0.0.1:8080:8080"]
+    secrets:
+      - runtime_database_url
+    restart: unless-stopped
+
+  gis:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.runtime
+      args: { SERVICE: gis }
+    environment:
+      NODE_ENV: production
+      GIS_PORT: 3009
+      GIS_BIND_HOST: 0.0.0.0
+      DATABASE_URL_FILE: /run/secrets/runtime_database_url
+      JWT_VERIFY: "true"
+      OIDC_JWKS_URL: ${OIDC_JWKS_URL:?Set the production IdP JWKS URL}
+      OIDC_ISSUER: ${OIDC_ISSUER:?Set the production IdP issuer}
+      OIDC_AUDIENCE: ${OIDC_AUDIENCE:?Set the production API audience}
+      OIDC_JWKS_ALLOWED_HOSTS: ${OIDC_JWKS_ALLOWED_HOSTS:?Set the allowlisted IdP host}
+      PG_SSL: "true"
+      PG_SSL_REJECT_UNAUTHORIZED: "true"
+    secrets:
+      - runtime_database_url
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.runtime
+      args: { SERVICE: worker }
+    environment:
+      NODE_ENV: production
+      DATABASE_WORKER_URL_FILE: /run/secrets/worker_database_url
+      JWT_VERIFY: "true"
+      PG_SSL: "true"
+      PG_SSL_REJECT_UNAUTHORIZED: "true"
+    secrets:
+      - worker_database_url
+    restart: unless-stopped
+
+  ai:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.runtime
+      args: { SERVICE: ai }
+    environment:
+      NODE_ENV: production
+      AI_PORT: 8081
+      AI_BIND_HOST: 0.0.0.0
+      AI_ENABLED: ${AI_ENABLED:-false}
+      FIBEROS_AI_INFERENCE_URL: ${FIBEROS_AI_INFERENCE_URL:-}
+      FIBEROS_AI_MODEL_ID: ${FIBEROS_AI_MODEL_ID:-}
+      FIBEROS_SELF_HOSTED_HOSTS: ${FIBEROS_SELF_HOSTED_HOSTS:-}
+      FIBEROS_SELF_HOSTED_CIDRS: ${FIBEROS_SELF_HOSTED_CIDRS:-}
+      ALLOW_PUBLIC_AI_UPSTREAM: "false"
+    restart: unless-stopped
+
+secrets:
+  runtime_database_url:
+    file: ./secrets/runtime_database_url.txt
+  worker_database_url:
+    file: ./secrets/worker_database_url.txt

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; media-src 'self' blob:; worker-src 'self' blob:">
+<title>FiberOS — Buyer Evaluation Workspace</title>
+<link rel="stylesheet" href="/evaluation-mode.css">
+<script src="/evaluation-mode.js" defer></script>
+<link rel="stylesheet" href="/evaluation.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <span class="pill">FiberOS R14.1 · Buyer Evaluation</span>
+    <h1>Buyer Evaluation Workspace</h1>
+    <p class="muted">A controlled pre-sale demonstration of the existing FiberOS operational interfaces. Interactive controls use deterministic local fixtures and are explicitly marked as demonstration data.</p>
+    <a class="cta" href="/ops/?mode=evaluation">Open Operations Console</a>
+  </section>
+  <section class="grid" aria-label="Evaluation destinations">
+    <a class="card" href="/ops/?mode=evaluation"><h2>Operations Console</h2><p class="muted">Call Center / IVR, Crisis, GIS, Field Evidence, Dispatch, Exception Board, Assurance and Executive views.</p></a>
+    <a class="card" href="/ops/enterprise-command.html?mode=evaluation"><h2>Enterprise Command Center</h2><p class="muted">Command rooms, operational map, network, field and supply-chain views.</p></a>
+    <a class="card" href="/field/?mode=evaluation"><h2>Field Technician</h2><p class="muted">Camera, local OCR, GPS capture and field evidence / closure workflow.</p></a>
+  </section>
+  <p class="note">Boundary: this evaluation mode does not contact PostgreSQL, Redis, OIDC, PSTN, NMS, OTDR, storage or other production systems. It is not a substitute for production runtime verification and its 30-day window is a client-side convenience control, not a license-security mechanism.</p>
+</main>
+</body>
+</html>

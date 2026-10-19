@@ -1,0 +1,11 @@
+{
+  "name": "@fiberos/signing-port",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "description": "Server-side SigningPort — fail-closed, keys never in browser",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

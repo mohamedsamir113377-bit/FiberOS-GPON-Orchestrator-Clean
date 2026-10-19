@@ -1,0 +1,160 @@
+/* FiberOS Field Tech — professional dense field shell */
+:root {
+  /* Overrides the shared token layer: the field surface runs in daylight on
+     handsets, so its hairline is deliberately a touch stronger. */
+  --line: rgba(140, 200, 210, 0.14);
+  --r: 12px;
+  --shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 14px 36px rgba(0,0,0,0.35);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background:
+    radial-gradient(ellipse 80% 40% at 50% -10%, var(--fo-accent-a08), transparent 50%),
+    linear-gradient(180deg, #05090e, var(--fo-void));
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--aqua); }
+header, .topbar, .app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--fo-void-a92);
+  backdrop-filter: blur(12px);
+}
+.panel, .card, section {
+  background: linear-gradient(165deg, var(--fo-panel-hi), var(--fo-panel-lo));
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 14px;
+  margin: 12px;
+  box-shadow: var(--shadow);
+}
+h1, h2, h3 { margin: 0 0 8px; letter-spacing: -0.02em; }
+h1 { font-size: 1.35rem; }
+h2 { font-size: 1.1rem; }
+p { color: var(--muted); margin: 0 0 10px; }
+.muted { color: var(--muted); font-size: 12px; }
+.ok { color: var(--ok); }
+.warn { color: var(--warn); }
+.bad { color: var(--bad); }
+button, .btn {
+  border: 1px solid var(--line);
+  background: #12212d;
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+button.primary, .btn.primary {
+  background: linear-gradient(135deg, #5ff5e8, var(--aqua));
+  color: #031014;
+  border-color: transparent;
+  box-shadow: 0 8px 22px var(--fo-accent-a22);
+}
+input, select, textarea {
+  width: 100%;
+  background: #050c14;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--fo-accent-a4);
+  box-shadow: 0 0 0 3px var(--fo-accent-a12);
+}
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+.kpi {
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+pre, code {
+  font-family: var(--mono);
+  font-size: 12px;
+}
+pre {
+  background: #040a10;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  overflow: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+
+/* Motion — field */
+@keyframes field-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.panel, .card, section {
+  animation: field-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  transition: transform 0.18s ease, border-color 0.15s ease;
+}
+.panel:nth-child(2), .card:nth-child(2), section:nth-of-type(2) { animation-delay: 0.05s; }
+.panel:nth-child(3), .card:nth-child(3), section:nth-of-type(3) { animation-delay: 0.1s; }
+button, .btn {
+  transition: transform 0.12s ease, box-shadow 0.15s ease;
+}
+button:active, .btn:active { transform: scale(0.98); }
+@media (prefers-reduced-motion: reduce) {
+  .panel, .card, section, button, .btn {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+/* Visual effects — field */
+.panel, .card, section {
+  position: relative;
+  overflow: hidden;
+}
+.panel::before, .card::before, section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+  pointer-events: none;
+}
+header, .topbar, .app-bar {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2), inset 0 -1px 0 rgba(46,230,214,0.05);
+}
+button.primary, .btn.primary {
+  box-shadow: 0 8px 22px var(--fo-accent-a22), 0 0 0 1px rgba(255,255,255,0.1) inset;
+}
+
+
+/* 3D — field (subtle; mobile-first) */
+.panel, .card, section {
+  transform: translateZ(0);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.15s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .panel:hover, .card:hover, section:hover {
+    transform: translateY(-3px) translateZ(10px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .panel:hover, .card:hover, section:hover { transform: none !important; }
+}

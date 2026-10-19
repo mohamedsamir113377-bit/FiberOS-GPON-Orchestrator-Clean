@@ -1,0 +1,10 @@
+{
+  "name": "@fiberos/multilingual-contact-center",
+  "version": "1.0.0-rc.1",
+  "private": true,
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

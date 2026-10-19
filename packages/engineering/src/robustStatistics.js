@@ -1,0 +1,10 @@
+'use strict';
+function finite(x,n){const v=Number(x);if(!Number.isFinite(v))throw new TypeError(`${n} must be finite`);return v;}
+function median(a){if(!a.length)throw new TypeError('values required');const x=a.slice().sort((u,v)=>u-v);const m=Math.floor(x.length/2);return x.length%2?x[m]:(x[m-1]+x[m])/2;}
+function mad(values){const x=values.map((v,i)=>finite(v,`values[${i}]`));const m=median(x);return median(x.map(v=>Math.abs(v-m)));}
+function robustZ(value,values,consistency=1.4826){const v=finite(value,'value'),m=median(values),d=mad(values);const scale=consistency*d;if(scale===0)return Object.freeze({median:m,mad:d,scale,robustZ:v===m?0:(v>m?Infinity:-Infinity)});return Object.freeze({median:m,mad:d,scale,robustZ:(v-m)/scale});}
+function huberWeights(values,center,scale,k=1.345){const c=finite(k,'k');if(c<=0)throw new RangeError('k must be > 0');const s=finite(scale,'scale');if(s<=0)throw new RangeError('scale must be > 0');return values.map((v,i)=>{const r=Math.abs((finite(v,`values[${i}]`)-center)/s);return r<=c?1:c/r;});}
+function weightedMean(values,weights){if(!Array.isArray(values)||!Array.isArray(weights)||values.length!==weights.length||!values.length)throw new TypeError('values/weights mismatch');let sw=0,s=0;for(let i=0;i<values.length;i++){const w=finite(weights[i],`weights[${i}]`);if(w<0)throw new RangeError('weights must be >= 0');sw+=w;s+=w*finite(values[i],`values[${i}]`);}if(!(sw>0))throw new RangeError('sum weights must be > 0');return s/sw;}
+/** One-step robust reweighting around the median/MAD center. */
+function huberLocation(values,{k=1.345,iterations=10}={}){let center=median(values);let scale=1.4826*mad(values);if(!(scale>0))return Object.freeze({location:center,scale:0,iterations:0});let i=0;for(;i<iterations;i++){const w=huberWeights(values,center,scale,k);const next=weightedMean(values,w);if(Math.abs(next-center)<=1e-12*Math.max(1,Math.abs(center))){center=next;break;}center=next;}return Object.freeze({location:center,scale,iterations:i+1});}
+module.exports={median,mad,robustZ,huberLocation,huberWeights,weightedMean};

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "description": "Single source of truth for immutable source-package inventory and delivery archive contents.",
+  "sourceExclusions": {
+    "directoryNames": [
+      ".git",
+      "node_modules",
+      ".visual",
+      ".netlify"
+    ],
+    "rootDirectories": [
+      "evidence"
+    ],
+    "rootFileRegex": "^FiberOS-R14_1-SALES-CORE.*\\.zip$",
+    "files": [
+      ".git",
+      "MANIFEST_BUILD_STAMP.txt",
+      "apps/field-web/public/engineering-demo.html",
+      "apps/field-web/public/buyer-demo.html",
+      ".github/workflows/neon-pr-preview.yml"
+    ]
+  },
+  "archive": {
+    "root": "FiberOS-R14_1-SALES-CORE-rc1",
+    "generatedFiles": [
+      "MANIFEST_BUILD_STAMP.txt"
+    ]
+  }
+}

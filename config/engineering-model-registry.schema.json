@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiberos.local/schema/engineering-model-registry.v1.json",
+  "title": "FiberOS Engineering Model Registry Record",
+  "type": "object",
+  "required": ["modelId","version","status","formula","parameterRefs","validation"],
+  "properties": {
+    "modelId": {"type":"string","minLength":1},
+    "version": {"type":"string","minLength":1},
+    "status": {"enum":["candidate","calibrated","verified","retired"]},
+    "formula": {"type":"string","minLength":1},
+    "parameterRefs": {"type":"array","items":{"type":"string"}},
+    "validation": {
+      "type":"object",
+      "required":["datasetRef","method","validDomain"],
+      "properties": {
+        "datasetRef":{"type":"string","minLength":1},
+        "method":{"type":"string","minLength":1},
+        "validDomain":{"type":"object"},
+        "independentReviewRef":{"type":"string"}
+      }
+    },
+    "sourceRefs":{"type":"array","items":{"type":"string"}},
+    "notes":{"type":"string"}
+  },
+  "additionalProperties": false
+}

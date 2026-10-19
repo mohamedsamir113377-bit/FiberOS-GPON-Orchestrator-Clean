@@ -1,0 +1,38 @@
+# FiberOS R14.1 Sales Core runtime image.
+# Build separately for SERVICE=api|gis|worker|ai.
+# Runtime images intentionally exclude repository SQL/migration and maintenance-script trees.
+FROM node:24.21.0-bookworm-slim@sha256:713cfbf4a0ac19f40e1bb9919893e126b74a5c8cf5d0623c9f89515c8f74c6fa AS build
+ARG SERVICE=api
+WORKDIR /workspace
+ENV NODE_ENV=production
+COPY package.json package-lock.json .npmrc ./
+COPY packages ./packages
+COPY services ./services
+COPY config ./config
+COPY i18n ./i18n
+RUN case "$SERVICE" in \
+      api|ai|gis) test -f "services/$SERVICE/src/server.js" ;; \
+      worker) test -f "services/worker/src/worker.js" ;; \
+      *) echo "Unsupported SERVICE=$SERVICE" >&2; exit 1 ;; \
+    esac \
+ && npm ci --omit=dev --ignore-scripts --no-audit --no-fund \
+ && npm cache clean --force
+
+FROM node:24.21.0-bookworm-slim@sha256:713cfbf4a0ac19f40e1bb9919893e126b74a5c8cf5d0623c9f89515c8f74c6fa AS runtime
+ARG SERVICE=api
+WORKDIR /workspace
+ENV NODE_ENV=production
+
+RUN case "$SERVICE" in \
+      api) entry="services/api/src/server.js" ;; \
+      worker) entry="services/worker/src/worker.js" ;; \
+      ai) entry="services/ai/src/server.js" ;; \
+      gis) entry="services/gis/src/server.js" ;; \
+      *) echo "Unsupported SERVICE=$SERVICE" >&2; exit 1 ;; \
+    esac \
+ && printf "%s\\n" "#!/bin/sh" "set -eu" "exec node /workspace/$entry \"\$@\"" > /usr/local/bin/fiberos-entrypoint \
+ && chmod 0555 /usr/local/bin/fiberos-entrypoint
+
+COPY --from=build --chown=node:node /workspace /workspace
+USER node
+ENTRYPOINT ["/usr/local/bin/fiberos-entrypoint"]

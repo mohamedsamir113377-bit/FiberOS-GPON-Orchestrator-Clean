@@ -1,0 +1,454 @@
+{
+  "generatedBy": "scripts/generate-truth.mjs",
+  "provenance": {
+    "repository": "https://github.com/codespine78-web/FiberNexus-1.git",
+    "branch": "main",
+    "commit": "b8e3a2c34cb6c24772bde271eca5527123a99f5c",
+    "sourceFile": "config/html-feature-parity.json",
+    "sourceSha256": "55ce0bde42ec9b88cb82452a4e392eff03b90a159a90228031357edd498fdfa5"
+  },
+  "total": 106,
+  "byStatus": {
+    "REAL": 55,
+    "ADVISORY": 23,
+    "INTEGRATION_REQUIRED": 4,
+    "VISION": 24,
+    "UNIMPLEMENTED": 0
+  },
+  "notReal": 51,
+  "locales": {
+    "total": 114,
+    "verified": 2,
+    "machineDraft": 112,
+    "untranslated": 0,
+    "other": 0,
+    "humanCertified": 0,
+    "note": "humanCertified stays 0 until a native-speaker sign-off file exists"
+  },
+  "features": [
+    {
+      "id": "home",
+      "status": "REAL"
+    },
+    {
+      "id": "dashboard",
+      "status": "REAL"
+    },
+    {
+      "id": "callcenter",
+      "status": "REAL"
+    },
+    {
+      "id": "migration-center",
+      "status": "REAL"
+    },
+    {
+      "id": "architecture",
+      "status": "REAL"
+    },
+    {
+      "id": "future-roadmap",
+      "status": "VISION"
+    },
+    {
+      "id": "theory-guide",
+      "status": "REAL"
+    },
+    {
+      "id": "security-engineering",
+      "status": "REAL"
+    },
+    {
+      "id": "intelligence-core",
+      "status": "VISION"
+    },
+    {
+      "id": "memory-engine",
+      "status": "REAL"
+    },
+    {
+      "id": "ai-architecture",
+      "status": "VISION"
+    },
+    {
+      "id": "event-bus",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "fiber-brain",
+      "status": "VISION"
+    },
+    {
+      "id": "digital-twin",
+      "status": "REAL"
+    },
+    {
+      "id": "executive",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "command-center-2050",
+      "status": "REAL"
+    },
+    {
+      "id": "mission-control",
+      "status": "REAL"
+    },
+    {
+      "id": "simulator",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "noc3d",
+      "status": "REAL"
+    },
+    {
+      "id": "workflows",
+      "status": "REAL"
+    },
+    {
+      "id": "rbac",
+      "status": "REAL"
+    },
+    {
+      "id": "notifications",
+      "status": "REAL"
+    },
+    {
+      "id": "marketplace",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "line-link",
+      "status": "REAL"
+    },
+    {
+      "id": "audit",
+      "status": "REAL"
+    },
+    {
+      "id": "inventory",
+      "status": "REAL"
+    },
+    {
+      "id": "billing",
+      "status": "REAL"
+    },
+    {
+      "id": "sla",
+      "status": "REAL"
+    },
+    {
+      "id": "messaging",
+      "status": "INTEGRATION_REQUIRED"
+    },
+    {
+      "id": "subcontractors",
+      "status": "REAL"
+    },
+    {
+      "id": "ai-ceo",
+      "status": "VISION"
+    },
+    {
+      "id": "fiber-dna",
+      "status": "REAL"
+    },
+    {
+      "id": "dispatcher",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "gis",
+      "status": "REAL"
+    },
+    {
+      "id": "gis-planning",
+      "status": "REAL"
+    },
+    {
+      "id": "otdr-intel",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "vision-qc",
+      "status": "INTEGRATION_REQUIRED"
+    },
+    {
+      "id": "voice-ops",
+      "status": "INTEGRATION_REQUIRED"
+    },
+    {
+      "id": "smart-inventory",
+      "status": "REAL"
+    },
+    {
+      "id": "fiber-health-predict",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "ar-scanner",
+      "status": "REAL"
+    },
+    {
+      "id": "splice-inspection",
+      "status": "VISION"
+    },
+    {
+      "id": "self-diagnostic",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "cx-heatmap",
+      "status": "REAL"
+    },
+    {
+      "id": "geo-integrity",
+      "status": "REAL"
+    },
+    {
+      "id": "offline-sync",
+      "status": "REAL"
+    },
+    {
+      "id": "financial-twin",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "weather",
+      "status": "INTEGRATION_REQUIRED"
+    },
+    {
+      "id": "mission-status",
+      "status": "VISION"
+    },
+    {
+      "id": "crisis-mode",
+      "status": "REAL"
+    },
+    {
+      "id": "live-contracts",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "workload-balance",
+      "status": "REAL"
+    },
+    {
+      "id": "cost-leak",
+      "status": "VISION"
+    },
+    {
+      "id": "zero-trust",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "digital-memory",
+      "status": "REAL"
+    },
+    {
+      "id": "board-meeting",
+      "status": "VISION"
+    },
+    {
+      "id": "exec-radar",
+      "status": "REAL"
+    },
+    {
+      "id": "energy-analytics",
+      "status": "REAL"
+    },
+    {
+      "id": "ops-timeline",
+      "status": "REAL"
+    },
+    {
+      "id": "business-impact",
+      "status": "REAL"
+    },
+    {
+      "id": "innovation-lab",
+      "status": "VISION"
+    },
+    {
+      "id": "cross-project",
+      "status": "REAL"
+    },
+    {
+      "id": "reputation-index",
+      "status": "REAL"
+    },
+    {
+      "id": "strategy-planner",
+      "status": "VISION"
+    },
+    {
+      "id": "enterprise-twin",
+      "status": "REAL"
+    },
+    {
+      "id": "cos",
+      "status": "REAL"
+    },
+    {
+      "id": "enterprise-brain",
+      "status": "VISION"
+    },
+    {
+      "id": "ai-debate",
+      "status": "VISION"
+    },
+    {
+      "id": "digital-dna",
+      "status": "REAL"
+    },
+    {
+      "id": "business-weather",
+      "status": "REAL"
+    },
+    {
+      "id": "strategy-sim",
+      "status": "VISION"
+    },
+    {
+      "id": "enterprise-tm",
+      "status": "REAL"
+    },
+    {
+      "id": "intel-center",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "inspector-general",
+      "status": "VISION"
+    },
+    {
+      "id": "exec-hologram",
+      "status": "VISION"
+    },
+    {
+      "id": "procurement-ai",
+      "status": "VISION"
+    },
+    {
+      "id": "mission-planner",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "knowledge-evo",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "trust-engine",
+      "status": "REAL"
+    },
+    {
+      "id": "black-box",
+      "status": "VISION"
+    },
+    {
+      "id": "auto-score",
+      "status": "VISION"
+    },
+    {
+      "id": "exec-mission",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "future-scanner",
+      "status": "VISION"
+    },
+    {
+      "id": "constitution",
+      "status": "REAL"
+    },
+    {
+      "id": "digital-mind",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "living-org",
+      "status": "VISION"
+    },
+    {
+      "id": "causal-intel",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "consciousness",
+      "status": "VISION"
+    },
+    {
+      "id": "self-improve",
+      "status": "REAL"
+    },
+    {
+      "id": "org-physics",
+      "status": "VISION"
+    },
+    {
+      "id": "nervous-system",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "cognitive-sim",
+      "status": "VISION"
+    },
+    {
+      "id": "company-memory",
+      "status": "REAL"
+    },
+    {
+      "id": "intel-graph",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "cost-settings",
+      "status": "REAL"
+    },
+    {
+      "id": "backend-migration",
+      "status": "REAL"
+    },
+    {
+      "id": "exec-reports",
+      "status": "REAL"
+    },
+    {
+      "id": "db-engine",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "load-test",
+      "status": "REAL"
+    },
+    {
+      "id": "login",
+      "status": "REAL"
+    },
+    {
+      "id": "alarm-root-cause-correlation",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "optical-health-timeline",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "field-evidence-chain",
+      "status": "REAL"
+    },
+    {
+      "id": "pon-capacity-intelligence",
+      "status": "ADVISORY"
+    },
+    {
+      "id": "organization-operating-model",
+      "status": "REAL"
+    },
+    {
+      "id": "customer-portal",
+      "status": "REAL"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@fiberos/engineering",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "private": true,
+  "description": "Evidence-bound optical, reliability, topology and decision engineering primitives for FiberOS",
+  "main": "src/index.js",
+  "dependencies": {
+    "@fiberos/compute-kernel": "1.0.0-rc.1+commercial.2026-09-25"
+  },
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "schema": "fiberos.r14.1.translation-model-registry.v1",
+  "generatedAt": "2026-09-26T00:00:00.000Z",
+  "note": "EMPTY BY DESIGN. This template must be filled with real, verifiable provenance before any locale is released. No model entry is fabricated by this package. The 66 catalogs with status 'untranslated' have no model entry and must not be released.",
+  "models": []
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https:; media-src 'self' blob:; worker-src 'self' blob:">
+  <title>FiberOS Field Tech — Alpha47</title>
+  <link rel="stylesheet" href="field.css">
+  <link rel="stylesheet" href="i18n-selector.css">
+  <script src="field-config.js" defer></script>
+  <script src="field-security.js" defer></script>
+  <script src="field.js" defer></script>
+  <script src="i18n-selector.js" defer></script>
+  <script src="i18n-runtime.js" defer></script>
+<link rel="stylesheet" href="evaluation-mode.css">
+<script src="evaluation-mode.js" defer></script>
+<link rel="stylesheet" href="/fiberos-tokens.css">
+<link rel="stylesheet" href="/fiberos-3d.css"><link rel="stylesheet" href="fiberos-modern.css">
+<script src="/fiberos-3d.js" defer></script><script src="fiberos-modern.js" defer></script>
+</head>
+<body>
+  <main class="wrap">
+    <div class="fo-modern-page-bar"><button id="foPaletteButton" class="fo-palette-trigger" type="button" aria-haspopup="dialog" aria-controls="foCommandPalette"><span>COMMAND</span><kbd>⌘K</kbd></button></div>
+    <div class="fo-system-strip" aria-label="Operational boundary"><span><b>SOURCE</b> repository-backed</span><span><b>AUTH</b> server-authoritative</span><span><b>DATA</b> live only when connected</span><span class="fo-system-boundary">UNVERIFIED EXTERNALS stay visible</span></div>
+    <h1>FiberOS Field Tech</h1>
+    <p class="muted">Camera, local English OCR, GPS, evidence, and server-authoritative ticket closure. Review every OCR result before saving.</p>
+
+    <section class="card" aria-labelledby="connection-title">
+      <h2 id="connection-title">Secure connection</h2>
+      <label for="token">JWT Bearer Token</label>
+      <div class="token-row">
+        <input id="token" class="input" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Paste JWT from Supabase/Auth">
+        <button id="tokenToggle" class="btn ghost" type="button" aria-pressed="false">Show token</button>
+      </div>
+      <label for="apiBase">API Base</label>
+      <input id="apiBase" class="input" type="url" inputmode="url" autocomplete="url" placeholder="Same origin unless an HTTPS API origin is configured">
+      <div id="apiBaseStatus" class="muted" aria-live="polite">Bearer tokens are sent only to this page's origin or an operator-allowlisted HTTPS API origin.</div>
+      <label for="ticket">Ticket ID</label>
+      <input id="ticket" class="input" autocomplete="off" placeholder="Ticket UUID">
+      <div class="row">
+        <button id="captureGps" class="btn" type="button" data-command-safe="true" data-command-hint="Field location">Capture GPS</button>
+        <button id="startCamera" class="btn ghost" type="button" data-command-safe="true" data-command-hint="Field camera">Start Camera</button>
+        <button id="captureOcr" class="btn ghost" type="button" data-command-safe="true" data-command-hint="Local OCR workflow">Capture + OCR</button>
+      </div>
+      <div id="gpsOut" class="muted" aria-live="polite">GPS: —</div>
+    </section>
+
+    <div class="grid">
+      <section class="card" aria-labelledby="camera-title">
+        <h2 id="camera-title">Camera / OCR</h2>
+        <video id="video" autoplay playsinline muted aria-label="Live field camera"></video>
+        <canvas id="canvas" hidden></canvas>
+        <div id="ocrOut" class="muted" aria-live="polite">OCR: Ready. The English model is packaged locally.</div>
+        <label for="serial">ONT Serial</label>
+        <input id="serial" class="input" autocomplete="off">
+        <label for="box">Box Code</label>
+        <input id="box" class="input" autocomplete="off">
+      </section>
+
+      <section class="card" aria-labelledby="reading-title">
+        <h2 id="reading-title">Power Reading</h2>
+        <label for="rx">Rx dBm</label>
+        <input id="rx" class="input" type="number" step="0.1" inputmode="decimal" placeholder="e.g. -23.4">
+        <label for="note">Note</label>
+        <textarea id="note" class="input" rows="5"></textarea>
+        <div class="row">
+          <button id="saveEvidence" class="btn" type="button">Save Evidence</button>
+          <button id="closeTicket" class="btn danger" type="button">Close Ticket</button>
+        </div>
+        <pre id="out" aria-live="polite">—</pre>
+      </section>
+    </div>
+
+    <section class="card" aria-labelledby="status-title">
+      <h2 id="status-title">Operational Status</h2>
+      <div>
+        <span class="pill">server-authoritative close</span>
+        <span class="pill">photo freshness server-side</span>
+        <span class="pill">geofence server-side</span>
+        <span class="pill">no simulated close</span>
+      </div>
+      <div id="status" class="muted" aria-live="polite">Ready. OCR is optional; manually review and enter identifiers when needed.</div>
+    </section>
+  </main>
+<dialog id="foCommandPalette" class="fo-command-palette" aria-label="Command palette">
+  <div class="fo-palette-head"><strong>COMMAND NEXUS</strong><button type="button" class="fo-palette-close" aria-label="Close command palette">×</button><small>Navigate only through capabilities and routes already present on this surface.</small></div>
+  <div class="fo-palette-input-wrap"><input class="fo-palette-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search this surface…" aria-label="Search commands"></div>
+  <div class="fo-palette-list" role="listbox" aria-label="Available commands"></div>
+  <div class="fo-palette-footer"><span>↑↓ navigate</span><span>ENTER open</span><span>ESC close</span><span>CTRL/CMD+K command palette</span></div>
+</dialog>
+</body>
+</html>

@@ -1,0 +1,7 @@
+package=FiberOS R14.1 Sales Core
+build.mode=generated-at-archive-build
+build.stamp=generated from SOURCE_DATE_EPOCH by scripts/build-delivery-archive.py
+tree.commit=provided by --commit at archive build time
+scope=excluded from source manifest; embedded once in the delivery archive
+rebuild=python3 scripts/build-delivery-archive.py --output out.zip --commit <final-source-commit>
+verify=python3 scripts/verify-delivery-archive.py out.zip --commit <final-source-commit>

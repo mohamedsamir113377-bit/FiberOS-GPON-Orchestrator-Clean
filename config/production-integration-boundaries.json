@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "principle": "fail-closed; real-provider evidence required",
+  "boundaries": {
+    "identity.oidc_jwks": {
+      "enabled": false,
+      "productionVerified": false,
+      "evidenceRef": null
+    },
+    "database.postgresql_postgis": {
+      "enabled": false,
+      "productionVerified": false,
+      "evidenceRef": null
+    },
+    "routing.server_side": {
+      "enabled": false,
+      "productionVerified": false,
+      "evidenceRef": null
+    },
+    "telemetry.nms_otdr": {
+      "enabled": false,
+      "productionVerified": false,
+      "evidenceRef": null
+    },
+    "object_storage.evidence": {
+      "enabled": false,
+      "productionVerified": false,
+      "evidenceRef": null
+    },
+    "kms_hsm.keys": {
+      "enabled": false,
+      "productionVerified": false,
+      "evidenceRef": null
+    },
+    "messaging.outbox": {
+      "enabled": false,
+      "productionVerified": false,
+      "evidenceRef": null
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@fiberos/assurance",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "private": true,
+  "main": "src/domain-neutrality-gate.js",
+  "description": "Domain-neutrality and assurance helpers for multi-buyer positioning.",
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

@@ -1,0 +1,26 @@
+FiberOS R14.1 Sales Core
+
+This archive is a commercial source distribution offered through an online commercial licensing model.
+Version: 1.0.0-rc.1+commercial.2026-09-25
+Status: COMMERCIAL RELEASE CANDIDATE
+
+STANDARD ONLINE LICENSE:
+The standard license is non-exclusive and worldwide. The seller remains free to use FiberOS and to sell or license the same release to other customers.
+
+The purchaser receives commercial use, deployment, configuration, source-modification, and deployed-service/solution resale rights, subject to the published online license and applicable third-party licenses.
+
+Standalone resale or redistribution of the original FiberOS source archive, downstream source sublicensing, master-reseller rights, IP assignment, and exclusivity are NOT included in the standard license unless an explicitly purchased license tier or separate written agreement grants them.
+
+ONLINE PURCHASE:
+The license becomes effective according to the published checkout terms after successful purchase and acceptance. The seller should retain the order ID, purchaser, license tier, package version, SHA-256, price/currency, timestamp, and accepted-terms version.
+
+The release has seller/reference-environment verification evidence dated 2026-09-25. That evidence is not certification of the buyer's production environment.
+
+The buyer remains responsible for validating its own PostgreSQL/PostGIS deployment, tenant isolation, identity provider, TLS/ingress, secrets boundary, backups/restore, rate-limit architecture, external adapters, and production attestation before go-live.
+
+Reference list price: USD 3,500.
+Current online campaign price: USD 3,000 (USD 500 discount).
+Standard support proposal: 14 calendar days.
+The reference price is non-binding; the online order record and applicable checkout terms control the transaction price and selected license tier.
+
+See ONLINE_COMMERCIAL_LICENSE.md, RESELLER_COMMERCIAL_PACKAGE.md, SUPPORT_POLICY.md, SALES_AGREEMENT_TEMPLATE.md, and COMMERCIAL_RELEASE_STATUS.md.

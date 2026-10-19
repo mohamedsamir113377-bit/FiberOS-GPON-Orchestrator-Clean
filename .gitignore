@@ -1,0 +1,49 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local/runtime state
+node_modules/
+.npm/
+.cache/
+coverage/
+.tmp/
+tmp/
+logs/
+*.log
+
+# Generated runtime evidence and local reports
+evidence/r14_1/runtime/
+artifacts/
+evidence/
+reports/local/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local build output
+build/
+dist/
+
+# Do not accidentally commit ad-hoc delivery archives.
+# Versioned release archives must be stored through the controlled release process.
+*.zip
+*.tar
+*.tar.gz
+
+# Build output
+.netlify/
+__pycache__/
+*.pyc
+
+# visual regression working captures (baselines live in docs/visual-baselines)
+.visual/

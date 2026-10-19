@@ -1,0 +1,1062 @@
+{
+  "schema": "fiberos.r14.1.rls-tenant-sensitive-inventory.v1",
+  "generatedAt": "2026-10-08T11:37:28.168Z",
+  "source": {
+    "directory": "sql/migrations",
+    "migrationCount": 196,
+    "excluded": [
+      "000_local_auth_stubs.sql"
+    ],
+    "lastReconciledDate": "2026-10-17"
+  },
+  "derivation": "STATIC_MIGRATION_SCAN",
+  "proofLevel": "STATIC_ONLY",
+  "tables": [
+    {
+      "table": "alarm_signals",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "audit_log",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "call_dispositions",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "call_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "call_queue_assignments",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "call_sessions",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "contact_center_agent_presence",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "contractor_entities",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "contractor_qualifications",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "contractor_work_authorizations",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "contractor_work_measurements",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "customer_accounts",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "data_conflicts",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "decision_certificates",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "decision_executions",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "decision_rollbacks",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "dispatch_requests",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "engineering_calibrations",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "engineering_models",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "engineering_parameters",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "enterprise_dashboard_contracts",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "enterprise_decisions",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "enterprise_departments",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "enterprise_policies",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "enterprise_positions",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "enterprise_scope_grants",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "event_outbox_contract",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "event_processing_attempts",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "evidence",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "evidence_chain_certificates",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fault_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fault_evidence",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fault_jobs",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fault_messages",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fiber_cables",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fiber_core_links",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fiber_cores",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fiberos_asset_dna",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fiberos_contact_center_nodes",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fiberos_ftth_engineering_assessments",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fiberos_gis_layer_registry",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fiberos_web_ai_models",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "fiberos_web_ai_requests",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "field_close_idempotency",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_activation_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_buildings",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_cable_segments",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_civil_corridor_risk",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_civil_inspections",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_command_decisions",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_construction_evidence",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_customer_orders",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_duct_segments",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_floors",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_odn_connections",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_programs",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_quality_gates",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_riser_boxes",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_risers",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_splices",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_units",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_work_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_work_package_tasks",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_work_packages",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ftth_work_state_transitions",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "hash_ledger",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "incident_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "incidents",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "installation_documents",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "installation_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "installation_evidence",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "installation_jobs",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "installation_messages",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "inventory_items",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "inventory_reservations",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "inventory_transactions",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "invoices",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "material_chain_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "model_outcomes",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "model_predictions",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_asset_acceptance_gates",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_asset_class_registry",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_asset_semantic_links",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_assets",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_authority_policies",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_capability_claims",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_capacity_scenarios",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_cards",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_control_cycles",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_department_kpi_bindings",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_department_kpi_bindings_tenant"
+    },
+    {
+      "table": "network_evidence_admissibility_rules",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_failure_domain_members",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_failure_domains",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_fault_hypotheses",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_knowledge_records",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_knowledge_records_tenant"
+    },
+    {
+      "table": "network_optical_assurance_assessments",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_pon_adapter_declarations",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_pon_adapter_declarations_tenant"
+    },
+    {
+      "table": "network_pon_telemetry_observations",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_pon_telemetry_observations_tenant"
+    },
+    {
+      "table": "network_ports",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_proof_graph_edges",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_proof_graph_nodes",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_reconciliation_findings",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_reconciliation_findings_tenant"
+    },
+    {
+      "table": "network_reconciliation_jobs",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_reconciliation_jobs_tenant"
+    },
+    {
+      "table": "network_replay_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_safety_budgets",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_service_path_hops",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_shared_graph_edges",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_state_transition_rules",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_state_transitions",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_telemetry_correlations",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_telemetry_source_registry",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_truth_compilation_runs",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_truth_conflict_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "network_uncertainty_assessments",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "optical_measurements",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "org_units",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "outbox_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "payment_cycle_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "payment_cycles",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "physical_topology_edges",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "portal_report_runs",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "portal_report_runs_select_auth"
+    },
+    {
+      "table": "portal_report_schedules",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "portal_report_schedule_select_auth"
+    },
+    {
+      "table": "portal_subscription_events",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "portal_subscription_events_select_auth"
+    },
+    {
+      "table": "portal_subscriptions",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "portal_subscription_select_auth"
+    },
+    {
+      "table": "portal_tenant_memberships",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "portal_membership_select_auth"
+    },
+    {
+      "table": "production_deployment_audit",
+      "tenantSensitive": false,
+      "source": "migration-derived"
+    },
+    {
+      "table": "production_proof_revocation",
+      "tenantSensitive": false,
+      "source": "migration-derived"
+    },
+    {
+      "table": "production_readiness_check_log",
+      "tenantSensitive": false,
+      "source": "migration-derived"
+    },
+    {
+      "table": "rework_case_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "rework_cases",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "router_installation_details",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "routing_requests",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "security_events",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "services",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "splice_records",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "sync_operations",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "technician_positions",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "technician_role_assignments",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "technician_subordinates",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "technicians",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "telco_webhook_providers",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "telco_webhook_replay_guard",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "tenants",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "ticket_worker_assignments",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "tickets",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "truth_facts",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "user_preferences",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "warehouse_bins",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "warehouse_transfer_lines",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "warehouse_transfers",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "warehouses",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "portal_usage_metric_catalog",
+      "tenantSensitive": false,
+      "source": "sql/migrations/147_entitlement_usage_order_sla_foundations.sql"
+    },
+    {
+      "table": "portal_plan_entitlements",
+      "tenantSensitive": true,
+      "source": "sql/migrations/147_entitlement_usage_order_sla_foundations.sql"
+    },
+    {
+      "table": "portal_usage_ledger",
+      "tenantSensitive": true,
+      "source": "sql/migrations/147_entitlement_usage_order_sla_foundations.sql"
+    },
+    {
+      "table": "portal_service_orders",
+      "tenantSensitive": true,
+      "source": "sql/migrations/147_entitlement_usage_order_sla_foundations.sql"
+    },
+    {
+      "table": "portal_service_order_events",
+      "tenantSensitive": true,
+      "source": "sql/migrations/147_entitlement_usage_order_sla_foundations.sql"
+    },
+    {
+      "table": "portal_sla_contracts",
+      "tenantSensitive": true,
+      "source": "sql/migrations/147_entitlement_usage_order_sla_foundations.sql"
+    },
+    {
+      "table": "portal_sla_clock_events",
+      "tenantSensitive": true,
+      "source": "sql/migrations/147_entitlement_usage_order_sla_foundations.sql"
+    },
+    {
+      "table": "portal_order_work_package_links",
+      "tenantSensitive": true,
+      "source": "sql/migrations/148_contractor_work_package_commercial_reconciliation.sql"
+    },
+    {
+      "table": "contractor_work_package_events",
+      "tenantSensitive": true,
+      "source": "sql/migrations/148_contractor_work_package_commercial_reconciliation.sql"
+    },
+    {
+      "table": "commercial_measurement_reconciliation",
+      "tenantSensitive": true,
+      "source": "sql/migrations/148_contractor_work_package_commercial_reconciliation.sql"
+    },
+    {
+      "table": "portal_sla_enforcement_events",
+      "tenantSensitive": true,
+      "source": "sql/migrations/148_contractor_work_package_commercial_reconciliation.sql"
+    },
+    {
+      "table": "reality_access_profiles",
+      "tenantSensitive": true,
+      "source": "sql/migrations/149_reality_access_policies.sql"
+    },
+    {
+      "table": "reality_access_bindings",
+      "tenantSensitive": true,
+      "source": "sql/migrations/149_reality_access_policies.sql"
+    },
+    {
+      "table": "reality_acquisition_events",
+      "tenantSensitive": true,
+      "source": "sql/migrations/149_reality_access_policies.sql"
+    },
+    {
+      "table": "reality_source_catalog",
+      "tenantSensitive": false,
+      "source": "sql/migrations/149_reality_access_policies.sql"
+    },
+    {
+      "table": "evidence_vault_objects",
+      "tenantSensitive": true,
+      "source": "sql/migrations/150_evidence_vault_incident_command.sql"
+    },
+    {
+      "table": "evidence_vault_links",
+      "tenantSensitive": true,
+      "source": "sql/migrations/150_evidence_vault_incident_command.sql"
+    },
+    {
+      "table": "incident_command_links",
+      "tenantSensitive": true,
+      "source": "sql/migrations/150_evidence_vault_incident_command.sql"
+    },
+    {
+      "table": "incident_impact_snapshots",
+      "tenantSensitive": true,
+      "source": "sql/migrations/150_evidence_vault_incident_command.sql"
+    },
+    {
+      "table": "incident_command_events",
+      "tenantSensitive": true,
+      "source": "sql/migrations/150_evidence_vault_incident_command.sql"
+    },
+    {
+      "table": "reality_operation_plan_events",
+      "tenantSensitive": true,
+      "source": "sql/migrations/152_reality_operation_plan.sql"
+    },
+    {
+      "table": "contact_center_conversations",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "contact_center_conversation_messages",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    },
+    {
+      "table": "operational_event_evidence_links",
+      "tenantSensitive": true,
+      "source": "sql/migrations/155_operational_event_evidence_links.sql"
+    },
+    {
+      "table": "operational_event_incident_links",
+      "tenantSensitive": true,
+      "source": "sql/migrations/156_operational_event_incident_links.sql"
+    },
+    {
+      "table": "material_reel_ledger",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "material_reel_ledger_app_read",
+      "tenantSensitive": true
+    },
+    {
+      "table": "network_asset_semantics",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_asset_semantics_tenant",
+      "tenantSensitive": true
+    },
+    {
+      "table": "network_authorized_commands",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_authorized_commands_tenant",
+      "tenantSensitive": true
+    },
+    {
+      "table": "network_counterfactual_scenarios",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_counterfactual_scenarios_tenant",
+      "tenantSensitive": true
+    },
+    {
+      "table": "network_integrity_findings",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_integrity_findings_tenant",
+      "tenantSensitive": true
+    },
+    {
+      "table": "network_reality_observations",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_reality_observations_tenant",
+      "tenantSensitive": true
+    },
+    {
+      "table": "network_service_path_versions",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_service_path_versions_tenant",
+      "tenantSensitive": true
+    },
+    {
+      "table": "network_truth_claims",
+      "tenantColumn": "tenant_id",
+      "rls": "FORCE",
+      "policy": "network_truth_claims_tenant",
+      "tenantSensitive": true
+    },
+    {
+      "table": "portal_plan_catalog",
+      "tenantSensitive": false,
+      "source": "sql/migrations/145_customer_portal_commerce_reporting.sql"
+    },
+    {
+      "table": "portal_work_type_catalog",
+      "tenantSensitive": false,
+      "source": "sql/migrations/145_customer_portal_commerce_reporting.sql"
+    },
+    {
+      "table": "field_test_tools",
+      "tenantSensitive": true,
+      "source": "sql/migrations/162_odn_budget_otdr_calibration_fault_taxonomy.sql"
+    },
+    {
+      "table": "field_tool_calibrations",
+      "tenantSensitive": true,
+      "source": "sql/migrations/162_odn_budget_otdr_calibration_fault_taxonomy.sql"
+    },
+    {
+      "table": "odn_power_budget_assessments",
+      "tenantSensitive": true,
+      "source": "sql/migrations/162_odn_budget_otdr_calibration_fault_taxonomy.sql"
+    },
+    {
+      "table": "otdr_trace_acquisitions",
+      "tenantSensitive": true,
+      "source": "sql/migrations/162_odn_budget_otdr_calibration_fault_taxonomy.sql"
+    },
+    {
+      "table": "tenant_fttx_profile",
+      "tenantSensitive": true,
+      "source": "sql/migrations/163_fttx_materials_and_install_constraints.sql"
+    },
+    {
+      "table": "cable_plant_segments",
+      "tenantSensitive": true,
+      "source": "sql/migrations/163_fttx_materials_and_install_constraints.sql"
+    },
+    {
+      "table": "install_constraint_evaluations",
+      "tenantSensitive": true,
+      "source": "sql/migrations/163_fttx_materials_and_install_constraints.sql"
+    },
+    {
+      "table": "optical_splitter_assets",
+      "tenantSensitive": true,
+      "source": "sql/migrations/163_fttx_materials_and_install_constraints.sql"
+    },
+    {
+      "table": "as_built_deviations",
+      "tenantSensitive": true,
+      "source": "sql/migrations/164_as_built_labels_fire_class.sql"
+    },
+    {
+      "table": "network_hierarchical_labels",
+      "tenantSensitive": true,
+      "source": "sql/migrations/164_as_built_labels_fire_class.sql"
+    },
+    {
+      "table": "field_visit_time_slots",
+      "tenantSensitive": true,
+      "source": "sql/migrations/165_field_visit_time_slots.sql"
+    },
+    {
+      "table": "operational_regions",
+      "tenantSensitive": true,
+      "source": "sql/migrations/167_gis_snap_and_regions.sql"
+    },
+    {
+      "table": "gis_snap_events",
+      "tenantSensitive": true,
+      "source": "sql/migrations/167_gis_snap_and_regions.sql"
+    },
+    {
+      "table": "gis_dig_proposals",
+      "tenantSensitive": true,
+      "source": "sql/migrations/168_gis_corridor_measure_integrity.sql"
+    },
+    {
+      "table": "gis_corridor_conflict_events",
+      "tenantSensitive": true,
+      "source": "sql/migrations/168_gis_corridor_measure_integrity.sql"
+    },
+    {
+      "table": "gis_linear_measure_events",
+      "tenantSensitive": true,
+      "source": "sql/migrations/168_gis_corridor_measure_integrity.sql"
+    },
+    {
+      "table": "enterprise_change_log",
+      "tenantSensitive": true,
+      "source": "migration-derived"
+    }
+  ],
+  "tableCount": 203,
+  "truthBoundary": "This inventory is a schema-derived canonical input for static/runtime comparison; it does not prove live pg_catalog or effective privileges.",
+  "lastReconciledDate": "2026-10-13",
+  "migrationCount": 196
+}

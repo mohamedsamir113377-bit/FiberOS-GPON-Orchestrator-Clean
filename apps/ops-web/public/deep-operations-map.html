@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none';base-uri 'none';form-action 'none';object-src 'none';script-src 'self' https://unpkg.com;style-src 'self' https://unpkg.com 'unsafe-inline';img-src 'self' data: blob: https://tiles.openfreemap.org;connect-src 'self' https://tiles.openfreemap.org;worker-src 'self' blob:;font-src 'self' data: https://tiles.openfreemap.org;media-src 'self' blob:;upgrade-insecure-requests">
+<title>FiberOS — Deep Operational GIS</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl.css">
+<link rel="stylesheet" href="fiberos-tokens.css"><link rel="stylesheet" href="fiberos-modern.css"><link rel="stylesheet" href="deep-operations-map.css">
+<script src="ops-config.js" defer></script><script src="api-origin.js" defer></script><script src="session-auth.js" defer></script>
+<script type="module" src="deep-operations-map.js"></script></head>
+<body>
+<header class="shell"><div><div class="eyebrow">FIBEROS / DEEP OPERATIONAL GIS</div><h1>الخريطة التشغيلية العميقة</h1><p>GIS تشغيلي متعدد الطبقات: الشبكة، الأصول، الألياف، الدكت، الفنيون، التركيبات، الأعطال، وكثافة الأعطال والأثر الشبكي.</p></div><a class="back" href="/">Operations Console</a></header>
+<main class="shell layout"><aside class="controls">
+<section class="card"><h2>طبقات تشغيلية</h2>
+<label><input type="checkbox" data-layer="technician" checked> الفنيون الحاليون</label>
+<label><input type="checkbox" data-layer="installation" checked> التركيبات</label>
+<label><input type="checkbox" data-layer="fault" checked> الأعطال</label>
+<label><input type="checkbox" data-layer="fault-heatmap"> كثافة الأعطال</label>
+<label><input type="checkbox" data-layer="network_asset" checked> أصول الشبكة</label>
+<label><input type="checkbox" data-layer="fiber_cable" checked> كابلات الألياف</label>
+<label><input type="checkbox" data-layer="duct" checked> الدكت</label>
+<label><input type="checkbox" data-layer="evidence"> الأدلة</label>
+<label><input type="checkbox" data-layer="ticket_location" checked> مواقع البلاغات</label>
+</section>
+<section class="card"><h2>فلترة الأعطال</h2>
+<label>الحالة<select id="faultStatus"><option value="">الكل</option><option>INTAKE</option><option>CALL_CENTER_REVIEW</option><option>SCHEDULED</option><option>DISPATCHED</option><option>TECHNICIAN_ACCEPTED</option><option>IN_PROGRESS</option><option>AWAITING_CUSTOMER_CONFIRMATION</option><option>SLA_BREACHED</option></select></label>
+<label>الأولوية<select id="faultSeverity"><option value="">الكل</option><option>P1</option><option>P2</option><option>P3</option><option>P4</option></select></label>
+<label>حالة التركيب<select id="installationStatus"><option value="">الكل</option><option>INTAKE</option><option>CALL_CENTER_REVIEW</option><option>SCHEDULED</option><option>DISPATCHED</option><option>TECHNICIAN_ACCEPTED</option><option>IN_PROGRESS</option><option>AWAITING_CUSTOMER_CONFIRMATION</option><option>SLA_BREACHED</option></select></label>
+</section>
+<section class="card"><h2>تاريخ الفني</h2>
+<div class="metric"><span>نافذة التتبع</span><b id="trackHoursValue">24 ساعة</b></div>
+<input id="trackHours" type="range" min="1" max="168" value="24" step="1">
+<button id="showTrack" disabled>عرض المسار التاريخي</button>
+</section>
+<section class="card"><h2>المصدر</h2><div class="metric"><span>تحديث المصدر</span><b id="updatedAt">—</b></div><div class="metric"><span>الفنيون</span><b id="techCount">—</b></div><div class="metric"><span>التركيبات</span><b id="installationCount">—</b></div><div class="metric"><span>الأعطال</span><b id="faultCount">—</b></div><button id="refresh" class="primary">تحديث</button></section>
+<section class="card"><h2>العنصر المحدد</h2><pre id="selection">لا يوجد</pre><button id="nearest" disabled>أقرب فنيين</button><button id="route" disabled>مسار قيادة حقيقي</button><button id="impact" disabled>أثر الأصل/العطل</button><pre id="analysis">—</pre></section>
+</aside><section class="map-shell"><div id="map"></div><div class="legend"><span>● فني</span><span>● تركيب</span><span>● عطل</span><span>● أصل</span><span>━ ألياف</span><span>┄ دكت</span><span>◉ كثافة أعطال</span></div><div id="truth" class="truth">في انتظار المصدر…</div></section></main></body></html>

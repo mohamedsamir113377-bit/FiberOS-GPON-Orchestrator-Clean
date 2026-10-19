@@ -1,0 +1,740 @@
+{
+  "registryVersion": "1.0.0",
+  "policy": "A capability cannot be claimed production-ready without evidenceRefs.",
+  "capabilities": [
+    {
+      "key": "ticket.lifecycle",
+      "status": "IMPLEMENTED",
+      "evidenceRefs": [
+        "services/api/test/ticketAuthorityBoundary.test.js"
+      ],
+      "limitations": []
+    },
+    {
+      "key": "field.reality-gate",
+      "status": "UNIT_TESTED",
+      "evidenceRefs": [
+        "packages/domain/test/realityGate.test.js"
+      ],
+      "limitations": [
+        "Server/RLS verification still required for production"
+      ]
+    },
+    {
+      "key": "optical.source-provenance",
+      "status": "IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/ftth-measurements/test/opticalEngineering.test.js",
+        "packages/network-reality-kernel/test/index.test.js"
+      ],
+      "limitations": []
+    },
+    {
+      "key": "optical.engineering-math",
+      "status": "UNIT_TESTED",
+      "evidenceRefs": [
+        "packages/ftth-measurements/test/opticalEngineering.test.js",
+        "services/api/test/engineeringMath.test.js"
+      ],
+      "limitations": [
+        "Deterministic mathematics and API exposure are unit-tested; physical instrument calibration, vendor-specific OTDR SOR field parsing, and live measurement evidence remain separate runtime/integration boundaries."
+      ]
+    },
+    {
+      "key": "olt.nms.read-only",
+      "status": "INTEGRATION_REQUIRED",
+      "evidenceRefs": [
+        "packages/adapters/src/zteNms.js",
+        "packages/adapters/src/huaweiNms.js",
+        "packages/adapters/src/nokiaNms.js",
+        "packages/adapters/src/nmsReadOnly.js"
+      ],
+      "limitations": [
+        "Read-only ZTE SNMP and configurable Huawei/Nokia HTTP adapter code is implemented; live buyer NMS endpoint, credentials, device inventory and telemetry acceptance remain external runtime evidence."
+      ]
+    },
+    {
+      "key": "otdr.vendor-parsing",
+      "status": "INTEGRATION_REQUIRED",
+      "evidenceRefs": [
+        "packages/adapters/src/global/sorStandardParser.js",
+        "packages/adapters/src/global/otdrFileAdapter.js",
+        "packages/adapters/src/global/otdrVendorRegistry.js",
+        "packages/domain/src/sorParser.js"
+      ],
+      "limitations": [
+        "Standard SR-4731 SOR parsing is wired through the pinned sor-reader dependency with CRC validation; vendor/revision-specific field resolvers remain empty until real vendor layouts and fixture corpora are supplied."
+      ]
+    },
+    {
+      "key": "ai.diagnosis",
+      "status": "ADVISORY_CALIBRATION_REQUIRED",
+      "evidenceRefs": [
+        "packages/engineering/src/bayesianDiagnosis.js",
+        "packages/engineering/src/calibratedLikelihoodPack.js",
+        "services/api/src/routes/engineering.js",
+        "services/api/test/engineeringMath.test.js"
+      ],
+      "limitations": [
+        "Generic Bayesian diagnosis and calibrated-pack boundary are executable and evidence-gated, but production priors/likelihoods must be buyer-calibrated and remain advisory; no autonomous AI authority is claimed."
+      ]
+    },
+    {
+      "key": "decision.certificates",
+      "status": "UNIT_TESTED",
+      "evidenceRefs": [
+        "packages/signing-port/test/packageContract.test.js",
+        "packages/enterprise-kernel/test/decisionSafety.test.js"
+      ],
+      "limitations": [
+        "Persistent server signing/KMS integration required"
+      ]
+    },
+    {
+      "key": "tenant.rls",
+      "status": "IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/security/test/migration121TenantContainment.test.js",
+        "packages/security/test/migration124FtthRls.test.js"
+      ],
+      "limitations": [
+        "Live cross-tenant RLS/API attack and target managed PostgreSQL/Supabase runtime verification required"
+      ]
+    },
+    {
+      "key": "immutable.audit",
+      "status": "IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/enterprise-kernel/test/evidenceIntegrity.test.js",
+        "services/api/test/securityDefinerPrivilegeClosure.test.js"
+      ],
+      "limitations": [
+        "Live database privilege and append-only enforcement verification required; hash key custody must be server-side"
+      ]
+    },
+    {
+      "key": "offline.field-sync",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/offline-field-queue/src/index.js",
+        "packages/offline-field-queue/test/index.test.js",
+        "packages/sync/src/index.js"
+      ],
+      "limitations": [
+        "Encrypted browser queue and deterministic reconnect/conflict state machine are source-implemented and unit-tested.",
+        "Exact mobile/browser IndexedDB field execution, reconnect UX, device key lifecycle, and live server/runtime acceptance remain unverified.",
+        "The queue never grants tenant authority to the client; server/RLS remains authoritative."
+      ]
+    },
+    {
+      "key": "network.reality-kernel",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/network-reality-kernel/src/index.js",
+        "packages/network-reality-kernel/test/index.test.js",
+        "sql/migrations/136_network_reality_kernel.sql",
+        "sql/migrations/137_master_operating_statement_deep_kernels.sql",
+        "sql/migrations/138_reality_reference_tenant_guards.sql",
+        "docs/MASTER_OPERATING_STATEMENT_COVERAGE_2026-10-07.md"
+      ],
+      "limitations": [
+        "Exact-head PostgreSQL 18/PostGIS 3.6/RLS execution remains unproven until hosted runtime admission succeeds.",
+        "Structured service paths, acceptance gates, telemetry correlation boundaries, integrity scanning, resilience scenarios, replay controls and proof-carrying command fields are source implementations, not evidence of live buyer integrations.",
+        "No vendor NMS/OLT connectivity, physical OTDR calibration, KMS/HSM custody, or autonomous live topology mutation is claimed."
+      ]
+    },
+    {
+      "key": "network.master-statement-kernels",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "sql/migrations/137_master_operating_statement_deep_kernels.sql",
+        "sql/migrations/138_reality_reference_tenant_guards.sql",
+        "sql/migrations/139_service_path_and_optical_assurance_guards.sql",
+        "sql/migrations/140_proof_state_control_kernels.sql",
+        "sql/migrations/141_network_knowledge_and_reconciliation.sql",
+        "sql/migrations/142_path_bound_optical_and_pon_telemetry_boundary.sql",
+        "packages/network-reality-kernel/src/index.js",
+        "packages/network-reality-kernel/test/index.test.js",
+        "docs/MASTER_OPERATING_STATEMENT_COVERAGE_2026-10-07.md"
+      ],
+      "limitations": [
+        "Source coverage is extensive across the specified five-kernel architecture, but hosted runtime proof is still required.",
+        "Real vendor OLT/NMS adapters, KMS/HSM custody, physical instrument attestations, device-local encrypted field execution and buyer-environment integrations remain external proof boundaries.",
+        "The control-cycle schema is explicitly non-autonomous; production mutation remains behind existing authorization paths."
+      ]
+    },
+    {
+      "key": "operations.reality-trace",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/operations-trace/src/index.js",
+        "packages/operations-trace/test/index.test.js"
+      ],
+      "limitations": [
+        "Explicit customer-to-service-to-network-path resolution with bounded deterministic traversal; exact buyer database/runtime topology proof remains pending."
+      ]
+    },
+    {
+      "key": "gis.reconciliation",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/gis-reconciliation/src/index.js",
+        "packages/gis-reconciliation/test/index.test.js"
+      ],
+      "limitations": [
+        "Three-way planned/field/as-built reconciliation is deterministic and refuses fuzzy matches without explicit identity; real GIS/as-built acceptance remains deployment evidence."
+      ]
+    },
+    {
+      "key": "contact.call-incident-correlation",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/contact-center-intelligence/src/index.js",
+        "packages/contact-center-intelligence/test/intelligence.test.js"
+      ],
+      "limitations": [
+        "Explicit call/ticket/service/incident/asset correlation graph is advisory and read-only; end-to-end provider/runtime correlation remains pending."
+      ]
+    },
+    {
+      "key": "optical.assurance-provenance",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/network-reality-kernel/src/index.js",
+        "packages/network-reality-kernel/test/index.test.js"
+      ],
+      "limitations": [
+        "Measured optical evidence now requires instrument/calibration provenance and measurement proof; vendor parser and physical field validation remain external boundaries."
+      ]
+    },
+    {
+      "key": "offline.operation-envelope",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/offline-field-queue/src/index.js",
+        "packages/offline-field-queue/test/index.test.js"
+      ],
+      "limitations": [
+        "Generic offline operation envelope carries server-derived tenant authority metadata, explicit idempotency and bounded expiry; device/runtime validation remains pending."
+      ]
+    },
+    {
+      "key": "operations.recovery-control",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/network-reality-kernel/src/index.js",
+        "packages/network-reality-kernel/test/index.test.js"
+      ],
+      "limitations": [
+        "Interrupted control recovery requires explicit reauthorization and idempotency and cannot silently promote to commit; database/runtime interruption testing remains pending."
+      ]
+    },
+    {
+      "key": "network.knowledge-system",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/network-knowledge/src/index.js",
+        "packages/network-knowledge/test/index.test.js",
+        "sql/migrations/141_network_knowledge_and_reconciliation.sql"
+      ],
+      "limitations": [
+        "Section 28 knowledge capture/search is evidence-gated and content-addressed; model-generated knowledge requires an explicit human reviewer. Persistence runtime proof remains pending."
+      ]
+    },
+    {
+      "key": "data.quality-reconciliation-engine",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/data-quality-engine/src/index.js",
+        "packages/data-quality-engine/test/index.test.js",
+        "sql/migrations/141_network_knowledge_and_reconciliation.sql"
+      ],
+      "limitations": [
+        "Section 29 scheduled reconciliation over explicitly declared source pairs; contradicted facts never carry a selected winner and auto-resolve is structurally disabled. Scheduled job execution runtime proof remains pending."
+      ]
+    },
+    {
+      "key": "kpi.department-resolution",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/domain/src/kpiCatalog.js",
+        "packages/operations-kpi/src/index.js",
+        "packages/operations-kpi/test/index.test.js",
+        "sql/migrations/144_department_kpi_truth_primitives.sql",
+        "services/api/src/routes/departmentKpis.js",
+        "services/api/test/departmentKpisRoute.test.js"
+      ],
+      "limitations": [
+        "All previously deferred Section 33 KPI prerequisites now have a persisted source path. First-Time-Fix excludes legacy rows not observed by the reopen tracker; travel time reports bounded GPS-observed movement intervals rather than unobserved transit; runtime DB/RLS verification remains pending."
+      ]
+    },
+    {
+      "key": "resilience.shared-risk-scenario",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/engineering/src/resilienceAdvanced.js",
+        "packages/engineering/test/resilienceSharedRisk.test.js",
+        "services/api/src/routes/engineering.js"
+      ],
+      "limitations": "Structural exposure rankings only; no invented failure probabilities; live graph runtime unproven."
+    },
+    {
+      "key": "resilience.service-path-risk-bridge",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/engineering/src/resilienceAdvanced.js",
+        "packages/engineering/test/resilienceSharedRisk.test.js",
+        "sql/migrations/137_master_operating_statement_deep_kernels.sql"
+      ],
+      "limitations": "Dependencies derived only from explicit hop asset/port/core identifiers; no geometry inference."
+    },
+    {
+      "key": "optical.path-bound-assurance",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/network-reality-kernel/src/index.js",
+        "packages/network-reality-kernel/test/index.test.js",
+        "sql/migrations/139_service_path_and_optical_assurance_guards.sql",
+        "sql/migrations/142_path_bound_optical_and_pon_telemetry_boundary.sql",
+        "services/api/src/routes/realityBoundary.js"
+      ],
+      "limitations": "Path binding required for ledger compile; instrument/vendor measurement proof remains external."
+    },
+    {
+      "key": "pon.telemetry-adapter-boundary",
+      "status": "BOUNDARY_SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/southbound-contract/src/ponTelemetryBoundary.js",
+        "packages/southbound-contract/test/southbound.test.js",
+        "sql/migrations/142_path_bound_optical_and_pon_telemetry_boundary.sql",
+        "services/api/src/routes/realityBoundary.js"
+      ],
+      "limitations": "connectivityProven/connectivityClaimed structurally false; buyer/provider NMS connectivity not claimed."
+    },
+    {
+      "key": "resilience.linked-shared-risk",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/engineering/src/sharedRiskLinkedAnalysis.js",
+        "packages/engineering/test/sharedRiskLinkedAnalysis.test.js",
+        "services/api/src/routes/sharedRiskLinked.js",
+        "sql/migrations/137_master_operating_statement_deep_kernels.sql",
+        "sql/migrations/019_physical_twin_engineering.sql"
+      ],
+      "limitations": "Requires live PostgreSQL with service-path hops under RLS; ranking remains structural; no invented failure probabilities."
+    },
+    {
+      "key": "customer-portal.commercial-saas",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "apps/ops-web/public/customer-portal.html",
+        "apps/ops-web/public/customer-portal.js",
+        "apps/ops-web/public/customer-portal.css",
+        "services/api/src/routes/customerPortal.js",
+        "services/api/src/server.js",
+        "services/api/src/routeAuthorizationPolicy.js",
+        "sql/migrations/145_customer_portal_commerce_reporting.sql",
+        "services/worker/src/worker.js",
+        "packages/productization/test/index.test.js",
+        "packages/security/test/customerPortalRole.test.js",
+        "sql/migrations/146_customer_portal_work_domain_expansion.sql"
+      ],
+      "limitations": [
+        "The customer portal, subscription catalog, weekly/monthly/yearly scheduling, database-backed reports and outbox email job are source-implemented.",
+        "Payment remains an external checkout/provider boundary; the portal stores no card data and quote-required plans do not fabricate a price.",
+        "Actual SMTP/email provider delivery, identity-provider configuration, KMS/HSM custody, hosted PostgreSQL/PostGIS/RLS execution and buyer-environment HA/performance evidence require runtime admission."
+      ]
+    },
+    {
+      "key": "portal.customer-command",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "services/api/src/routes/customerPortal.js",
+        "sql/migrations/145_customer_portal_commerce_reporting.sql",
+        "sql/migrations/146_customer_portal_work_domain_expansion.sql",
+        "packages/productization/src/index.js",
+        "packages/productization/test/index.test.js",
+        "packages/security/test/customerPortalRole.test.js",
+        "services/worker/src/worker.js"
+      ],
+      "limitations": "Email delivery requires configured provider at buyer runtime; hosted CI/runtime admission still pending (runner assignment observed failing with 0 steps)."
+    },
+    {
+      "key": "commercial.entitlement-usage-engine",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "sql/migrations/147_entitlement_usage_order_sla_foundations.sql",
+        "packages/productization/src/entitlementEngine.js",
+        "packages/productization/test/entitlementEngine.test.js",
+        "services/api/src/routes/customerPortal.js"
+      ],
+      "limitations": "Usage is server ledger only; plan entitlement rows must be provisioned per plan. Hosted runtime admission still pending."
+    },
+    {
+      "key": "commercial.service-order-fsm",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "sql/migrations/147_entitlement_usage_order_sla_foundations.sql",
+        "packages/productization/src/entitlementEngine.js",
+        "services/api/src/routes/customerPortal.js"
+      ],
+      "limitations": "Orders are operational entities with explicit FSM; automatic linkage to field tickets is optional and not invented."
+    },
+    {
+      "key": "commercial.sla-clock-engine",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "sql/migrations/147_entitlement_usage_order_sla_foundations.sql",
+        "packages/productization/src/entitlementEngine.js",
+        "services/api/src/routes/customerPortal.js"
+      ],
+      "limitations": "SLA evaluation uses database clock events only; missing clocks remain unknown. No invented ETA."
+    },
+    {
+      "key": "commercial.contractor-work-package-engine",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "sql/migrations/148_contractor_work_package_commercial_reconciliation.sql",
+        "packages/productization/src/contractorWorkPackageEngine.js",
+        "packages/productization/test/contractorWorkPackageEngine.test.js",
+        "services/api/src/routes/contractorCommercial.js",
+        "sql/migrations/060_ftth_construction_lifecycle.sql"
+      ],
+      "limitations": "Transitions map to ftth_work_packages.status; hosted runtime admission pending."
+    },
+    {
+      "key": "commercial.measurement-invoice-reconciliation",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "sql/migrations/148_contractor_work_package_commercial_reconciliation.sql",
+        "sql/migrations/065_contractor_work_acceptance_and_commercial_control.sql",
+        "packages/productization/src/contractorWorkPackageEngine.js",
+        "services/api/src/routes/contractorCommercial.js"
+      ],
+      "limitations": "payment_reconciled requires provider_payment_ref + evidence class; no fake payment success."
+    },
+    {
+      "key": "commercial.sla-enforcement-thresholds",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "sql/migrations/148_contractor_work_package_commercial_reconciliation.sql",
+        "packages/productization/src/contractorWorkPackageEngine.js",
+        "services/api/src/routes/contractorCommercial.js"
+      ],
+      "limitations": "Records breach_risk/breached from elapsed vs limit only; no invented ETA."
+    },
+    {
+      "key": "reality.multi-path-acquisition-policy",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/reality-acquisition-policy/src/index.js",
+        "packages/reality-acquisition-policy/test/index.test.js",
+        "sql/migrations/149_reality_access_policies.sql",
+        "services/api/src/routes/realityCommand.js"
+      ],
+      "limitations": [
+        "Buyer NMS/OLT/OTDR connectivity and trusted adapter verification remain external runtime evidence."
+      ]
+    },
+    {
+      "key": "reality.field-photo-proof",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/reality-acquisition-policy/src/index.js",
+        "packages/reality-acquisition-policy/test/index.test.js",
+        "services/api/src/routes/realityCommand.js"
+      ],
+      "limitations": [
+        "GPS/SHA-256/actor/capture metadata are validated; image pixels are not inspected. Photo evidence cannot become numeric RX/OTDR authority."
+      ]
+    },
+    {
+      "key": "evidence.vault-metadata",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "sql/migrations/150_evidence_vault_incident_command.sql",
+        "services/api/src/routes/realityCommand.js",
+        "services/api/test/realityCommandRoute.test.js"
+      ],
+      "limitations": [
+        "Immutable metadata, hash and provenance are implemented; object storage/provider verification remains external."
+      ]
+    },
+    {
+      "key": "operations.major-incident-command",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "sql/migrations/150_evidence_vault_incident_command.sql",
+        "services/api/src/routes/realityCommand.js",
+        "services/api/test/realityCommandRoute.test.js"
+      ],
+      "limitations": [
+        "Impact is explicit-link/persisted-fact based; no silent geographic/topology inference."
+      ]
+    },
+    {
+      "key": "reality.operation-planner",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/reality-acquisition-policy/src/operationPlanner.js",
+        "packages/reality-acquisition-policy/test/operationPlanner.test.js",
+        "sql/migrations/152_reality_operation_plan.sql",
+        "services/api/src/routes/realityCommand.js"
+      ],
+      "limitations": [
+        "Ranks policy-valid alternatives only; runtime adapter connectivity and measurement verification remain unverified."
+      ]
+    },
+    {
+      "key": "reality.network-specific-radio-path",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/reality-acquisition-policy/src/index.js",
+        "packages/reality-acquisition-policy/src/operationPlanner.js",
+        "sql/migrations/151_reality_evidence_source_expansion.sql"
+      ],
+      "limitations": [
+        "Wireless backhaul uses radio telemetry/field measurement paths and does not inherit optical RX/OTDR requirements. Live adapter connectivity remains external."
+      ]
+    },
+    {
+      "key": "operations.canonical-event-context",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/operational-context/src/index.js",
+        "packages/operational-context/test/index.test.js",
+        "sql/migrations/153_canonical_operational_event_envelope.sql",
+        "services/api/src/routes/realityCommand.js"
+      ],
+      "limitations": [
+        "The canonical context/event envelope is source-implemented and one real reality operation-plan producer is atomically wired into the existing outbox.",
+        "Existing departments/producers still migrate progressively; no broker/provider publication or buyer-environment runtime admission is claimed."
+      ]
+    },
+    {
+      "key": "operations.field-close-canonical-event",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "services/api/src/routes/fieldClose.js",
+        "services/api/test/canonicalCommercialEventBoundary.test.js",
+        "sql/migrations/153_canonical_operational_event_envelope.sql"
+      ],
+      "limitations": [
+        "Field-close now emits the canonical envelope transactionally with its existing measurement/evidence/ticket/ledger path; live DB/runtime execution and external hardware verification remain unverified."
+      ]
+    },
+    {
+      "key": "commercial.canonical-event-bridge",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "services/api/src/routes/contractorCommercial.js",
+        "services/api/test/canonicalCommercialEventBoundary.test.js",
+        "sql/migrations/153_canonical_operational_event_envelope.sql"
+      ],
+      "limitations": [
+        "Work-package, measurement, and reconciliation mutations emit namespaced canonical events through the existing outbox; provider delivery and exact-head runtime admission remain unverified."
+      ]
+    },
+    {
+      "key": "incident.canonical-command-event",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "services/api/src/routes/realityCommand.js",
+        "services/api/test/ticketAuthorityBoundary.test.js",
+        "sql/migrations/153_canonical_operational_event_envelope.sql",
+        "sql/migrations/150_evidence_vault_incident_command.sql"
+      ],
+      "limitations": [
+        "Incident command mutations are bridged into the canonical outbox with DB-derived actor identity; external notification/provider delivery and runtime admission remain unverified."
+      ]
+    },
+    {
+      "key": "customer.order-canonical-event",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "services/api/src/routes/customerPortal.js",
+        "services/api/test/canonicalCommercialEventBoundary.test.js",
+        "packages/operational-context/src/index.js",
+        "sql/migrations/153_canonical_operational_event_envelope.sql"
+      ],
+      "limitations": [
+        "Customer service-order creation and transitions emit canonical events through the existing outbox; linkage to field execution and buyer runtime integrations remains environment-dependent."
+      ]
+    },
+    {
+      "key": "commercial.sla-clock-enforcement",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "services/api/src/routes/customerPortal.js",
+        "packages/productization/src/entitlementEngine.js",
+        "packages/productization/src/contractorWorkPackageEngine.js",
+        "sql/migrations/147_entitlement_usage_order_sla_foundations.sql",
+        "sql/migrations/148_contractor_work_package_commercial_reconciliation.sql",
+        "services/api/test/canonicalCommercialEventBoundary.test.js"
+      ],
+      "limitations": [
+        "Recorded SLA clocks and 80/100 threshold events are persisted and canonicalized; no automatic escalation/reassignment is claimed, and runtime clock sources remain external evidence."
+      ]
+    },
+    {
+      "key": "operations.correlation-causation-chain",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/operational-context/src/index.js",
+        "services/api/src/routes/fieldClose.js",
+        "services/api/src/routes/realityCommand.js",
+        "services/api/src/routes/contractorCommercial.js",
+        "services/api/src/routes/customerPortal.js"
+      ],
+      "limitations": [
+        "Stable correlation identities and tenant-bound internal causation references are implemented at canonical-event boundaries; not every legacy producer has yet been migrated."
+      ]
+    },
+    {
+      "key": "contact.multilingual-84-language",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/multilingual-contact-center/src/index.js",
+        "packages/multilingual-contact-center/test/index.test.js",
+        "services/api/src/routes/contactCenterMultilingual.js"
+      ],
+      "limitations": [
+        "84 target language profiles are encoded with locale-first dialect policy; actual speech quality, native-dialect fidelity and provider support remain adapter/runtime verification requirements."
+      ]
+    },
+    {
+      "key": "contact.multilingual-conversation-persistence",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "sql/migrations/154_multilingual_contact_center_conversations.sql",
+        "services/api/src/routes/contactCenterMultilingual.js"
+      ],
+      "limitations": [
+        "Voice and chat conversation state is persisted with tenant isolation and canonical events; no telephony or speech-model connection is claimed without runtime adapter evidence."
+      ]
+    },
+    {
+      "key": "contact.voice-media-policy-2026",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/multilingual-contact-center/src/index.js",
+        "packages/sovereign-contact-center/src/index.js",
+        "packages/sovereign-contact-center/src/runtime.js"
+      ],
+      "limitations": [
+        "SIP-TLS, WSS/WebRTC and SRTP are enforced as policy contracts; live media negotiation and provider execution remain environment-dependent."
+      ]
+    },
+    {
+      "key": "contact.dialect-safety-boundary",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/multilingual-contact-center/src/index.js",
+        "services/api/src/routes/contactCenterMultilingual.js"
+      ],
+      "limitations": [
+        "Exact-locale is preferred and silent dialect fallback is forbidden; a locale is not proof of human-native dialect fluency and still requires runtime quality validation."
+      ]
+    },
+    {
+      "key": "contact-center.speech-adapter-boundary",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/multilingual-contact-center/src/speechAdapterBoundary.js",
+        "packages/multilingual-contact-center/src/index.js",
+        "packages/multilingual-contact-center/test/index.test.js",
+        "services/api/src/routes/contactCenterMultilingual.js"
+      ],
+      "limitations": "Capability probe only. No production SIP/ASR/TTS claim. Exact locale without certified native voice forces HUMAN_HANDOFF_REQUIRED."
+    },
+    {
+      "key": "organization.operating-model",
+      "status": "IMPLEMENTED",
+      "evidenceRefs": [
+        "services/api/src/routes/managementSurfaces.js",
+        "services/api/test/managementSurfaces.test.js",
+        "services/api/src/routeAuthorizationPolicy.js"
+      ],
+      "limitations": [
+        "Tenant runtime provisioning and database execution remain deployment evidence requirements.",
+        "SOURCE_INTEGRATION_COMPLETE is a source/provisioning state, not provider or runtime certification."
+      ]
+    },
+    {
+      "key": "engineering.odn-power-budget-p0",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/engineering/src/odnPowerBudget.js",
+        "packages/engineering/src/otdrTracePolicy.js",
+        "packages/engineering/src/fieldToolCalibration.js",
+        "packages/engineering/src/ponFaultTaxonomy.js",
+        "packages/engineering/test/odnPowerBudget.p0.test.js",
+        "sql/migrations/162_odn_budget_otdr_calibration_fault_taxonomy.sql"
+      ],
+      "limitations": "Pure source evaluation + tables. No claim of live OTDR/power-meter connectivity or production OLT readings."
+    },
+    {
+      "key": "engineering.fttx-materials-catalog",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/engineering/src/fttxMaterialsCatalog.js",
+        "packages/engineering/test/fttxMaterialsCatalog.test.js",
+        "sql/migrations/163_fttx_materials_and_install_constraints.sql"
+      ],
+      "limitations": "Catalog from cited standards; vendor datasheet overrides remain operator-declared. No claim of physical plant connectivity."
+    },
+    {
+      "key": "field.time-slot-reservation",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/engineering/src/timeSlotReservation.js",
+        "sql/migrations/165_field_visit_time_slots.sql",
+        "services/api/src/routes/fieldTimeSlots.js"
+      ],
+      "limitations": "EXCLUDE constraint requires live PostgreSQL with btree_gist; no claim of multi-region clock sync."
+    },
+    {
+      "key": "gis.proximity-policy",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/sovereign-gis/src/proximityPolicy.js"
+      ],
+      "limitations": "Query policy only; requires live PostGIS positions."
+    },
+    {
+      "key": "security.request-consumption-guard",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/security/src/requestConsumptionGuard.js"
+      ],
+      "limitations": "Process-local structural caps; multi-instance rate limits remain deployment config."
+    },
+    {
+      "key": "security.object-access-guard",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/security/src/objectAccessGuard.js"
+      ],
+      "limitations": "Complements RLS; handlers must call assertTenantOwnsRow on ID access."
+    },
+    {
+      "key": "gis.technician-density-cluster",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "packages/sovereign-gis/src/spatialClusteringPolicy.js"
+      ],
+      "limitations": "Requires projectedSrid; no silent degree-as-meters clustering."
+    },
+    {
+      "key": "field.slot-installation-link",
+      "status": "SOURCE_IMPLEMENTED",
+      "evidenceRefs": [
+        "sql/migrations/166_time_slot_installation_link.sql",
+        "services/api/src/routes/fieldTimeSlots.js"
+      ],
+      "limitations": "DB-backed link; EXCLUDE still enforces non-overlap."
+    }
+  ],
+  "evidencePolicyNote": "The 2026-10-07 master operating statement is treated as a target specification. Source implementation, CI verification, runtime verification and buyer-environment verification remain separate states. No capability is promoted to production-ready without its required proof path.",
+  "updatedAt": "2026-10-08"
+}

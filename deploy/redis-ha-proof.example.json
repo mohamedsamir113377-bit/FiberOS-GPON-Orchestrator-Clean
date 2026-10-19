@@ -1,0 +1,15 @@
+{
+  "schema": "fiberos.redis-ha-proof.v1",
+  "keyId": "REPLACE_WITH_DEPLOYMENT_PINNED_KEY_ID",
+  "issuer": "REPLACE_WITH_APPROVED_INFRASTRUCTURE_ATTESTOR",
+  "payload": {
+    "provider": "REPLACE_WITH_MANAGED_REDIS_PROVIDER",
+    "resourceId": "REPLACE_WITH_REDIS_RESOURCE_ID",
+    "managedHighAvailability": false,
+    "automaticFailoverConfigured": false,
+    "failoverTested": false,
+    "failoverTestedAt": null,
+    "evidenceReference": "REPLACE_WITH_CONTROL_PLANE_OR_SIGNED_TEST_RECORD_REFERENCE"
+  },
+  "signature": "REPLACE_WITH_ED25519_SIGNATURE_BASE64"
+}

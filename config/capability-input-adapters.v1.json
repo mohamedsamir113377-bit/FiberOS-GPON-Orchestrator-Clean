@@ -1,0 +1,54 @@
+{
+  "schema": "fiberos.capability-input-adapters.v1",
+  "version": "1.0.0",
+  "recordedOn": "2026-10-15",
+  "policy": {
+    "failClosed": true,
+    "allowDefaults": false,
+    "allowEstimates": false,
+    "allowEnglishFallback": false,
+    "promotionRule": "A capability leaves externalInputStatus=INTEGRATION_REQUIRED only after a live probe in the buyer environment. Source code plus unit tests do not satisfy the external-input requirement."
+  },
+  "adapters": {
+    "energy-analytics": {
+      "externalInputStatus": "INTEGRATION_REQUIRED",
+      "configured": false,
+      "transport": null,
+      "source": null,
+      "requiredInputs": ["readings"],
+      "acceptedTransports": ["csv", "http-json", "postgres"],
+      "forbidden": ["estimated values", "billing totals without a meter reading"],
+      "decisionNeeded": "Which authoritative energy source (meter CSV export, utility API, or Postgres table), its units, sampling interval and authentication."
+    },
+    "reputation-index": {
+      "externalInputStatus": "INTEGRATION_REQUIRED",
+      "configured": false,
+      "transport": null,
+      "source": null,
+      "requiredInputs": ["definition", "observations"],
+      "acceptedTransports": ["http-json", "postgres"],
+      "forbidden": ["survey proxies without a stated source", "defaulted missing observations"],
+      "decisionNeeded": "The indicator set, each indicator's authoritative source, its min/max scale, invert flag and weight."
+    },
+    "business-weather": {
+      "externalInputStatus": "INTEGRATION_REQUIRED",
+      "configured": false,
+      "transport": null,
+      "source": null,
+      "requiredInputs": ["definitions", "values"],
+      "acceptedTransports": ["http-json", "postgres"],
+      "forbidden": ["inputs without a unit", "imputed values"],
+      "decisionNeeded": "Each weather input's unit, authoritative source, scale bounds, weight, and the band mapping."
+    },
+    "ar-scanner": {
+      "externalInputStatus": "INTEGRATION_REQUIRED",
+      "configured": false,
+      "transport": null,
+      "source": null,
+      "requiredInputs": ["captures"],
+      "acceptedTransports": ["http-json"],
+      "forbidden": ["device-supplied defaults for GPS or serial", "unsigned photo hashes"],
+      "decisionNeeded": "The registered field device models, OS versions, ARKit/ARCore availability, and whether the capture is a code scan or a marker scan."
+    }
+  }
+}

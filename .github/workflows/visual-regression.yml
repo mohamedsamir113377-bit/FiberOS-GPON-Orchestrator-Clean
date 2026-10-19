@@ -1,0 +1,63 @@
+name: visual-regression
+
+on:
+  push:
+    branches: [main, 'website/**', 'fix/**']
+  pull_request:
+    paths:
+      - 'apps/**'
+      - 'scripts/build-netlify-site.js'
+      - 'tools/visual/**'
+      - 'docs/visual-baselines/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Install visual tooling (not a runtime dependency)
+        run: npm i --no-save playwright@1.63.0 pngjs
+
+      - name: Install headless Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Install deterministic UI fonts (match local baseline environment)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core fonts-noto-ui-core fonts-noto-color-emoji fonts-liberation 2>/dev/null || \
+            sudo apt-get install -y -qq fonts-noto fonts-liberation
+          fc-cache -f
+          fc-list | grep -i noto | head -5 || true
+
+      - name: Build static site
+        run: npm run website:build
+
+      - name: Verify static site
+        run: npm run website:check
+
+      - name: Screenshot every key screen and compare to baselines
+        run: node tools/visual/visual-regression.js
+
+      - name: Upload captures
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: visual-captures
+          path: .visual/current
+          if-no-files-found: warn
+          retention-days: 14

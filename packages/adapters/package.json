@@ -1,0 +1,13 @@
+{
+  "name": "@fiberos/adapters",
+  "version": "1.0.0-rc.1+commercial.2026-10-03",
+  "main": "src/registry.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.21.0"
+  },
+  "dependencies": {
+    "net-snmp": "^3.29.2",
+    "sor-reader": "^1.0.0"
+  }
+}

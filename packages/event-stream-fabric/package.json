@@ -1,0 +1,9 @@
+{
+  "name": "@fiberos/event-stream-fabric",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=24.21.0"
+  },
+  "private": true,
+  "main": "src/index.js"
+}

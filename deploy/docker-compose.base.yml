@@ -1,0 +1,39 @@
+# FiberOS R14.1 — Layer 1: database only.
+# Pinned image (never :latest). Secrets come from files, not env literals.
+name: fiberos
+
+services:
+  db:
+    image: postgis/postgis:18-3.6
+    container_name: fiberos_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: fiberos_dev
+      POSTGRES_USER: fiberos_owner          # cluster-admin bootstrap identity only
+      POSTGRES_PASSWORD_FILE: /run/secrets/pg_owner_password
+      POSTGRES_INITDB_ARGS: "--auth-host=scram-sha-256 --auth-local=peer"
+    secrets:
+      - pg_owner_password
+    volumes:
+      - pgdata:/var/lib/postgresql
+      # No post-migration hardening scripts are mounted into initdb. Bootstrap,
+      # migrations, and deploy/sql hardening run in the documented explicit order.
+      # Production TLS is supplied by deploy/docker-compose.tls.yml.
+      # The base developer DB intentionally does not enable TLS because no
+      # certificate material is shipped in the source package.
+    ports:
+      - "127.0.0.1:5432:5432"               # never expose the DB on a public interface
+    command: ["postgres","-c","ssl=off"]
+    healthcheck:                            # real readiness, not "container started"
+      test: ["CMD-SHELL", "pg_isready -U fiberos_owner -d fiberos_dev -h 127.0.0.1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+secrets:
+  pg_owner_password:
+    file: ./secrets/pg_owner_password.txt
+
+volumes:
+  pgdata:

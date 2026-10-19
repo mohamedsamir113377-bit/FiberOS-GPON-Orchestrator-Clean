@@ -1,0 +1,32 @@
+{
+  "schema": "fiberos.i18n.post-merge-baseline.v1",
+  "generatedAt": "2026-10-06T20:42:37Z",
+  "mergeCommitReferenced": "1831f3abcc80aee968de84423320fe7a4abbb9f4",
+  "targetBranch": "fix/security-release-blockers-2026-10-06",
+  "notMergedToMain": true,
+  "counts": {
+    "manifestLocales": 114,
+    "populatedAudited": 84,
+    "intentionallyUntranslated": 30,
+    "canonicalKeys": 101,
+    "translationCells": 8484
+  },
+  "statusTally": {
+    "verified": 2,
+    "machine-draft": 82,
+    "untranslated": 30
+  },
+  "lastLocalExecution": {
+    "forensic": "PASS",
+    "atomic": "PASS",
+    "validatorFixes": [
+      "URL RegExp escaping",
+      "\\\\p{L} property escape in overlap heuristic",
+      "decimalDigitSequence numeric semantic parity",
+      "FORENSIC report write trailing newline (literal \\\\n bug)"
+    ]
+  },
+  "acceptanceClass": "DETERMINISTIC_MACHINE_FORENSIC_ONLY",
+  "humanLinguisticCertification": "NOT_PERFORMED",
+  "machineDraftPromotion": "FORBIDDEN"
+}

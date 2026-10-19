@@ -1,0 +1,10 @@
+{
+  "name": "@fiberos/observability",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "private": true,
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.21.0"
+  }
+}

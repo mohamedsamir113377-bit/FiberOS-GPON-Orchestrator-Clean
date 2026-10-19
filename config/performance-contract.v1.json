@@ -1,0 +1,24 @@
+{
+  "schema": "fiberos.performance-resource-contract.v1",
+  "purpose": "Static resource ceilings for source-level computational and request-boundary design. Runtime SLOs remain deployment-specific.",
+  "limits": {
+    "operationsTraceMaxNodes": 1000,
+    "operationsTraceMaxLinks": 4000,
+    "operationsTraceMaxPaths": 32,
+    "operationsTraceMaxDepth": 64,
+    "gisReconciliationMaxRecords": 5000,
+    "contactCorrelationMaxAssets": 5,
+    "intelligenceGraphMaxDepth": 32,
+    "intelligenceGraphMaxNeighbors": 50,
+    "intelligenceGraphMaxAssessments": 20,
+    "offlineQueueMaxAttempts": 5
+  },
+  "rules": [
+    "Static ceilings are safety/resource controls, not latency or availability guarantees.",
+    "Bound graph traversal and bulk reconciliation before iteration.",
+    "Prefer deterministic ordering and bounded database LIMITs.",
+    "Keep large exports/reports outside synchronous request handlers.",
+    "Deployment SLOs require production-like benchmark evidence.",
+    "Load, stress and soak remain final admission activities."
+  ]
+}

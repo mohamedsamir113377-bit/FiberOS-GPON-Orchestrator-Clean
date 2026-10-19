@@ -1,0 +1,1094 @@
+{
+  "schemaVersion": 1,
+  "product": "FiberOS R14.1 Official Locale Pack (114)",
+  "packId": "official-114",
+  "generatedAt": "2026-10-16T08:04:27Z",
+  "sourceManifest": "i18n/manifest-114.generated.json",
+  "includedLocaleCount": 114,
+  "canonicalKeyCount": 101,
+  "translationMethod": "automated",
+  "humanCertifiedLocaleCount": 0,
+  "verifiedLocaleCount": 2,
+  "machineDraftLocaleCount": 112,
+  "untranslatedLocaleCount": 0,
+  "translationNotice": "OFFICIAL 114-LOCALE PACK — AUTOMATED TRANSLATION + STRUCTURAL FORENSIC AUDIT. All 114 locales are officially adopted for structural completeness (101 keys each). Tier split: 2 verified (ar, en) for production activation; 112 machine-draft official automated drafts. Forensic audit validates structure and integrity only. This is NOT native-speaker linguistic certification (humanCertifiedLocaleCount=0). Arabic: حزمة 114 معتمدة رسميًا هيكليًا — ترجمة آلية مع تدقيق جنائي بنيوي؛ ليست شهادة متحدث أصلي. المعتمدة للتفعيل الإنتاجي حسب السياسة: ar و en فقط (verified).",
+  "exclusions": {
+    "count": 0,
+    "reason": "None. All 114 locales are inside official-114 after structural fill and forensic gate."
+  },
+  "relationToOfficial84": {
+    "official84": "Sales/core subset contract remains in i18n/official-84.json",
+    "official114": "Superset structural pack; does not promote locales to verified or human-certified"
+  },
+  "statusTally": {
+    "verified": 2,
+    "machine-draft": 112,
+    "untranslated": 0
+  },
+  "locales": [
+    {
+      "locale": "af",
+      "direction": "ltr",
+      "file": "i18n/catalogs/af.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "am",
+      "direction": "ltr",
+      "file": "i18n/catalogs/am.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ar",
+      "direction": "rtl",
+      "file": "i18n/catalogs/ar.json",
+      "catalogStatus": "verified",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "as",
+      "direction": "ltr",
+      "file": "i18n/catalogs/as.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ay",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ay.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "az",
+      "direction": "ltr",
+      "file": "i18n/catalogs/az.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "be",
+      "direction": "ltr",
+      "file": "i18n/catalogs/be.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ber",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ber.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "bg",
+      "direction": "ltr",
+      "file": "i18n/catalogs/bg.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "bi",
+      "direction": "ltr",
+      "file": "i18n/catalogs/bi.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "bm",
+      "direction": "ltr",
+      "file": "i18n/catalogs/bm.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "bn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/bn.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "bs",
+      "direction": "ltr",
+      "file": "i18n/catalogs/bs.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ch",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ch.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "cs",
+      "direction": "ltr",
+      "file": "i18n/catalogs/cs.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "da",
+      "direction": "ltr",
+      "file": "i18n/catalogs/da.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "de",
+      "direction": "ltr",
+      "file": "i18n/catalogs/de.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "din",
+      "direction": "ltr",
+      "file": "i18n/catalogs/din.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "dv",
+      "direction": "rtl",
+      "file": "i18n/catalogs/dv.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "el",
+      "direction": "ltr",
+      "file": "i18n/catalogs/el.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "en",
+      "direction": "ltr",
+      "file": "i18n/catalogs/en.json",
+      "catalogStatus": "verified",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "es",
+      "direction": "ltr",
+      "file": "i18n/catalogs/es.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "et",
+      "direction": "ltr",
+      "file": "i18n/catalogs/et.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "fa",
+      "direction": "rtl",
+      "file": "i18n/catalogs/fa.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ff",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ff.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "fi",
+      "direction": "ltr",
+      "file": "i18n/catalogs/fi.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "fj",
+      "direction": "ltr",
+      "file": "i18n/catalogs/fj.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "fr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/fr.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "gn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/gn.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "gu",
+      "direction": "ltr",
+      "file": "i18n/catalogs/gu.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ha",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ha.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "hi",
+      "direction": "ltr",
+      "file": "i18n/catalogs/hi.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "hr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/hr.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "hu",
+      "direction": "ltr",
+      "file": "i18n/catalogs/hu.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "hy",
+      "direction": "ltr",
+      "file": "i18n/catalogs/hy.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "id",
+      "direction": "ltr",
+      "file": "i18n/catalogs/id.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ig",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ig.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "is",
+      "direction": "ltr",
+      "file": "i18n/catalogs/is.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "it",
+      "direction": "ltr",
+      "file": "i18n/catalogs/it.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ja",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ja.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ka",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ka.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "kk",
+      "direction": "ltr",
+      "file": "i18n/catalogs/kk.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "km",
+      "direction": "ltr",
+      "file": "i18n/catalogs/km.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "kn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/kn.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ko",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ko.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ks",
+      "direction": "rtl",
+      "file": "i18n/catalogs/ks.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ktu",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ktu.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ku",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ku.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ln",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ln.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "lo",
+      "direction": "ltr",
+      "file": "i18n/catalogs/lo.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "lt",
+      "direction": "ltr",
+      "file": "i18n/catalogs/lt.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "lv",
+      "direction": "ltr",
+      "file": "i18n/catalogs/lv.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "mg",
+      "direction": "ltr",
+      "file": "i18n/catalogs/mg.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "mi",
+      "direction": "ltr",
+      "file": "i18n/catalogs/mi.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "mk",
+      "direction": "ltr",
+      "file": "i18n/catalogs/mk.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ml",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ml.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "mn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/mn.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "mr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/mr.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ms",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ms.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "my",
+      "direction": "ltr",
+      "file": "i18n/catalogs/my.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ne",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ne.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "nl",
+      "direction": "ltr",
+      "file": "i18n/catalogs/nl.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "no",
+      "direction": "ltr",
+      "file": "i18n/catalogs/no.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "nr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/nr.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "nus",
+      "direction": "ltr",
+      "file": "i18n/catalogs/nus.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ny",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ny.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "om",
+      "direction": "ltr",
+      "file": "i18n/catalogs/om.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "or",
+      "direction": "ltr",
+      "file": "i18n/catalogs/or.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "pa",
+      "direction": "ltr",
+      "file": "i18n/catalogs/pa.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "pau",
+      "direction": "ltr",
+      "file": "i18n/catalogs/pau.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "pl",
+      "direction": "ltr",
+      "file": "i18n/catalogs/pl.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ps",
+      "direction": "rtl",
+      "file": "i18n/catalogs/ps.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "pt",
+      "direction": "ltr",
+      "file": "i18n/catalogs/pt.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "qu",
+      "direction": "ltr",
+      "file": "i18n/catalogs/qu.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "rn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/rn.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ro",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ro.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ru",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ru.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "rw",
+      "direction": "ltr",
+      "file": "i18n/catalogs/rw.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "sat",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sat.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "sg",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sg.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "si",
+      "direction": "ltr",
+      "file": "i18n/catalogs/si.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "sk",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sk.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "sm",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sm.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "sn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sn.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "so",
+      "direction": "ltr",
+      "file": "i18n/catalogs/so.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "sq",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sq.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "sr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sr.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ss",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ss.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "st",
+      "direction": "ltr",
+      "file": "i18n/catalogs/st.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "sv",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sv.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "sw",
+      "direction": "ltr",
+      "file": "i18n/catalogs/sw.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ta",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ta.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "te",
+      "direction": "ltr",
+      "file": "i18n/catalogs/te.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "tg",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tg.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "th",
+      "direction": "ltr",
+      "file": "i18n/catalogs/th.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ti",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ti.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "tig",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tig.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "tk",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tk.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "tl",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tl.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "tn",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tn.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "to",
+      "direction": "ltr",
+      "file": "i18n/catalogs/to.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "tr",
+      "direction": "ltr",
+      "file": "i18n/catalogs/tr.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ts",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ts.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "uk",
+      "direction": "ltr",
+      "file": "i18n/catalogs/uk.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ur",
+      "direction": "rtl",
+      "file": "i18n/catalogs/ur.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "uz",
+      "direction": "ltr",
+      "file": "i18n/catalogs/uz.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "ve",
+      "direction": "ltr",
+      "file": "i18n/catalogs/ve.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "vi",
+      "direction": "ltr",
+      "file": "i18n/catalogs/vi.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "wo",
+      "direction": "ltr",
+      "file": "i18n/catalogs/wo.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "xh",
+      "direction": "ltr",
+      "file": "i18n/catalogs/xh.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "yo",
+      "direction": "ltr",
+      "file": "i18n/catalogs/yo.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "yue",
+      "direction": "ltr",
+      "file": "i18n/catalogs/yue.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "zh",
+      "direction": "ltr",
+      "file": "i18n/catalogs/zh.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    },
+    {
+      "locale": "zu",
+      "direction": "ltr",
+      "file": "i18n/catalogs/zu.json",
+      "catalogStatus": "machine-draft",
+      "keyCount": 101,
+      "translatedCount": 101,
+      "missingCount": 0
+    }
+  ],
+  "adoption": {
+    "status": "official",
+    "adoptedAt": "2026-10-16T08:04:27Z",
+    "scope": "All 114 locales are officially included in the product language pack.",
+    "tiers": {
+      "verified": {
+        "count": 2,
+        "locales": [
+          "ar",
+          "en"
+        ],
+        "meaning": "Eligible for production UI activation per QUALITY_POLICY activation.verifiedStatusOnly"
+      },
+      "machine-draft": {
+        "count": 112,
+        "meaning": "Officially shipped automated drafts; structural forensic audit passed; not human-certified"
+      }
+    },
+    "humanCertifiedLocaleCount": 0
+  },
+  "forensicAudit": {
+    "type": "structural-forensic",
+    "result": "PASS",
+    "covers": [
+      "keyCount=101 parity with source",
+      "no empty translation values",
+      "no untranslated catalogs",
+      "core/ops/field catalog mirror SHA parity",
+      "source.json keys-section uniqueness"
+    ],
+    "doesNotCover": [
+      "native-speaker semantic certification",
+      "promotion of machine-draft to verified",
+      "marketing claim of human review"
+    ],
+    "report": "i18n/FORENSIC_LINGUISTIC_AUDIT_114.md"
+  },
+  "translationNoticeAr": "اعتماد رسمي لحزمة 114 لغة: ترجمة آلية + تدقيق جنائي هيكلي. لغتان verified للتفعيل الإنتاجي (ar، en). 112 لغة machine-draft ضمن الحزمة الرسمية دون اعتماد بشري. عدد اللغات المعتمدة بشريًا = 0."
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "product": "FiberOS R14.1 Sales Core",
+  "releaseVersion": "1.0.0-rc.1+commercial.2026-09-25",
+  "releaseStatus": "COMMERCIAL_RELEASE_CANDIDATE",
+  "referenceListPriceUSD": 3500,
+  "supportDays": 14,
+  "migrationRange": "001-196",
+  "runtime": {
+    "node": "24.21.0",
+    "postgresql": "18.6+",
+    "postgis": "3.6.x",
+    "identity": "OIDC/JWKS RS256"
+  },
+  "buyerProductionVerificationRequired": true,
+  "referenceVerificationDate": "2026-09-25",
+  "referenceVerificationEnvironment": "Ubuntu 24.04 / Node 24.21.0 / PostgreSQL 18.6 / PostGIS 3.6.4",
+  "commercialPriceNote": "Reference list price is USD 3,500; current online campaign price is USD 3,000 (USD 500 discount). The online order record and applicable checkout terms control the transaction price, license tier, support scope, and any optional resale rights.",
+  "licenseModel": "ONLINE_COMMERCIAL_LICENSE",
+  "onlineCommercialLicense": {
+    "exclusive": false,
+    "territory": "worldwide",
+    "sellerMayContinueSelling": true,
+    "buyerCommercialUse": true,
+    "buyerSourceModification": true,
+    "buyerStandaloneSourceResale": false,
+    "buyerDeployedServiceResale": true,
+    "ipAssignment": false,
+    "effectiveEvent": "successful online purchase and acceptance of applicable terms",
+    "licenseDocument": "docs/commercial/ONLINE_COMMERCIAL_LICENSE.md"
+  },
+  "onlineSalePriceUSD": 3000,
+  "campaignDiscountUSD": 500,
+  "languageScope": {
+    "status": "OFFICIAL_AUTOMATED_TRANSLATION_SCOPE",
+    "source": "i18n/official-84.json",
+    "sourceManifest": "i18n/manifest-114.generated.json",
+    "includedCatalogs": 84,
+    "existingManifestVerifiedStatus": 2,
+    "machineDraftCatalogs": 82,
+    "humanCertifiedCatalogs": 0,
+    "translationMethod": "automated",
+    "excludedUntranslatedCatalogs": 0,
+    "acceptanceMeaning": "catalog/key-coverage scope only; not native-speaker certification",
+    "disclosure": "These 84 language catalogs were translated automatically. This scope accepts automated translation as a delivery format only (full 114-catalog pack: 2 verified, 112 machine-draft, 0 untranslated); it does not claim native-speaker review or semantic accuracy. Review safety-critical, legal, billing and customer-facing text before operational use.",
+    "fullPackStatusTally": {
+      "verified": 2,
+      "machine-draft": 112,
+      "untranslated": 0
+    },
+    "excludedFromSalesSubsetCatalogs": 30
+  },
+  "featureRegistry": {
+    "source": "config/html-feature-parity.json",
+    "total": 106,
+    "statusCounts": {
+      "REAL": 55,
+      "INTEGRATION_REQUIRED": 4,
+      "ADVISORY": 23,
+      "UNIMPLEMENTED": 0,
+      "VISION": 24
+    },
+    "notice": "Registry classifications identify source scope only. They are not individual end-to-end production certifications."
+  }
+}

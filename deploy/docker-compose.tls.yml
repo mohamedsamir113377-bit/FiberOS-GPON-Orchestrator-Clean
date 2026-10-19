@@ -1,0 +1,17 @@
+# FiberOS R14.1 — production TLS override for the PostgreSQL service.
+# Requires operator-provided certificate files; none are shipped as secrets.
+name: fiberos
+services:
+  db:
+    command: ["postgres","-c","ssl=on","-c","ssl_cert_file=/run/secrets/pg_server_crt","-c","ssl_key_file=/run/secrets/pg_server_key"]
+    secrets:
+      - pg_owner_password
+      - pg_server_crt
+      - pg_server_key
+secrets:
+  pg_owner_password:
+    file: ./secrets/pg_owner_password.txt
+  pg_server_crt:
+    file: ./secrets/server.crt
+  pg_server_key:
+    file: ./secrets/server.key

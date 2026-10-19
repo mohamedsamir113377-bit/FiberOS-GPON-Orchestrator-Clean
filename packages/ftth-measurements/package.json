@@ -1,0 +1,11 @@
+{
+  "name": "@fiberos/ftth-measurements",
+  "version": "1.0.0-rc.1+commercial.2026-09-25",
+  "description": "Authoritative FTTH / GPON optical measurement contracts — ITU-T aligned, source-bound, zero simulated authority",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.21.0"
+  },
+  "license": "UNLICENSED"
+}

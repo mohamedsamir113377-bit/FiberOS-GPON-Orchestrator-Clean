@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none';base-uri 'none';form-action 'none';object-src 'none';script-src 'self' https://unpkg.com;style-src 'self' https://unpkg.com 'unsafe-inline';img-src 'self' data: blob: https://tiles.openfreemap.org;connect-src 'self' https://tiles.openfreemap.org;worker-src 'self' blob:;font-src 'self' data: https://tiles.openfreemap.org;media-src 'self' blob:">
+<title>FiberOS — Customer Technician Tracking</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.13.0/dist/maplibre-gl.css"><link rel="stylesheet" href="/customer-tracking.css"><script src="/customer-tracking.js" type="module"></script>
+</head>
+<body><main class="wrap">
+<header><div class="eyebrow">FIBEROS / CUSTOMER VISIT TRACKING</div><h1>متابعة الفني</h1><p id="truth">الرابط مؤقت ويعرض حالة الفني وموقعه فقط. لا يتم عرض بيانات العميل الحساسة.</p></header>
+<section class="card"><div class="status"><span id="jobStatus">جاري التحميل…</span><span id="techStatus">—</span></div><div id="map" class="map" aria-label="خريطة تتبع الفني"><div class="empty">في انتظار أول إحداثيات حقيقية للفني…</div></div>
+<div class="grid"><div><b>الفني</b><div id="techName">—</div></div><div><b>آخر تحديث</b><div id="capturedAt">—</div></div><div><b>الدقة</b><div id="accuracy">—</div></div><div><b>الموعد</b><div id="visit">—</div></div></div></section>
+<p class="muted">الموقع المعروض يأتي من آخر position حقيقية للفني. لا يتم اختراع ETA أو مسار قيادة؛ أي مسار/زمن وصول يحتاج مزود Routing حقيقيًا ومهيأ.</p>
+</main></body></html>

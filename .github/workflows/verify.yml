@@ -1,0 +1,228 @@
+name: verify
+
+# CI is part of the release boundary: every push/PR must prove that the
+# source tree, workspace graph, security contracts, tests, and manifest agree.
+# The GitHub Actions dependencies are pinned to immutable action commits.
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Reusable workflow: concurrency is owned by the caller (see release-admission.yml).
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ github.sha }}
+          # Union closure walks every reachable object; a shallow checkout
+          # cannot answer the question, and the gate fails closed on one.
+          fetch-depth: 0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Verify release integrity before dependency install
+        run: npm run verify:release
+      - name: Verify union closure (every reachable blob is in main or the external archive)
+        run: npm run verify:union-closure
+      - name: Verify pre-DB final truth boundary
+        run: npm run verify:pre-db-final
+      - name: Verify contiguous production migration sequence
+        run: npm run verify:migration-sequence
+      - name: Verify production console logging boundary
+        run: npm run verify:production-console
+      - name: Install dependencies
+        run: npm ci --omit=dev --ignore-scripts --no-audit --no-fund
+      - name: Audit production dependency tree
+        run: npm audit --omit=dev --audit-level=high
+      - name: Start isolated Redis primary/replica for distributed security tests
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install --yes redis-server
+          mkdir -p "$RUNNER_TEMP/fiberos-redis-primary" "$RUNNER_TEMP/fiberos-redis-replica"
+          redis-server \
+            --port 6387 --bind 127.0.0.1 --protected-mode yes \
+            --daemonize yes --dir "$RUNNER_TEMP/fiberos-redis-primary" \
+            --pidfile "$RUNNER_TEMP/fiberos-redis-primary.pid" \
+            --logfile "$RUNNER_TEMP/fiberos-redis-primary.log" \
+            --save "" --appendonly no
+          redis-server \
+            --port 6388 --bind 127.0.0.1 --protected-mode yes \
+            --replicaof 127.0.0.1 6387 --daemonize yes \
+            --dir "$RUNNER_TEMP/fiberos-redis-replica" \
+            --pidfile "$RUNNER_TEMP/fiberos-redis-replica.pid" \
+            --logfile "$RUNNER_TEMP/fiberos-redis-replica.log" \
+            --save "" --appendonly no
+          ready=0
+          for attempt in $(seq 1 30); do
+            if redis-cli -h 127.0.0.1 -p 6387 ping 2>/dev/null | tr -d '\r' | grep -qx PONG \
+              && redis-cli -h 127.0.0.1 -p 6387 info replication 2>/dev/null | tr -d '\r' | grep -qx 'connected_slaves:1' \
+              && redis-cli -h 127.0.0.1 -p 6388 info replication 2>/dev/null | tr -d '\r' | grep -qx 'master_link_status:up'; then
+              ready=1
+              break
+            fi
+            sleep 1
+          done
+          if [ "$ready" -ne 1 ]; then
+            echo "Redis primary/replica readiness failed; diagnostic state follows."
+            echo "--- primary log ---"
+            cat "$RUNNER_TEMP/fiberos-redis-primary.log" || true
+            echo "--- replica log ---"
+            cat "$RUNNER_TEMP/fiberos-redis-replica.log" || true
+            echo "--- primary replication status ---"
+            redis-cli -h 127.0.0.1 -p 6387 info replication 2>&1 | tr -d '\r' || true
+            echo "--- replica replication status ---"
+            redis-cli -h 127.0.0.1 -p 6388 info replication 2>&1 | tr -d '\r' || true
+            exit 1
+          fi
+      - name: Run tests (node --test)
+        env:
+          FIBEROS_REDIS_TEST_URL: redis://127.0.0.1:6387
+        run: npm run test
+      - name: Stop isolated Redis test processes
+        if: always()
+        run: |
+          redis-cli -h 127.0.0.1 -p 6388 shutdown nosave || true
+          redis-cli -h 127.0.0.1 -p 6387 shutdown nosave || true
+      - name: Install nftables parser
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes nftables
+      - name: Validate generated firewall policy with real nftables parser (check-only)
+        env:
+          FIBEROS_NFT_TABLE: fiberos
+          FIBEROS_FW_INGRESS_CIDRS: "198.51.100.0/24,2001:db8:1::/48"
+          FIBEROS_FW_ADMIN_CIDRS: "198.51.100.10/32,2001:db8:1::10/128"
+          FIBEROS_FW_EGRESS_CIDRS: "203.0.113.0/24,2001:db8:10::/48"
+          FIBEROS_FW_RESOLVER_CIDRS: "192.0.2.53/32,2001:db8:53::53/128"
+          FIBEROS_FW_NTP_CIDRS: "192.0.2.123/32,2001:db8:123::123/128"
+          FIBEROS_FW_CONTAINER_CIDRS: "10.42.0.0/16,fd42::/48"
+          FIBEROS_CONTAINER_SUBNET: "10.42.0.0/16"
+        run: |
+          set -euo pipefail
+          bash -n scripts/firewall/apply-nft-policy.sh
+          node scripts/firewall/render-nft-policy.js "$RUNNER_TEMP/fiberos-policy.nft"
+          sudo env \
+            FIBEROS_NFT_TABLE=fiberos \
+            FIBEROS_FIREWALL_STATE_DIR="$RUNNER_TEMP/fiberos-firewall-state" \
+            scripts/firewall/apply-nft-policy.sh --check "$RUNNER_TEMP/fiberos-policy.nft"
+      - name: Run bounded formal verification certificate
+        run: npm run verify:formal
+      - name: Verify capability-registry parity
+        run: npm run verify:capabilities
+      - name: Verify domain-neutrality gate (multi-buyer mode)
+        run: npm run verify:domain
+      - name: Verify SALES_PACKAGE_MANIFEST.json matches shipped tree
+        run: npm run verify:manifest
+      - name: node --check every .js file
+        run: |
+          set -e
+          find . -name '*.js' -not -path './node_modules/*' -not -path './.git/*' -print0 \
+            | xargs -0 -r -n1 node --check
+      - name: Build verified source ZIP
+        run: |
+          set -euo pipefail
+          VERSION=$(node -p "require('./package.json').version")
+          SHORT_SHA="${GITHUB_SHA::12}"
+          ZIP="FiberOS-${VERSION}-${SHORT_SHA}-VERIFIED-SOURCE.zip"
+          rm -f "$ZIP"
+          # ZIP scope must stay byte-aligned with config/delivery-scope-policy.json
+          # (sourceExclusions): evidence/ is governance material outside the
+          # 1388-file delivery scope. The consolidation archive now lives in
+          # its own repository and is not part of this tree at all.
+          zip -qr "$ZIP" . \
+            -x '.git/*' \
+               'node_modules/*' \
+               '.visual/*' \
+               '.netlify/*' \
+               'evidence/*' \
+               '*.zip' \
+               'MANIFEST_BUILD_STAMP.txt' \
+               'apps/field-web/public/buyer-demo.html' \
+               'apps/field-web/public/engineering-demo.html' \
+               '.github/workflows/neon-pr-preview.yml' \
+               '.DS_Store' \
+               'coverage/*'
+          test -s "$ZIP"
+          sha256sum "$ZIP" | tee "${ZIP}.sha256"
+      - name: Verify verified source ZIP matches release manifest
+        run: |
+          set -euo pipefail
+          VERSION=$(node -p "require('./package.json').version")
+          SHORT_SHA="${GITHUB_SHA::12}"
+          ZIP="FiberOS-${VERSION}-${SHORT_SHA}-VERIFIED-SOURCE.zip"
+          export ZIP_PATH="$ZIP"
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          import posixpath
+          import zipfile
+
+          zip_path = os.environ["ZIP_PATH"]
+          manifest = json.load(open("SALES_PACKAGE_MANIFEST.json", encoding="utf-8"))
+          declared_map = manifest.get("sha256ByFile", {})
+          declared = set(declared_map)
+
+          with zipfile.ZipFile(zip_path) as archive:
+              infos = [info for info in archive.infolist() if not info.is_dir()]
+              names = [info.filename for info in infos]
+
+              duplicates = sorted({name for name in names if names.count(name) > 1})
+              if duplicates:
+                  print("Duplicate ZIP members:", duplicates)
+                  raise SystemExit(1)
+
+              unsafe = []
+              for name in names:
+                  normalized = posixpath.normpath(name)
+                  if name.startswith("/") or normalized == ".." or normalized.startswith("../") or "\\" in name:
+                      unsafe.append(name)
+              if unsafe:
+                  print("Unsafe ZIP paths:", sorted(unsafe))
+                  raise SystemExit(1)
+
+              actual = set(names)
+              if actual != declared:
+                  print("Verified source ZIP / manifest parity FAILED")
+                  print("Extra in ZIP:", sorted(actual - declared))
+                  print("Missing from ZIP:", sorted(declared - actual))
+                  raise SystemExit(1)
+
+              expected = manifest["fileCount"]
+              if len(actual) != expected:
+                  raise SystemExit(f"ZIP file count {len(actual)} != manifest fileCount {expected}")
+
+              for info in infos:
+                  if info.filename == "SALES_PACKAGE_MANIFEST.json":
+                      continue
+                  expected_hash = declared_map.get(info.filename)
+                  if not isinstance(expected_hash, str) or len(expected_hash) != 64:
+                      raise SystemExit(f"Missing/invalid manifest hash for ZIP member: {info.filename}")
+                  digest = hashlib.sha256(archive.read(info)).hexdigest()
+                  if digest.lower() != expected_hash.lower():
+                      raise SystemExit(
+                          f"ZIP content SHA-256 mismatch: {info.filename} "
+                          f"(manifest={expected_hash} actual={digest})"
+                      )
+
+          print(f"Verified source ZIP / manifest parity passed ({len(actual)} files) with content hashes verified.")
+          PY
+      - name: Upload verified source ZIP
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: FiberOS-verified-source-${{ github.sha }}
+          path: |
+            FiberOS-*-VERIFIED-SOURCE.zip
+            FiberOS-*-VERIFIED-SOURCE.zip.sha256
+          if-no-files-found: error
+          retention-days: 14

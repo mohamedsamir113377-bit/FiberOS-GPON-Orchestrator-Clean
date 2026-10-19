@@ -1,0 +1,2539 @@
+{
+  "version": "2.0.0",
+  "locales": {
+    "ar": {
+      "status": "verified",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ar",
+        "direction": "rtl",
+        "pluralCategories": [
+          "zero",
+          "one",
+          "two",
+          "few",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "ar",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ar"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "fa": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "fa",
+        "direction": "rtl",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "fa",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "fa"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "tr": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "tr",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "tr",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "tr"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ku": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ku",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ku",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ku"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "am": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "am",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "am",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "am"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "sw": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "sw",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "sw",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "sw"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "om": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "om",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "om",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "om"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "so": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "so",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "so",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "so"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ti": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ti",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ti",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ti"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ha": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ha",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ha",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ha"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "yo": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "yo",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "yo",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "yo"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ig": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ig",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "ig",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ig"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "zu": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "zu",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "zu",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "zu"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "xh": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "xh",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "xh",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "xh"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "af": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "af",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "af",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "af"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ff": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ff",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ff",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ff"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "wo": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "wo",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "wo",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "wo"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "bm": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "bm",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "bm",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "bm"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "mg": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "mg",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "mg",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "mg"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "rw": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "rw",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "rw"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "rn": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "rn",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "rn"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "st": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "st",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "st",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "st"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "tn": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "tn",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "tn",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "tn"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ss": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ss",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ss",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ts": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ts",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ts",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ve": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ve",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ve",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "nr": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "nr",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "nr",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "sn": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "sn",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "sn",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "sn"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ny": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ny",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ny",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ln": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ln",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ln",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ln"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ktu": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ktu",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "sg": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "sg",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "sg",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "sg"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "tig": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "tig",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "tig",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "din": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "din",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "nus": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "nus",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "nus"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ber": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ber",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "zh": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "zh",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "zh",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "zh"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "yue": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "yue",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "yue",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "yue"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ja": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ja",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "ja",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ja"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ko": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ko",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "ko",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ko"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "hi": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "hi",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "hi",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "hi"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ur": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ur",
+        "direction": "rtl",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ur",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ur"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "bn": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "bn",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "bn",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "bn"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "pa": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "pa",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "pa",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "pa"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ta": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ta",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ta",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ta"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "te": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "te",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "te",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "te"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "mr": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "mr",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "mr",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "mr"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "gu": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "gu",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "gu",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "gu"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ml": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ml",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ml",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ml"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "kn": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "kn",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "kn",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "kn"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "as": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "as",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "as",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "as"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "or": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "or",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "or",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "or"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "sat": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "sat",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "two",
+          "other"
+        ],
+        "pluralResolvedLocale": "sat",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "sat"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ks": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ks",
+        "direction": "rtl",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ks",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ks"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ne": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ne",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ne",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ne"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "si": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "si",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "si",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "si"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "dv": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "dv",
+        "direction": "rtl",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "dv",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ps": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ps",
+        "direction": "rtl",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ps",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ps"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ms": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ms",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "ms",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ms"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "id": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "id",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "id",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "id"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "th": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "th",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "th",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "th"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "vi": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "vi",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "vi",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "vi"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "km": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "km",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "km",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "km"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "lo": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "lo",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "lo",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "lo"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "my": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "my",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "my",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "my"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "tl": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "fil",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "fil",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "fil"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "az": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "az",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "az",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "az"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "hy": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "hy",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "hy",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "hy"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ka": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ka",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "ka",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ka"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "mn": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "mn",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "mn",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "mn"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "en": {
+      "status": "verified",
+      "coverage": 100,
+      "intl": {
+        "canonical": "en",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "fr": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "fr",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "fr",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "fr"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "es": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "es",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "es",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "es"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ru": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ru",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "few",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "ru",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ru"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "de": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "de",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "de",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "de"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "it": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "it",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "it",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "it"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "pt": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "pt",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "pt",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "pt"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "nl": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "nl",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "nl",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "nl"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "el": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "el",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "el",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "el"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "sq": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "sq",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "sq",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "sq"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "sr": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "sr",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "few",
+          "other"
+        ],
+        "pluralResolvedLocale": "sr",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "sr"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "hr": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "hr",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "few",
+          "other"
+        ],
+        "pluralResolvedLocale": "hr",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "hr"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "bs": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "bs",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "few",
+          "other"
+        ],
+        "pluralResolvedLocale": "bs",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "bs"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "mk": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "mk",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "mk",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "mk"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "bg": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "bg",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "bg",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "bg"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ro": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ro",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "few",
+          "other"
+        ],
+        "pluralResolvedLocale": "ro",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "ro"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "hu": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "hu",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "hu",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "hu"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "cs": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "cs",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "few",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "cs",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "cs"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "sk": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "sk",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "few",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "sk",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "sk"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "pl": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "pl",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "few",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "pl",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "pl"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "uk": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "uk",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "few",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "uk",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "uk"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "be": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "be",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "few",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "be",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "be"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "lt": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "lt",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "few",
+          "many",
+          "other"
+        ],
+        "pluralResolvedLocale": "lt",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "lt"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "lv": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "lv",
+        "direction": "ltr",
+        "pluralCategories": [
+          "zero",
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "lv",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "lv"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "et": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "et",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "et",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "et"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "fi": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "fi",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "fi",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "fi"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "sv": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "sv",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "sv",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "sv"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "no": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "no",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "no",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "no"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "da": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "da",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "da",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "da"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "is": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "is",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "is",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "is"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "kk": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "kk",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "kk",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "kk"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "uz": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "uz",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "uz",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "uz"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "tk": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "tk",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "tk",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "tk"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "tg": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "tg",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "tg"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "qu": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "qu",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "qu"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ay": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ay",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "gn": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "gn",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "mi": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "mi",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "mi"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "fj": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "fj",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "sm": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "sm",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "to": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "to",
+        "direction": "ltr",
+        "pluralCategories": [
+          "other"
+        ],
+        "pluralResolvedLocale": "to",
+        "dateTimeFormatSupported": true,
+        "numberFormatSupported": true,
+        "formattingFallbackLocale": null,
+        "formattingResolved": "to"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "bi": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "bi",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "pau": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "pau",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    },
+    "ch": {
+      "status": "machine-draft",
+      "coverage": 100,
+      "intl": {
+        "canonical": "ch",
+        "direction": "ltr",
+        "pluralCategories": [
+          "one",
+          "other"
+        ],
+        "pluralResolvedLocale": "en-US",
+        "dateTimeFormatSupported": false,
+        "numberFormatSupported": false,
+        "formattingFallbackLocale": "en",
+        "formattingResolved": "en"
+      },
+      "sourceCopies": [],
+      "placeholders": [],
+      "unicode": [],
+      "terminology": [],
+      "errors": []
+    }
+  },
+  "totals": {
+    "localeCount": 114,
+    "keyCount": 101,
+    "verified": 2,
+    "warning": 112,
+    "untranslated": 0,
+    "invalid": 0,
+    "runtimeIntlUnsupported": 17,
+    "runtimeIntlPartial": 0,
+    "sourceCopyViolations": 0,
+    "placeholderViolations": 0,
+    "unicodeViolations": 0,
+    "terminologyViolations": 0
+  },
+  "pass": true
+}

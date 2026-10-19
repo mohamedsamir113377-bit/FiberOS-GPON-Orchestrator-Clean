@@ -1,0 +1,16 @@
+c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08  ./LICENSE-tesseract.js-core
+b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1  ./LICENSE-tesseract.js.md
+7f740254d0e1c2ec3f71f70881ac1904dbf93488606c251b1e49cdfa9b4b3e4a  ./NOTICE.txt
+adcb325473fe124291951a0a3d29fcb54b341828881570e45c42dc2a3a61a45d  ./README-english-data.md
+04db1e0ecf100ceae03483b1bf3b808c536c4e222d102cd643a42f9c3fa73b1d  ./UPSTREAM.md
+66b17df6e20c5329a17ffa9c202a47eaa3e32500b253d4c7f38e7f2bc01457c3  ./core/tesseract-core-lstm.wasm
+eef5f8b2f8e20e150680b20adaec4a60babafee3adbe8a94583c81fee46e8680  ./core/tesseract-core-lstm.wasm.js
+34e8d50cac216427d86bf397d610fdd9f49492539bbcdfbfccc4eda20c810bea  ./core/tesseract-core-simd-lstm.wasm
+c58b46a4c796c0b8afccf77591d5b875b6896b45d402bbce8caa6f5362447b38  ./core/tesseract-core-simd-lstm.wasm.js
+7d237a13edfeb0fa2f104744fccde0a00e0c076c3e23b7a8fc7af75ec9af2c3e  ./core/tesseract-core-simd.wasm
+6b61ef4e911b5cf57e656bbfe983d6e2b3711a02dd164154ddda064566e8e09d  ./core/tesseract-core-simd.wasm.js
+c7f5ace62ac0ad065e71e9c6725f1d7cdf82e7eda8fba532cbb9563964da7098  ./core/tesseract-core.wasm
+0bc6ce3e5fbbd0cd89706cf2fd70960e3372f4f01ee24265b26990808aaeb286  ./core/tesseract-core.wasm.js
+45b4cb346724ac1774f1c36f42f182b887bcdb28ebe63e6fff90ac41f3fcff91  ./lang-data/eng.traineddata.gz
+000c27d9cd0def655f77b36c72a389c0ab13793aa31cb4d7aab56d09c0afbc7e  ./tesseract.min.js
+576b7df7e3393e137e51849357c9adb53fe7ac1bb69bfa06cf3d61520f182c6d  ./worker.min.js

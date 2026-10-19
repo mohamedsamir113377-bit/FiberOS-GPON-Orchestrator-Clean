@@ -1,0 +1,16 @@
+source	type	policy
+GPON	technical	preserve
+OLT	technical	preserve
+ONT	technical	preserve
+ODF	technical	preserve
+OTDR	technical	preserve
+GIS	technical	preserve
+NMS	technical	preserve
+RLS	security	preserve
+IVR	telecom	preserve
+SLA	operations	preserve
+GPS	technical	preserve
+OCR	technical	preserve
+JWT	security	preserve
+API	software	preserve
+PSTN	telecom	preserve

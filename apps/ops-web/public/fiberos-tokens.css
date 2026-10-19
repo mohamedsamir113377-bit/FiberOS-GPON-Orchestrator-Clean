@@ -1,0 +1,111 @@
+/* ===========================================================================
+   FiberOS - shared design tokens (single source of truth)
+   ---------------------------------------------------------------------------
+   Every surface used to redeclare the same palette literals in its own :root
+   block. They now live here exactly once, inside an explicit cascade layer.
+
+   Load order matters and is enforced by scripts/build-netlify-site.js:
+     fiberos-tokens.css  ->  <surface>.css  ->  fiberos-3d.css
+
+   Why @layer: unlayered rules outrank every layer, so each surface keeps the
+   ability to override a token it genuinely needs to differ on (the field
+   surface keeps its slightly stronger --line) without any specificity war.
+
+   External stylesheet only - style-src 'self' stays intact.
+
+   R14.2 extension: primitives for the Buyer Command surface, its shared
+   aliases, and the accent/void/line alpha ramps that used to be copy-pasted
+   rgba() literals across ops.css, field.css and buyer.css. The ramps keep
+   their original byte-level rgb values so the shared visual baselines hold.
+   =========================================================================== */
+
+@layer fiberos.tokens {
+  :root {
+    color-scheme: dark;
+
+    /* --- primitives: the only place these literals appear --- */
+    --fo-void: #030508;
+    --fo-panel: #0c1620;
+    --fo-ink: #eef6f5;
+    --fo-ink-muted: #7a9493;
+    --fo-accent: #2ee6d6;
+    --fo-accent-2: #6b8cff;
+    --fo-warn: #f0b429;
+    --fo-ok: #34d399;
+    --fo-bad: #f87171;
+    --fo-line: rgba(140, 200, 210, 0.12);
+    --fo-font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    --fo-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+
+    /* elevated panel gradient (was #12202c -> #0a1219 inside every card rule) */
+    --fo-panel-hi: #12202c;
+    --fo-panel-lo: #0a1219;
+
+    /* near-void translucency used by the header/backdrop bars */
+    --fo-void-a78: rgba(5, 9, 14, 0.78);
+    --fo-void-a85: rgba(5, 9, 14, 0.85);
+    --fo-void-a92: rgba(5, 9, 14, 0.92);
+    --fo-void-a94: rgba(5, 9, 14, 0.94);
+    --fo-void-a95: rgba(5, 9, 14, 0.95);
+
+    /* hairline translucency (line family) */
+    --fo-line-a1: rgba(140, 200, 210, 0.1);
+    --fo-line-a14: rgba(140, 200, 210, 0.14);
+    --fo-line-a2: rgba(140, 200, 210, 0.2);
+
+    /* accent translucency ramp: glows, focus rings, hover washes, gradients */
+    --fo-accent-a03: rgba(46, 230, 214, 0.03);
+    --fo-accent-a035: rgba(46, 230, 214, 0.035);
+    --fo-accent-a04: rgba(46, 230, 214, 0.04);
+    --fo-accent-a05: rgba(46, 230, 214, 0.05);
+    --fo-accent-a06: rgba(46, 230, 214, 0.06);
+    --fo-accent-a07: rgba(46, 230, 214, 0.07);
+    --fo-accent-a08: rgba(46, 230, 214, 0.08);
+    --fo-accent-a1: rgba(46, 230, 214, 0.1);
+    --fo-accent-a11: rgba(46, 230, 214, 0.11);
+    --fo-accent-a12: rgba(46, 230, 214, 0.12);
+    --fo-accent-a14: rgba(46, 230, 214, 0.14);
+    --fo-accent-a15: rgba(46, 230, 214, 0.15);
+    --fo-accent-a2: rgba(46, 230, 214, 0.2);
+    --fo-accent-a22: rgba(46, 230, 214, 0.22);
+    --fo-accent-a25: rgba(46, 230, 214, 0.25);
+    --fo-accent-a28: rgba(46, 230, 214, 0.28);
+    --fo-accent-a35: rgba(46, 230, 214, 0.35);
+    --fo-accent-a4: rgba(46, 230, 214, 0.4);
+    --fo-accent-a45: rgba(46, 230, 214, 0.45);
+    --fo-accent-a5: rgba(46, 230, 214, 0.5);
+    --fo-accent-a55: rgba(46, 230, 214, 0.55);
+    --fo-accent-a65: rgba(46, 230, 214, 0.65);
+
+    /* --- shared aliases consumed by the Operations and Field surfaces --- */
+    --bg: var(--fo-void);
+    --panel: var(--fo-panel);
+    --line: var(--fo-line);
+    --text: var(--fo-ink);
+    --muted: var(--fo-ink-muted);
+    --aqua: var(--fo-accent);
+    --warn: var(--fo-warn);
+    --ok: var(--fo-ok);
+    --bad: var(--fo-bad);
+    --font: var(--fo-font);
+    --mono: var(--fo-mono);
+
+    /* --- Buyer Command surface aliases (shared across buyer/evaluation) --- */
+    --bg-void: var(--fo-void);
+    --bg-0: var(--fo-void);
+    --bg-1: var(--fo-bg-1, #081018);
+    --accent: var(--fo-accent);
+    --accent-2: var(--fo-accent-2);
+    --amber: var(--fo-warn);
+    --crit: var(--fo-bad);
+    --stroke: var(--fo-line-a1);
+    --stroke-2: var(--fo-line-a2);
+    --stroke-3: var(--fo-accent-a35);
+    --ink: var(--fo-ink);
+    --ink-1: var(--fo-ink-1, #b7ccc9);
+    --ink-2: var(--fo-ink-muted);
+    --ink-3: var(--fo-ink-3, #536668);
+    --accent-soft: var(--fo-accent-a1);
+    --amber-soft: rgba(240, 180, 41, 0.1);
+  }
+}

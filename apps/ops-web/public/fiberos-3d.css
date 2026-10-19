@@ -1,0 +1,161 @@
+/* ===========================================================================
+   FiberOS - realistic 3D depth + smooth motion layer (Operations surface)
+   ---------------------------------------------------------------------------
+   CSP-compatible by construction: this is an external stylesheet only. There is
+   no <style> block, no inline style attribute and no inline event handler, so
+   the hardened CSP emitted by scripts/build-netlify-site.js
+   (script-src 'self' 'wasm-unsafe-eval'; style-src 'self') stays intact.
+
+   Pointer-tracked specular lighting reads the --fo-mx / --fo-my / --fo-rx /
+   --fo-ry custom properties that fiberos-3d.js writes through the CSSOM. When
+   those never arrive (no JS, coarse pointer, reduced motion) every surface
+   keeps a well-lit static orientation - there is no broken or half-applied
+   state, only a less interactive one.
+
+   Depth model
+     1 stage perspective   .deck / .grid / .metrics / .section
+     2 surface orientation --fo-rx / --fo-ry (pointer tracked)
+     3 specular sheen      ::after radial highlight at --fo-mx/--fo-my
+     4 occlusion + contact layered box-shadow (tight near, wide far)
+     5 motion              spring easing, scroll-driven reveal,
+                           View Transitions for in-page navigation
+
+   Accessibility: every transform, transition and animation is switched off
+   under prefers-reduced-motion: reduce. Pointer tracking additionally requires
+   (hover: hover) and (pointer: fine), so touch devices never chase the pointer.
+   =========================================================================== */
+
+:root {
+  --fo-spring: cubic-bezier(0.22, 1, 0.36, 1);
+  --fo-glide: cubic-bezier(0.16, 1, 0.3, 1);
+  --fo-mx: 50%;
+  --fo-my: 50%;
+  --fo-rx: 0deg;
+  --fo-ry: 0deg;
+  --fo-z: 0px;
+  --fo-lift: 0px;
+  --fo-edge: rgba(255, 255, 255, 0.06);
+  --fo-halo: rgba(46, 230, 214, 0.16);
+  --fo-ao: rgba(0, 0, 0, 0.55);
+}
+
+/* 1 - Depth stage: one shared vanishing point per grid keeps the perspective
+   coherent instead of every card inventing its own. */
+.deck { perspective: 1500px; perspective-origin: 50% 18%; }
+.grid, .metrics { perspective: 1250px; perspective-origin: 50% 30%; }
+.section { perspective: 1500px; }
+
+/* 2 - Oriented surface */
+.panel, .card, .metric {
+  position: relative;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform:
+    translate3d(0, 0, var(--fo-z))
+    rotateX(var(--fo-rx))
+    rotateY(var(--fo-ry));
+  transition:
+    transform 560ms var(--fo-spring),
+    box-shadow 460ms var(--fo-glide),
+    border-color 240ms ease;
+  box-shadow:
+    inset 0 1px 0 var(--fo-edge),
+    0 1px 2px rgba(0, 0, 0, 0.45),
+    0 12px 26px -10px var(--fo-ao);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .panel:hover, .card:hover, .metric:hover {
+    --fo-z: 18px;
+    --fo-lift: -7px;
+    transform:
+      translate3d(0, var(--fo-lift), var(--fo-z))
+      rotateX(var(--fo-rx))
+      rotateY(var(--fo-ry));
+    border-color: rgba(46, 230, 214, 0.26);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.09),
+      0 2px 4px rgba(0, 0, 0, 0.5),
+      0 34px 60px -18px rgba(0, 0, 0, 0.78),
+      0 0 0 1px var(--fo-halo);
+  }
+}
+
+/* 3 - Specular sheen: a soft highlight that sits where the pointer is, which is
+   what actually sells the "lit surface" illusion. */
+.panel::after, .card::after, .metric::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 380ms var(--fo-glide);
+  background: radial-gradient(
+    460px circle at var(--fo-mx) var(--fo-my),
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.055) 30%,
+    rgba(255, 255, 255, 0) 62%
+  );
+  mix-blend-mode: screen;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .panel:hover::after, .card:hover::after, .metric:hover::after { opacity: 1; }
+}
+
+/* will-change is attached only to surfaces the enhancer actually tracks, so it
+   is never spent on the dozens of untracked nodes. */
+.fo-3d { will-change: transform; }
+
+/* 5 - Motion */
+@keyframes fo-rise {
+  from { opacity: 0; transform: translate3d(0, 22px, 0) scale(0.985); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Native scroll-driven reveal: zero JavaScript, zero scroll listeners. */
+  @supports (animation-timeline: view()) {
+    .section, .panel, .card, .metric {
+      animation: fo-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 8% cover 30%;
+    }
+  }
+
+  /* Fallback reveal for engines without scroll timelines; the enhancer only
+     adds .fo-reveal when it has an IntersectionObserver to complete it. */
+  @supports not (animation-timeline: view()) {
+    html.fo-js .fo-reveal { opacity: 0; transform: translate3d(0, 20px, 0); }
+    html.fo-js .fo-reveal.fo-in {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      transition: opacity 680ms var(--fo-glide), transform 680ms var(--fo-spring);
+    }
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 340ms;
+    animation-timing-function: var(--fo-spring);
+  }
+}
+
+/* Mobile / low-power guard: the sheen blend is the most expensive layer, so it
+   is dropped on narrow viewports and the depth is expressed by transform only. */
+@media (max-width: 720px) {
+  .panel::after, .card::after, .metric::after { display: none; }
+  .deck, .grid, .metrics, .section { perspective: 1100px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel, .card, .metric, .section,
+  .fo-reveal, .fo-reveal.fo-in {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .panel::after, .card::after, .metric::after { opacity: 0 !important; }
+}

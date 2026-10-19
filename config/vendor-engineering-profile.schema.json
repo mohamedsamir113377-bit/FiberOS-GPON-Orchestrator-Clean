@@ -1,0 +1,18 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://fiberos.local/schema/vendor-engineering-profile.v1.json",
+  "title":"FiberOS Vendor Engineering Profile",
+  "type":"object",
+  "required":["profileId","vendor","model","version","parameterRefs"],
+  "properties":{
+    "profileId":{"type":"string","minLength":1},
+    "vendor":{"type":"string","minLength":1},
+    "model":{"type":"string","minLength":1},
+    "version":{"type":"string","minLength":1},
+    "standards":{"type":"array","items":{"type":"string"}},
+    "parameterRefs":{"type":"array","items":{"type":"string"}},
+    "capabilities":{"type":"object"},
+    "metadata":{"type":"object"}
+  },
+  "additionalProperties":false
+}

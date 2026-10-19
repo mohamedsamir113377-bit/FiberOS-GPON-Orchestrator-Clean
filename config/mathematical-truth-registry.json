@@ -1,0 +1,94 @@
+{
+  "version": "1.0",
+  "metrics": [
+    {
+      "metric": "Distance",
+      "source": "GPS/telemetry",
+      "unit": "m",
+      "formula": "documented geodesic calculation",
+      "validity": "verified",
+      "fallback": "NO_RESULT"
+    },
+    {
+      "metric": "Inventory balance",
+      "source": "inventory ledger",
+      "unit": "item units",
+      "formula": "transactional ledger sum",
+      "validity": "verified",
+      "fallback": "NO_RESULT"
+    },
+    {
+      "metric": "SLA",
+      "source": "ticket timestamps + contract",
+      "unit": "s",
+      "formula": "contractual definition",
+      "validity": "PENDING_CONTRACT_VALIDATION",
+      "fallback": "NO_KPI"
+    },
+    {
+      "metric": "ETA",
+      "source": "routing provider",
+      "unit": "s",
+      "formula": "provider result",
+      "validity": "INTEGRATION_DEPENDENT",
+      "fallback": "NO_ETA"
+    },
+    {
+      "metric": "Optical degradation",
+      "source": "attested measurements",
+      "unit": "dB",
+      "formula": "domain-defined calculation",
+      "validity": "SOURCE_DEPENDENT",
+      "fallback": "NO_RESULT"
+    },
+    {
+      "metric": "OTDR distance",
+      "source": "OTDR round-trip time + declared group index",
+      "unit": "m",
+      "formula": "d = c*t/(2*n_g), t in seconds, z is one-way distance",
+      "validity": "UNIT_TESTED_MATHEMATICAL",
+      "fallback": "NO_RESULT"
+    },
+    {
+      "metric": "OTDR backscatter attenuation",
+      "source": "two ordered backscatter levels + one-way distance span",
+      "unit": "dB/km",
+      "formula": "alpha = 10*log10(P1/P2)/(2*delta-z), with P1/P2 represented by dBm difference",
+      "validity": "UNIT_TESTED_MATHEMATICAL",
+      "fallback": "NO_RESULT"
+    },
+    {
+      "metric": "OTDR event loss",
+      "source": "pre/post event optical levels",
+      "unit": "dB",
+      "formula": "L_event = P_before(dBm) - P_after(dBm)",
+      "validity": "UNIT_TESTED_MATHEMATICAL",
+      "fallback": "NO_RESULT"
+    },
+    {
+      "metric": "OTDR reflectance",
+      "source": "incident and reflected optical power",
+      "unit": "dB",
+      "formula": "R = 10*log10(P_reflected/P_incident)",
+      "validity": "UNIT_TESTED_MATHEMATICAL",
+      "fallback": "NO_RESULT"
+    },
+    {
+      "metric": "Rx power conversion",
+      "source": "declared optical power",
+      "unit": "dBm/mW",
+      "formula": "P_mW = 10^(P_dBm/10); P_dBm = 10*log10(P_mW)",
+      "validity": "UNIT_TESTED_MATHEMATICAL",
+      "fallback": "NO_RESULT"
+    },
+    {
+      "metric": "Optical link budget",
+      "source": "declared transmit power, gains and losses",
+      "unit": "dBm/dB",
+      "formula": "P_rx = P_tx + gains - losses; sensitivity margin = P_rx - sensitivity; overload headroom = overload - P_rx",
+      "validity": "UNIT_TESTED_MATHEMATICAL",
+      "fallback": "NO_RESULT"
+    }
+  ],
+  "rule": "An unverified metric must never be rendered as a factual value. Mathematical results are not physical measurement evidence; vendor calibration/correction and live instrument verification remain separate."
+}

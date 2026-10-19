@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://fiberos.local/schemas/capability-input-adapters.schema.json",
+  "title": "FiberOS capability input adapters",
+  "type": "object",
+  "required": ["schema", "version", "policy", "adapters"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": "fiberos.capability-input-adapters.v1" },
+    "version": { "type": "string" },
+    "recordedOn": { "type": "string" },
+    "policy": {
+      "type": "object",
+      "required": ["failClosed", "allowDefaults", "allowEstimates", "promotionRule"],
+      "properties": {
+        "failClosed": { "const": true },
+        "allowDefaults": { "const": false },
+        "allowEstimates": { "const": false },
+        "allowEnglishFallback": { "const": false },
+        "promotionRule": { "type": "string" }
+      }
+    },
+    "adapters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["externalInputStatus", "configured", "requiredInputs", "acceptedTransports"],
+        "properties": {
+          "externalInputStatus": { "enum": ["INTEGRATION_REQUIRED", "READY"] },
+          "configured": { "type": "boolean" },
+          "transport": { "type": ["string", "null"] },
+          "source": { "type": ["string", "null"] },
+          "requiredInputs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+          "acceptedTransports": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+          "forbidden": { "type": "array", "items": { "type": "string" } },
+          "decisionNeeded": { "type": "string" }
+        }
+      }
+    }
+  }
+}
