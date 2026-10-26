@@ -12,7 +12,7 @@
     "@fiberos/domain": "1.0.0-rc.1+commercial.2026-09-25",
     "@opentelemetry/instrumentation-http": "0.223.0",
     "@opentelemetry/instrumentation-pg": "0.75.0",
-    "@opentelemetry/sdk-node": "0.223.0"
+    "@opentelemetry/sdk-node": "0.300.0"
   },
   "engines": {
     "node": ">=24.21.0"
