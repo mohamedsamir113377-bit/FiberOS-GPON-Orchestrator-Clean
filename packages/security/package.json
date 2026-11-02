@@ -7,6 +7,6 @@
     "node": ">=24.21.0"
   },
   "dependencies": {
-    "redis": "6.3.0"
+    "redis": "6.3.1"
   }
 }
